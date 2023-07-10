@@ -1,7 +1,13 @@
+import Carrusel from "@/components/Carrusel";
+
 export default function Home() {
   return (
     <>
-      <h1>Costanet</h1>
+      <main>
+        <section>
+          <Carrusel />
+        </section>
+      </main>
     </>
   );
 }
