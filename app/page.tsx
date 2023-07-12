@@ -9,11 +9,14 @@ export default function Home() {
         <section>
           <Carrusel />
         </section>
-      <Container>
+        <section className="bg-navbar">
 
-      <PageAbout/>
+          <Container className="pt-24">
 
-      </Container>
+            <PageAbout/>
+
+          </Container>
+        </section>
       </main>
     </>
   );
