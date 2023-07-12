@@ -11,7 +11,7 @@ const navigation = [
   { name: "Nosotros", href: "/nosotros", current: false },
   { name: "Servicios", href: "#", current: false },
   { name: "Contacto", href: "#", current: false },
-  { name: "Test de Velocidad", href: "#", current: false },
+  { name: "Test de Velocidad", href: "/test-de-velocidad", current: false },
   { name: "PQRSF", href: "#", current: false },
   { name: "PES", href: "#", current: false },
 ];
