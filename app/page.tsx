@@ -1,11 +1,23 @@
-import  Navbar from "@/components/Navbar";
+import Carrusel from "@/components/Carrusel";
+import Container from '@mui/material/Container'
+import PageAbout from "./nosotros/page";
 
 export default function Home() {
   return (
     <>
-      <Navbar />
-      <h1>david r</h1>
-      <button></button>
+      <main>
+        <section>
+          <Carrusel />
+        </section>
+        <section className="bg-navbar">
+
+          <Container className="pt-24">
+
+            <PageAbout/>
+
+          </Container>
+        </section>
+      </main>
     </>
   );
 }
