@@ -1,4 +1,6 @@
 import Carrusel from "@/components/Carrusel";
+import Container from '@mui/material/Container'
+import PageAbout from "./nosotros/page";
 
 export default function Home() {
   return (
@@ -7,6 +9,11 @@ export default function Home() {
         <section>
           <Carrusel />
         </section>
+      <Container>
+
+      <PageAbout/>
+
+      </Container>
       </main>
     </>
   );
