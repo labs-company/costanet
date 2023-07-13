@@ -11,7 +11,7 @@ export default function PageAbout() {
         </Grid>
         <Grid xs={6}>
             <Image src={nosotros} alt="Quienes somos nosotros costanet"/>
-            <Image src={nosotros} alt="Quienes somos nosotros costanet"/>
+            
         </Grid>
     </Grid> 
 }
