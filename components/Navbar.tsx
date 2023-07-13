@@ -22,10 +22,10 @@ function classNames(...classes: string[]) {
 
 export default function Navbar() {
   return (
-    <Disclosure as="nav" className="bg-navbar fixed top-0 left-0 right-0 z-10">
+    <Disclosure as="nav" className="bg-navbar fixed top-0 left-0 right-0 z-10  flex items-center spa">
       {({ open }) => (
         <>
-          <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+          <div className="w-full px-2 sm:px-6 lg:px-8">
             <div className="relative flex h-18 items-center justify-between">
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                 {/* Mobile menu button*/}
@@ -39,7 +39,7 @@ export default function Navbar() {
                 </Disclosure.Button>
               </div>
               <div className="flex flex-1 items-center justify-center sm:items-center sm:justify-between md:flex-col lg:flex-row">
-                <div className="flex flex-shrink-0 items-center">
+                <div className="flex flex-shrink-0 items-center p-4">
                   <Image
                     src={logo_cn}
                     alt="costanet"
