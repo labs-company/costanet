@@ -71,14 +71,41 @@
         border-radius: 50%;
         animation: btnRing 2s linear;
     }
+    
+    .loader-content button::after {
+        content: '';
+        position: absolute;
+        height: calc(100% + 4px);
+        width: calc(100% + 4px);
+        top: -2px;
+        left: -2px;
+        background: linear-gradient(45deg, #25476e, #c7ecee);
+        border: 2px solid #7ed6d4;
+        border-radius: 50%;
+        animation: btnRing 2s linear;
+        z-index: -1;
+    }
     @keyframes btnRing {
-            60% {
-                height: calc(100% + 60px);
-                width: calc(100% +  60px);
-                top: -32px;
-                left: -32px;
-                opacity: 0;
-                
-            }
+        60% {
+            height: calc(100% + 60px);
+            width: calc(100% +  60px);
+            top: -32px;
+            left: -32px;
+            opacity: 0;
+            
+        }
+    }
+    .loader-content button:hover {
+        background-color: #1f3c4e;
+    }
+    .content {
+        display: flex;
+        width: 100%;
+        font-size: 64px;
+        margin: 12px 0 32px 0;
+        flex-direction: column;
+    }
+    .content small {
+        font-size: 40%;
     }
 }

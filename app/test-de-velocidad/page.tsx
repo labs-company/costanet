@@ -6,7 +6,7 @@ export default function TestDeVelocidad() {
       <div className="loader-widget">
         <span className="loader hiden"></span>
         <div className="loader-content">
-            <div className="content"></div>
+            <div className="content">24 <small>Mbps</small></div>
             <button>EMPEZAR</button>
         </div>
       </div>
