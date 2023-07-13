@@ -19,6 +19,7 @@ module.exports = {
       letter: "#274A99",
       white: "#FFFFFF",
       black: "#000000",
+      section: "#C1DEEE"
     },
   },
   plugins: [require("flowbite/plugin")],

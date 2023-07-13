@@ -1,5 +1,5 @@
 import Carrusel from "@/components/Carrusel";
-import Container from '@mui/material/Container'
+import Container from "@mui/material/Container";
 import PageAbout from "./nosotros/page";
 
 export default function Home() {
@@ -9,12 +9,9 @@ export default function Home() {
         <section>
           <Carrusel />
         </section>
-        <section className="bg-navbar">
-
+        <section className="bg-section">
           <Container className="pt-24">
-
-            <PageAbout/>
-
+            <PageAbout />
           </Container>
         </section>
       </main>
