@@ -8,11 +8,6 @@
     *.hiden {
         display: none !important;
     }
-    .loader-widget {
-        width: 360px;
-        height: 420x;
-    }
-
     .loader {
         position: relative;
         display: inline-block;
@@ -65,8 +60,8 @@
         position: absolute;
         height: 100%;
         width: 100%;
-        top: -2px;
-        left: -2px;
+        top: 0;
+        left: 0;
         border: 2px solid #7ed6d4;
         border-radius: 50%;
         animation: btnRing 2s linear;

@@ -2,7 +2,8 @@ import { Container } from "@mui/material";
 
 export default function TestDeVelocidad() {
   return (
-    <Container className="bg-navbar">
+    <div className="bg-section h-screen">
+    <Container>
       <div className="loader-widget">
         <span className="loader hiden"></span>
         <div className="loader-content">
@@ -11,5 +12,6 @@ export default function TestDeVelocidad() {
         </div>
       </div>
     </Container>
+    </div>
   );
 }
