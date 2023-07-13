@@ -1,3 +1,39 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
+@layer utilities {
+    .loader-widget {
+        width: 360px;
+        height: 420x;
+    }
+
+    .loader {
+        position: relative;
+        display: inline-block;
+        height: 240px;
+        width: 240px;
+        border-radius: 50%;
+        background: conic-gradient(rgba(1, 182, 190, 0.3) 0%, transparent 65%);
+        animation: radarRotate 2s linear;
+    }
+
+    @keyframes radarRotate {
+        100% {
+            transform: rotate(-360deg);
+        }
+    }
+    .loader::before {
+        content: "";
+        position: absolute;
+        height: 0;
+        width: 0;
+        top: 0;
+        left: calc(50% - 8px);
+        border: 8px solid transparent;
+        border-top: 120px solid #81ecec;
+        filter: drop-shadow(0 0 12px #01b6be);
+    }
+}
