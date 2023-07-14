@@ -13,7 +13,7 @@
     width: 240px;
     border-radius: 50%;
     background: conic-gradient(rgba(1, 182, 190, 0.3) 0%, transparent 65%);
-    animation: radarRotate 2s linear;
+    animation: radarRotate 2s linear infinite;
   }
 
   @keyframes radarRotate {
@@ -67,7 +67,7 @@
     left: 0;
     border: 2px solid #7ed6d4;
     border-radius: 50%;
-    animation: btnRing 2s linear;
+    animation: btnRing 2s linear infinite;
   }
   @keyframes btnRing {
     60%,
@@ -103,6 +103,7 @@
     margin: 12px 0 32px 0;
     flex-direction: column;
   }
+
   .content small {
     font-size: 40%;
   }
