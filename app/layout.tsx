@@ -1,8 +1,11 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Josefin_Sans } from "next/font/google";
 import Navbar from "@/components/Navbar";
-const inter = Inter({ subsets: ["latin"] });
+
+
+
+export const josefin_sans = Josefin_Sans({weight: "700",subsets:["latin"]})
 
 export const metadata: Metadata = {
   title: "Costanet",
@@ -19,8 +22,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <header className="relative mb-20">
+      <body className={josefin_sans.className}>
+        <header className="relative">
         <Navbar />
         </header>
         

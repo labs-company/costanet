@@ -13,14 +13,19 @@ module.exports = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      boxShadow: {
+        shadowus: "0px 0px 16px 20px #bfccd9ad",
+      },
     },
     colors: {
       navbar: "#F1F9FE",
       letter: "#274A99",
       white: "#FFFFFF",
       black: "#000000",
-      section: "#C1DEEE"
+      section: "#C1DEEE",
+      bgshadow: "#bfccd9ad",
     },
   },
   plugins: [require("flowbite/plugin")],
 };
+// box-shadow: ;
