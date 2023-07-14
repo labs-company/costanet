@@ -1,5 +1,4 @@
 import Carrusel from "@/components/Carrusel";
-import Container from "@mui/material/Container";
 import PageAbout from "./nosotros/page";
 // import second from '@/public/backgroundUs.png'
 export default function Home() {
@@ -9,10 +8,8 @@ export default function Home() {
         <section>
           <Carrusel />
         </section>
-        <section className="bg-section bg-[url('../public/backgroundUs.png')] w-full bg-no-repeat bg-cover h-screen">
-          <Container className="pt-24">
-            <PageAbout />
-          </Container>
+        <section className="bg-section bg-[url('../public/backgroundUs.png')] w-full bg-no-repeat bg-cover h-screen flex justify-center items-center">
+          <PageAbout />
         </section>
       </main>
     </>
