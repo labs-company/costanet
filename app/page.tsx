@@ -2,6 +2,7 @@ import Carrusel from "@/components/Carrusel";
 import Container from "@mui/material/Container";
 import PageAbout from "./nosotros/page";
 import PageServices from "./servicios/page";
+import TestDeVelocidad from "./test-de-velocidad/page";
 
 export default function Home() {
   return (
@@ -18,6 +19,10 @@ export default function Home() {
 
         <section className="bg-letter">
           <PageServices />
+        </section>
+        
+        <section>
+          <TestDeVelocidad />
         </section>
       </main>
     </>
