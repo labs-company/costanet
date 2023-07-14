@@ -20,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <header className="relative mb-24">
+        <header className="relative mb-20">
         <Navbar />
         </header>
         

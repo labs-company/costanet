@@ -37,8 +37,7 @@ export default function SpeedTest() {
       const totalSpeed = (loadedBytes / timeDuration / 1024 / 1024).toFixed(2);
 
       let i = 0;
-      let speedOut: string;
-
+      
       const animateMbps = () => {
         if (i < parseInt(totalSpeed)) {
           const totalSpeedAnimate = i.toFixed(2);
