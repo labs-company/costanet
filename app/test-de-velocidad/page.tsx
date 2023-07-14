@@ -1,17 +1,14 @@
 import { Container } from "@mui/material";
+import SpeedTest from "@/components/SpeedTest";
 
 export default function TestDeVelocidad() {
   return (
     <div className="bg-section h-screen">
-    <Container>
-      <div className="loader-widget">
-        <span className="loader hiden"></span>
-        <div className="loader-content">
-            <div className="content">24 <small>Mbps</small></div>
-            <button>EMPEZAR</button>
+      <Container>
+        <div className="loader-widget">
+          <SpeedTest />
         </div>
-      </div>
-    </Container>
+      </Container>
     </div>
   );
 }
