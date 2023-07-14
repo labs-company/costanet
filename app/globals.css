@@ -53,6 +53,11 @@
     box-shadow: 0 0 12px #81ecec;
   }
 
+  .loader-content.result button {
+    height: 120px;
+    width: 120px;
+    margin-top: 16px;
+  }
   .loader-content button::before {
     content: "";
     position: absolute;
