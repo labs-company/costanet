@@ -35,6 +35,22 @@ export default function SpeedTest() {
       const timeDuration = (endTime - startTime) / 1000;
       const loadedBytes = downloadSize * 8;
       const totalSpeed = (loadedBytes / timeDuration / 1024 / 1024).toFixed(2);
+
+      let i = 0;
+      let speedOut: string;
+
+      const animateMbps = () => {
+        if (i < parseInt(totalSpeed)) {
+          const totalSpeedAnimate = i.toFixed(2);
+          setTotalSpeed(totalSpeedAnimate);
+          setTimeout(animateMbps, 20);
+          i += 1.02;
+        } else {
+          setTotalSpeed(totalSpeed);
+        }
+      };
+
+      animateMbps();
       setTotalSpeed(totalSpeed);
       setElementLoader({
         loaderContent: true,
@@ -42,7 +58,7 @@ export default function SpeedTest() {
         speedTotal: false,
         resultAgain: false,
       });
-      setMessage("Volver a empezar")
+      setMessage("Volver a empezar");
     };
   };
 
