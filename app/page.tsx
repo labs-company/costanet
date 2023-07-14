@@ -16,7 +16,7 @@ export default function Home() {
           </Container>
         </section>
 
-        <section>
+        <section className="bg-letter">
           <PageServices />
         </section>
       </main>
