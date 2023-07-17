@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Grid from "@mui/material/Unstable_Grid2/Grid2";
 import Container from "@mui/material/Container";
 import { Typography } from "@mui/material";

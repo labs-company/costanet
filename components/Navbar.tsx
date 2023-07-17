@@ -5,14 +5,15 @@ import Link from "next/link";
 import logo_cn from "@/public/costanet_desktop.png";
 import { Disclosure } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import { useState } from "react";
 
 const navigation = [
-  {name: "Costanet", href: "/", current: true},
+  { name: "Costanet", href: "/", current: true },
   { name: "Nosotros", href: "/nosotros", current: false },
-  { name: "Servicios", href: "#", current: false },
-  { name: "Contacto", href: "#", current: false },
+  { name: "Servicios", href: "/servicios", current: false },
+  { name: "Contacto", href: "/contacto", current: false },
   { name: "Test de Velocidad", href: "/test-de-velocidad", current: false },
-  { name: "PQRSF", href: "#", current: false },
+  { name: "PQRSF", href: "/pqrsf", current: false },
   { name: "PES", href: "#", current: false },
 ];
 
@@ -21,8 +22,15 @@ function classNames(...classes: string[]) {
 }
 
 export default function Navbar() {
+  const [currentNavItem, setCurrentNavItem] = useState(
+    navigation.find((item) => item.current)
+  );
+
   return (
-    <Disclosure as="nav" className="bg-navbar fixed top-0 left-0 right-0 z-10  flex items-center spa">
+    <Disclosure
+      as="nav"
+      className="bg-navbar fixed top-0 left-0 right-0 z-10  flex items-center"
+    >
       {({ open }) => (
         <>
           <div className="w-full px-2 sm:px-6 lg:px-8">
@@ -57,13 +65,18 @@ export default function Navbar() {
                       <Link
                         key={item.name}
                         href={item.href}
+                        onClick={() => setCurrentNavItem(item)}
                         className={classNames(
-                          item.current
+                          item.name === currentNavItem?.name
                             ? "bg-letter text-white"
                             : "text-letter hover:bg-letter hover:text-white",
                           "rounded-md px-3 py-2 text-sm font-medium"
                         )}
-                        aria-current={item.current ? "page" : undefined}
+                        aria-current={
+                          item.name === currentNavItem?.name
+                            ? "page"
+                            : undefined
+                        }
                       >
                         {item.name}
                       </Link>
