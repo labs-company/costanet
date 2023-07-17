@@ -3,9 +3,7 @@ import type { Metadata } from "next";
 import { Josefin_Sans } from "next/font/google";
 import Navbar from "@/components/Navbar";
 
-
-
-export const josefin_sans = Josefin_Sans({weight: "700",subsets:["latin"]})
+export const josefin_sans = Josefin_Sans({ weight: "700", subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Costanet",
@@ -24,9 +22,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={josefin_sans.className}>
         <header className="relative">
-        <Navbar />
+          <Navbar />
         </header>
-        
+
         {children}
       </body>
     </html>
