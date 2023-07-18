@@ -3,6 +3,7 @@ import PageAbout from "./nosotros/page";
 import PageServices from "./servicios/page";
 import PageSpeedTest from "./test-de-velocidad/page";
 import PageContact from "./contacto/page";
+import backgroundus from "@/public/sectionDos/backgroundUs.png";
 import { josefin_sans } from "./layout";
 
 export default function Home() {
@@ -12,7 +13,12 @@ export default function Home() {
         <section>
           <Carrusel />
         </section>
-        <section className="bg-section bg-[url('../public/backgroundUs.png')] w-full bg-no-repeat bg-cover h-screen flex justify-center items-center">
+        <section
+          className="bg-section w-full bg-no-repeat bg-cover h-screen flex justify-center items-center"
+          style={{
+            backgroundImage: `url(${backgroundus.src})`,
+          }}
+        >
           <PageAbout />
         </section>
 

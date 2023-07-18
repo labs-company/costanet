@@ -1,8 +1,8 @@
 import { Container } from "@mui/material";
 import Grid from "@mui/material/Unstable_Grid2/Grid2";
 import Image from "next/image";
-import clientHappy from "@/public/clientHappy.png";
-import wifiCostanet from "@/public/wifi-costanet.png";
+import clientHappy from "@/public/sectionTres/clientHappy.png";
+import wifiCostanet from "@/public/sectionTres/wifi-costanet.png";
 
 export default function PageServices() {
   return (
