@@ -3,12 +3,12 @@ import PageAbout from "./nosotros/page";
 import PageServices from "./servicios/page";
 import PageSpeedTest from "./test-de-velocidad/page";
 import PageContact from "./contacto/page";
-import PagePQRSF from "./pqrsf/page";
+import { josefin_sans } from "./layout";
 
 export default function Home() {
   return (
     <>
-      <main>
+      <main className={josefin_sans.className}>
         <section>
           <Carrusel />
         </section>
@@ -25,11 +25,10 @@ export default function Home() {
         </section>
 
         <section>
+          <div className="p-8">
+            <h2 className="text-5xl text-letter">CONTACTO</h2>
+          </div>
           <PageContact />
-        </section>
-
-        <section>
-          <PagePQRSF />
         </section>
       </main>
     </>
