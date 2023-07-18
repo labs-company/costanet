@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import { Josefin_Sans } from "next/font/google";
 import Navbar from "@/components/Navbar";
 
-export const josefin_sans = Josefin_Sans({ weight: "700", subsets: ["latin"] });
+export const josefin_sans = Josefin_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Costanet",

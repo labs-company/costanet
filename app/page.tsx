@@ -26,7 +26,7 @@ export default function Home() {
 
         <section>
           <div className="p-8">
-            <h2 className="text-5xl text-letter">CONTACTO</h2>
+            <h2 className="text-5xl text-letter font-bold">CONTACTO</h2>
           </div>
           <PageContact />
         </section>
