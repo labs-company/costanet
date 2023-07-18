@@ -1,3 +1,4 @@
+import { Button } from "@mui/material";
 import Grid from "@mui/material/Unstable_Grid2/Grid2";
 
 export default function PageContacto() {
@@ -18,12 +19,25 @@ export default function PageContacto() {
           </h2>
           <p>RESPONDEREMOS TODAS TUS DUDAS EN BREVE</p>
         </Grid>
-        <Grid xs={2}>
-          <div>
-            <button>PES</button>
+        <Grid
+          xs={2}
+          sx={{
+            display: "flex",
+            flexDirection: "column",
+            gap: "1rem",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          <div className="w-full flex flex-col">
+            <button className="rounded-md border border-transparent bg-white px-8 py-3 text-center font-medium text-letter">
+              PES
+            </button>
           </div>
-          <div>
-            <button>PQRSF</button>
+          <div className="w-full flex flex-col">
+            <button className="rounded-md border border-transparent bg-white px-8 py-3 text-center font-medium text-letter">
+              PQRSF
+            </button>
           </div>
         </Grid>
       </Grid>
