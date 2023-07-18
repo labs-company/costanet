@@ -3,16 +3,19 @@ import Grid from "@mui/material/Unstable_Grid2/Grid2";
 export default function PageContacto() {
   return (
     <>
-      <Grid container spacing={2} sx={{ backgroundColor: "#274A99" }}>
+      <Grid container sx={{ backgroundColor: "#274A99", padding: "5rem" }}>
         <Grid
           xs={10}
           sx={{
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
+            justifyContent: "flex-end",
           }}
         >
-          <h2>Aqui puedes contactarnos!</h2>
+          <h2 className="text-white font-bold text-5xl tracking-wide leading-tight">
+            Aqui puedes contactarnos!
+          </h2>
           <p>RESPONDEREMOS TODAS TUS DUDAS EN BREVE</p>
         </Grid>
         <Grid xs={2}>
