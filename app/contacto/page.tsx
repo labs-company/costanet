@@ -1,10 +1,10 @@
 import { Box, Container, Typography } from "@mui/material";
 import Grid from "@mui/material/Unstable_Grid2/Grid2";
 import Image from "next/image";
-import horarios from "@/public/horarios.png";
-import locacion from "@/public/locacion.png";
-import email from "@/public/mail.png";
-import tlf from "@/public/telephone.png";
+import horarios from "@/public/redes/horarios.png";
+import locacion from "@/public/redes/locacion.png";
+import email from "@/public/redes/mail.png";
+import tlf from "@/public/redes/telephone.png";
 
 export default function PageContacto() {
   return (
