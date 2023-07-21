@@ -48,16 +48,20 @@ export default function Navbar() {
               </div>
               <div className="flex flex-1 items-center justify-center sm:items-center sm:justify-between md:flex-col lg:flex-row">
                 <div className="flex flex-shrink-0 items-center p-4">
+                <Link href="/">
                   <Image
                     src={logo_cn}
                     alt="costanet"
                     className="block h-12 w-auto lg:hidden"
                   />
+                  </Link>
+                  <Link href="/">
                   <Image
-                    src={logo_cn}
+                   src={logo_cn}
                     alt="costanet"
                     className="hidden h-12 w-auto lg:block"
                   />
+                  </Link>
                 </div>
                 <div className="hidden sm:ml-6 sm:block">
                   <div className="flex space-x-4">

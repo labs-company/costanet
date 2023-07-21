@@ -13,7 +13,7 @@ export default function PageContacto() {
         <div className="p-8">
           <h2 className="text-5xl text-letter font-bold">CONTACTO</h2>
         </div>
-        <Grid container sx={{ backgroundColor: "#274A99", padding: "5rem" }}>
+        <Grid container sx={{ backgroundColor: "#274A99", padding: "3rem" }}>
           <Grid
             xs={10}
             sx={{
