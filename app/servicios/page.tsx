@@ -3,8 +3,8 @@ import ServiceClientComponet from "@/components/ServiceClientComponet";
 export default function PageServices() {
   return (
     <>
-      <section className="bg-letter sm:h-screen flex flex-col justify-stretch">
-        <Container className="flex flex-col-reverse justify-center h-screen">
+      <section className="bg-letter flex flex-col justify-end">
+        <Container className="flex flex-col-reverse justify-center">
           <ServiceClientComponet />
         </Container>
       </section>
