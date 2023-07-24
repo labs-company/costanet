@@ -14,9 +14,10 @@ export default function ServiceClientComponet() {
       spacing={2}
       sx={{
         margin: "0px",
-        height: "100vh",
         flexWrap: "nowrap",
         flexDirection: matches ? "row" : "column-reverse",
+        alignItems: "center",
+        placeContent: "center",
       }}
     >
       <Grid
@@ -24,9 +25,9 @@ export default function ServiceClientComponet() {
         sx={{
           padding: "0px",
           width: "auto",
-          //   height: "100vh",
           display: "flex",
           alignItems: "flex-end",
+          placeContent: "center",
         }}
       >
         <Image
@@ -47,7 +48,7 @@ export default function ServiceClientComponet() {
           //   width: matches ? "max-content" : "auto",
         }}
       >
-        <div className="pt-5 p-0 flex content-center sm:h-screen">
+        <div className="pt-5 p-0 flex content-center h-auto">
           <p className="text-4xl text-center ml-1 text-white font-medium md:text-6xl xl:text-6xl sm:flex sm:items-center">
             Con nuestro servicio WIFI hacemos felices a nuestros clientes
           </p>
