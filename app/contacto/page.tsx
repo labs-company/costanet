@@ -9,17 +9,10 @@ import tlf from "@/public/redes/telephone.png";
 export default function PageContacto() {
   return (
     <>
-      <section>
-        <div className="p-8 bg-letter">
-          <h2 className="text-5xl text-white font-bold">CONTACTO</h2>
-        </div>
-        <Grid
-          container
-          sx={{ backgroundColor: "#274A99", padding: "0 3rem 3rem 3rem" }}
-        >
-          <Grid
-            xs={10}
-            sx={{
+      <section className="bg-letter">
+        <div style={{ padding: "3rem" }}>
+          <div
+            style={{
               display: "flex",
               flexDirection: "column",
               alignItems: "center",
@@ -30,29 +23,28 @@ export default function PageContacto() {
               Aqui puedes contactarnos!
             </h2>
             <p className="">RESPONDEREMOS TODAS TUS DUDAS EN BREVE</p>
-          </Grid>
-          <Grid
-            xs={2}
-            sx={{
+          </div>
+          <div
+            style={{
               display: "flex",
-              flexDirection: "column",
-              gap: "1rem",
+              gap: "6%",
               justifyContent: "center",
               alignItems: "center",
+              width: "100%",
             }}
           >
-            <div className="w-full flex flex-col justify-center">
-              <button className="rounded-xl border border-transparent bg-white px-8 py-3 text-center font-medium text-letter text-2xl">
+            <div className="w-full flex justify-center">
+              <button className="rounded-xl border border-transparent bg-white px-8 py-3 text-center font-medium text-letter text-2xl w-1/3">
                 PES
               </button>
             </div>
-            <div className="w-full flex flex-col justify-center">
-              <button className="rounded-xl border border-transparent bg-white px-8 py-3 text-center font-medium text-letter text-2xl">
+            <div className="w-full flex justify-center">
+              <button className="rounded-xl border border-transparent bg-white px-8 py-3 text-center font-medium text-letter text-2xl w-1/3">
                 PQRSF
               </button>
             </div>
-          </Grid>
-        </Grid>
+          </div>
+        </div>
         <Grid container sx={{ paddingTop: "1.5rem" }}>
           <Grid xs={3}>
             <Box
