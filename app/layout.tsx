@@ -22,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={josefin_sans.className}>
-        <header className="relative">
+        <header className="sticky top-0 z-50">
           <Navbar />
         </header>
 
