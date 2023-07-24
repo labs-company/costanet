@@ -16,6 +16,13 @@ module.exports = {
       boxShadow: {
         shadowus: "0px 0px 16px 20px #bfccd9ad",
       },
+      height: {
+        640: "24vh",
+        768: "31vh",
+        1024: "53vh",
+        1280: "75vh",
+        1536: "100vh",
+      },
     },
     colors: {
       navbar: "#F1F9FE",

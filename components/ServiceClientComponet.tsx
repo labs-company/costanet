@@ -7,7 +7,6 @@ import wifiCostanet from "@/public/sectionTres/wifi-costanet.png";
 
 export default function ServiceClientComponet() {
   const matches = useMediaQuery("(min-width:600px)");
-  console.log(matches);
 
   return (
     <Grid
@@ -31,9 +30,12 @@ export default function ServiceClientComponet() {
         }}
       >
         <Image
+          style={{
+            width: matches ? "100%" : "60%",
+          }}
           src={clientHappy}
           alt="Hacemos clientes felices"
-          className="w-full flex items-end xl:w-full"
+          className="flex items-end"
         />
       </Grid>
       <Grid
