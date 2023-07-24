@@ -8,10 +8,10 @@ import Image from "next/image";
 
 export default function SlidingInterval() {
   return (
-    <Carousel slideInterval={5000} className="h-screen rounded-none">
-      <Image alt="costanet" src={carruseluno} className="rounded-none" />
-      <Image alt="costanet" src={carruseldos} className="rounded-none" />
-      <Image alt="costanet" src={carruseltres} className="rounded-none" />
+    <Carousel slideInterval={5000} className="h-screen">
+      <Image alt="costanet" src={carruseluno} />
+      <Image alt="costanet" src={carruseldos} />
+      <Image alt="costanet" src={carruseltres} />
     </Carousel>
   );
 }

@@ -3,7 +3,7 @@
 import { Footer } from "flowbite-react";
 import Image from "next/image";
 import { BsFacebook, BsInstagram, BsTwitter } from "react-icons/bs";
-import logo_blanco from "@/public/logos/logo_blanco.png"
+import logo_blanco from "@/public/logos/logo_blanco.png";
 import Link from "next/link";
 
 export default function FooterWithSocialMediaIcons() {
@@ -12,13 +12,11 @@ export default function FooterWithSocialMediaIcons() {
       <div className="w-full">
         <div className="grid w-full justify-between sm:flex sm:justify-between md:flex md:grid-cols-1">
           <div>
-                <div>
-                    <Link href="/">
-                        <Image src={logo_blanco} alt="" className="w-40 p-4 pt-0"/>
-                    </Link>
-
-                </div>
-
+            <div>
+              <Link href="/">
+                <Image src={logo_blanco} alt="" className="w-40 p-4 pt-0" />
+              </Link>
+            </div>
           </div>
           <div className="grid grid-cols-2 gap-6 sm:mt-4 sm:grid-cols-4 sm:gap-4">
             <div>
@@ -56,7 +54,11 @@ export default function FooterWithSocialMediaIcons() {
               <Footer.Icon href="#" icon={BsInstagram} />
               <Footer.Icon href="#" icon={BsTwitter} />
             </div>
-          <Footer.Copyright by="netnovice" href="#" />  
+            <Footer.LinkGroup>
+              <Footer.Link href="github.com/nettenam-labs">
+                By netnovice
+              </Footer.Link>
+            </Footer.LinkGroup>
           </div>
         </div>
       </div>
