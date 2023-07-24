@@ -35,7 +35,7 @@ export default function ServiceClientComponet() {
           }}
           src={clientHappy}
           alt="Hacemos clientes felices"
-          className="flex items-end "
+          className="flex items-end"
         />
       </Grid>
       <Grid
