@@ -7,7 +7,7 @@ export default function PageAbout() {
   return (
     <>
       <section
-        className="bg-section w-full bg-no-repeat bg-cover h-screen flex justify-center items-center"
+        className="bg-section w-full bg-no-repeat bg-cover h-screen flex justify-center items-center md:bg-center bg-center"
         style={{
           backgroundImage: `url(${backgroundus.src})`,
         }}
@@ -15,12 +15,12 @@ export default function PageAbout() {
         <Container className="bg-bgshadow p-12 shadow-shadowus">
           <Grid container spacing={2}>
             <Grid xs={12}>
-              <h2 className="text-4xl font-bold leading-7  sm:truncate xl:text-6xl sm:tracking-tight text-letter flex justify-center">
+              <h2 className="text-4xl font-bold leading-7   xl:text-6xl sm:tracking-tight text-letter flex justify-center">
                 NOSOTROS
               </h2>
               <Typography
                 mt={3}
-                className="sm:text-4xl text-justify text-letter font-semibold"
+                className="sm:text-3xl md:text-4xl text-justify text-letter font-semibold"
               >
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae
                 magnam quod autem, commodi, exercitationem voluptatem sapiente
