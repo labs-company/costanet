@@ -33,7 +33,7 @@ export default function ServiceClientComponet() {
         <Image
           src={clientHappy}
           alt="Hacemos clientes felices"
-          className="w-full flex items-end  xl:w-full"
+          className="w-full flex items-end xl:w-full"
         />
       </Grid>
       <Grid

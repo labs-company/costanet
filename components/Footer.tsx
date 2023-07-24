@@ -8,13 +8,13 @@ import Link from "next/link";
 
 export default function FooterWithSocialMediaIcons() {
   return (
-    <Footer container className="bg-footerbgcolor rounded-none p-0">
+    <Footer container className="bg-footer rounded-none p-0">
       <div className="w-full">
-        <div className="grid w-full justify-between sm:flex sm:justify-between md:flex md:grid-cols-1">
+        <div className="grid w-full justify-between sm:flex sm:justify-between md:flex md:grid-cols-1 p-5">
           <div>
             <div>
               <Link href="/">
-                <Image src={logo_blanco} alt="" className="w-40 p-4 pt-0" />
+                <Image src={logo_blanco} alt="" className="w-44 p-4 pt-0" />
               </Link>
             </div>
           </div>
