@@ -79,9 +79,11 @@ export default function SpeedTest() {
             }`}
           >
             <p className="text-9xl ">{totalSpeed}</p>
-            <small> Mbps.</small>
+            <small className="text-lg"> Mbps.</small>
           </div>
-          <button onClick={handleClickTest}>{message}</button>
+          <button onClick={handleClickTest} className="text-2xl">
+            {message}
+          </button>
         </div>
       </div>
     </>
