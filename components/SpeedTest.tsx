@@ -37,7 +37,7 @@ export default function SpeedTest() {
       const totalSpeed = (loadedBytes / timeDuration / 1024 / 1024).toFixed(2);
 
       let i = 0;
-      
+
       const animateMbps = () => {
         if (i < parseInt(totalSpeed)) {
           const totalSpeedAnimate = i.toFixed(2);
@@ -63,23 +63,26 @@ export default function SpeedTest() {
 
   return (
     <>
-      <span
-        className={`loader ${elementLoader.loader ? "hiden" : "hiden-none"}`}
-      ></span>
-      <div
-        className={`loader-content ${
-          elementLoader.loaderContent ? "hiden-none" : "hiden"
-        } ${elementLoader.resultAgain ? "reuslt-none" : "result"}`}
-      >
+      <div className="pt-24">
+        <span
+          className={`loader ${elementLoader.loader ? "hiden" : "hiden-none"}`}
+        ></span>
+
         <div
-          className={`content ${
-            elementLoader.speedTotal ? "hiden" : "hiden-none"
-          }`}
+          className={`loader-content ${
+            elementLoader.loaderContent ? "hiden-none" : "hiden"
+          } ${elementLoader.resultAgain ? "reuslt-none" : "result"}`}
         >
-          <p className="text-9xl ">{totalSpeed}</p>
-           <small> Mbps.</small>
+          <div
+            className={`content ${
+              elementLoader.speedTotal ? "hiden" : "hiden-none"
+            }`}
+          >
+            <p className="text-9xl ">{totalSpeed}</p>
+            <small> Mbps.</small>
+          </div>
+          <button onClick={handleClickTest}>{message}</button>
         </div>
-        <button onClick={handleClickTest}>{message}</button>
       </div>
     </>
   );

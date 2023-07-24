@@ -24,8 +24,7 @@ module.exports = {
       black: "#000000",
       section: "#C1DEEE",
       bgshadow: "#bfccd9ad",
-      footerbgcolor: "#2b2b2b",
-    
+      footer: "#2b2b2b",
     },
   },
   plugins: [require("flowbite/plugin")],
