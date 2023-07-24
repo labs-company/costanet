@@ -10,9 +10,7 @@ export default function Home() {
   return (
     <>
       <main className={josefin_sans.className}>
-        <section>
-          <Carrusel />
-        </section>
+        <Carrusel />
 
         <PageAbout />
 
