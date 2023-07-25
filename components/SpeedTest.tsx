@@ -78,8 +78,8 @@ export default function SpeedTest() {
               elementLoader.speedTotal ? "hiden" : "hiden-none"
             }`}
           >
-            <p className="text-9xl ">{totalSpeed}</p>
-            <small className="text-lg"> Mbps.</small>
+            <p className="sm:text-9xl">{totalSpeed}</p>
+            <small className="text-md"> Mbps.</small>
           </div>
           <button onClick={handleClickTest} className="text-2xl">
             {message}

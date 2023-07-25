@@ -44,7 +44,7 @@ export default function FooterWithSocialMediaIcons() {
           </div>
         </div>
         <div className="bg-black">
-          <div className="w-full sm:flex sm:items-center sm:justify-between p-5">
+          <div className="w-full flex-col flex items-center sm:justify-between p-5 gap-y-2 justify-center">
             <Footer.Copyright
               by="Copyright 2023 CostaNet S.A.S | Todos los derechos reservados"
               href="#"
@@ -54,7 +54,7 @@ export default function FooterWithSocialMediaIcons() {
               <Footer.Icon href="#" icon={BsInstagram} />
               <Footer.Icon href="#" icon={BsTwitter} />
             </div>
-            <Footer.LinkGroup>
+            <Footer.LinkGroup className="py-2">
               <Footer.Link href="github.com/nettenam-labs">
                 By netnovice
               </Footer.Link>
