@@ -45,7 +45,7 @@ export default function ServiceClientComponet() {
           display: "flex",
           justifyContent: "center",
           flexDirection: "column",
-          //   width: matches ? "max-content" : "auto",
+          width: matches ? "initial" : "auto",
         }}
       >
         <div className="pt-5 p-0 flex content-center h-auto">

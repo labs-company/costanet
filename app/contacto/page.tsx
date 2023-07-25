@@ -45,7 +45,10 @@ export default function PageContacto() {
             </div>
           </div>
         </div>
-        <Grid container sx={{ paddingTop: "1.5rem" }}>
+        <Grid
+          container
+          sx={{ paddingTop: "1.5rem", color: "#fff", textAlign: "center" }}
+        >
           <Grid xs={12} sm={6} md={3}>
             <Box
               sx={{
