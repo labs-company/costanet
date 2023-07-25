@@ -12,6 +12,10 @@ export const metadata: Metadata = {
   icons: {
     icon: "/costanet.png",
   },
+  authors: {
+    name: "costanet",
+    url: "costanet.vercel.app",
+  },
 };
 
 export default function RootLayout({
