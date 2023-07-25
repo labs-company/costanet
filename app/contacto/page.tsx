@@ -33,20 +33,20 @@ export default function PageContacto() {
               width: "100%",
             }}
           >
-            <div className="w-full flex justify-center">
-              <button className="rounded-xl border border-transparent bg-white px-8 py-3 text-center font-medium text-letter text-2xl w-1/3">
+            <div className="w-full flex justify-center p-2">
+              <button className="rounded-xl border border-transparent bg-white px-8 py-3 text-center font-medium text-letter text-2xl md:w-80">
                 PES
               </button>
             </div>
-            <div className="w-full flex justify-center">
-              <button className="rounded-xl border border-transparent bg-white px-8 py-3 text-center font-medium text-letter text-2xl w-1/3">
+            <div className="w-full flex justify-center p-2">
+              <button className="rounded-xl border border-transparent bg-white px-8 py-3 text-center font-medium text-letter text-2xl md:w-80">
                 PQRSF
               </button>
             </div>
           </div>
         </div>
         <Grid container sx={{ paddingTop: "1.5rem" }}>
-          <Grid xs={3}>
+          <Grid xs={12} sm={6} md={3}>
             <Box
               sx={{
                 height: 220,
@@ -66,7 +66,7 @@ export default function PageContacto() {
               </Container>
             </Box>
           </Grid>
-          <Grid xs={3}>
+          <Grid xs={12} sm={6} md={3}>
             <Box
               sx={{
                 height: 220,
@@ -87,7 +87,7 @@ export default function PageContacto() {
               </Container>
             </Box>
           </Grid>
-          <Grid xs={3}>
+          <Grid xs={12} sm={6} md={3}>
             <Box
               sx={{
                 height: 220,
@@ -104,7 +104,7 @@ export default function PageContacto() {
               </Container>
             </Box>
           </Grid>
-          <Grid xs={3}>
+          <Grid xs={12} sm={6} md={3}>
             <Box
               sx={{
                 height: 220,
