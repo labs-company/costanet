@@ -29,8 +29,8 @@
     top: 0;
     left: calc(50% - 8px);
     border: 8px solid transparent;
-    border-top: 120px solid #81ecec;
-    filter: drop-shadow(0 0 12px #01b6be);
+    border-top: 120px solid #274a99;
+    filter: drop-shadow(0 0 12px #274a99);
   }
   .loader-content {
     display: flex;
@@ -49,7 +49,7 @@
     background-color: #274a99;
     color: #eaeaea;
     border: 0;
-    box-shadow: 0 0 12px #81ecec;
+    box-shadow: 0 0 12px #274a99;
   }
 
   .loader-content.result button {
@@ -64,7 +64,7 @@
     width: 100%;
     top: 0;
     left: 0;
-    border: 2px solid #000;
+    border: 2px solid #274a99;
     border-radius: 50%;
     animation: btnRing 2s linear infinite;
   }
@@ -85,8 +85,8 @@
     width: calc(100% + 4px);
     top: -2px;
     left: -2px;
-    background: linear-gradient(45deg, #274a99, #000);
-    border: 2px solid #7ed6d4;
+    background: linear-gradient(45deg, #274a99, #eaeaea);
+    border: 2px solid #274a99;
     z-index: -1;
     border-radius: 50%;
     animation: btnRing 2s linear;
