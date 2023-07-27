@@ -1,10 +1,10 @@
 import { Box, Container, Typography } from "@mui/material";
 import Grid from "@mui/material/Unstable_Grid2/Grid2";
 import Image from "next/image";
-import horarios from "@/public/redes/horarios.png";
-import locacion from "@/public/redes/locacion.png";
-import email from "@/public/redes/mail.png";
-import tlf from "@/public/redes/telephone.png";
+import horarios from "@/public/redes/clock-seven-svgrepo-com.svg";
+import locacion from "@/public/redes/location-svgrepo-com.svg";
+import email from "@/public/redes/email.svg";
+import tlf from "@/public/redes/telephone-signal-svgrepo-com.svg";
 
 export default function PageContacto() {
   return (
