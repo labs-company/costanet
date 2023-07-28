@@ -20,7 +20,7 @@ export default function FooterWithSocialMediaIcons() {
           </div>
           <div className="grid grid-cols-2 gap-6 sm:mt-4 sm:grid-cols-4 sm:gap-4">
             <div>
-              <Footer.Title title="ACERCA DE " />
+              <Footer.Title title="ACERCA DE" />
               <Footer.LinkGroup col>
                 <Footer.Link href="/nosotros">Nosotros</Footer.Link>
                 <Footer.Link href="#">Sedes</Footer.Link>
@@ -36,7 +36,7 @@ export default function FooterWithSocialMediaIcons() {
               </Footer.LinkGroup>
             </div>
             <div>
-              <Footer.Title title="TEXT DE VELOCIDAD" />
+              <Footer.Title title="TEST DE VELOCIDAD" />
               <Footer.LinkGroup col>
                 <Footer.Link href="/test-de-velocidad">Inicio</Footer.Link>
               </Footer.LinkGroup>
