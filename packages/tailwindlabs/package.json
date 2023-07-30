@@ -1,0 +1,16 @@
+{
+  "name": "tailwindlabs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "tailwindcss": "3.3.2"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
