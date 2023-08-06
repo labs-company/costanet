@@ -1,9 +1,12 @@
 import TabsPqrs from "@/components/TabsPqrs";
+import { Container } from "@mui/material";
 
 export default function PagePqrs() {
   return (
     <section>
-      <TabsPqrs />
+      <Container>
+        <TabsPqrs />
+      </Container>
     </section>
   );
 }
