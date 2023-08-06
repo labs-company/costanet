@@ -8,8 +8,19 @@ import Tab from "@mui/material/Tab";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import dynamic from "next/dynamic";
+import { Container } from "@mui/material";
 
-const Peticiones = dynamic(() => import("../components/PeticionesPqrs"), {
+const Peticiones = dynamic(() => import("./PeticionesPqrs"), {
+  ssr: false,
+});
+const Quejas = dynamic(() => import("./QuejasPqrs"), {
+  ssr: false,
+});
+
+const Reclamos = dynamic(() => import("./ReclamosPqrs"), {
+  ssr: false,
+});
+const Sugerencias = dynamic(() => import("./SugerenciasPqrs"), {
   ssr: false,
 });
 
@@ -61,7 +72,7 @@ export default function FullWidthTabs() {
         <Tabs
           value={value}
           onChange={handleChange}
-          indicatorColor="secondary"
+          indicatorColor="primary"
           textColor="inherit"
           variant="fullWidth"
           aria-label="full width tabs example"
@@ -76,13 +87,13 @@ export default function FullWidthTabs() {
         <Peticiones />
       </TabPanel>
       <TabPanel value={value} index={1} dir={theme.direction}>
-        Quejas
+        <Quejas />
       </TabPanel>
       <TabPanel value={value} index={2} dir={theme.direction}>
-        Reclamos
+        <Reclamos />
       </TabPanel>
       <TabPanel value={value} index={3} dir={theme.direction}>
-        Sugerencias
+        <Sugerencias />
       </TabPanel>
     </Box>
   );
