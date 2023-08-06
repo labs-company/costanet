@@ -1,14 +1,13 @@
 "use client";
 
 import React from "react";
-import { useTheme, Theme } from "@mui/material/styles";
+import { useTheme, Theme, useMediaQuery } from "@mui/material";
 import AppBar from "@mui/material/AppBar";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import dynamic from "next/dynamic";
-import { Container } from "@mui/material";
 
 const Peticiones = dynamic(() => import("./PeticionesPqrs"), {
   ssr: false,
@@ -60,6 +59,8 @@ function a11yProps(index: number) {
 
 export default function FullWidthTabs() {
   const theme: Theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
+
   const [value, setValue] = React.useState<number>(0);
 
   const handleChange = (event: React.SyntheticEvent, newValue: number) => {
@@ -67,17 +68,18 @@ export default function FullWidthTabs() {
   };
 
   return (
-    <Box sx={{ bgcolor: "background.paper", width: 500 }}>
+    <Box sx={{ bgcolor: "background.paper", width: "100%" }}>
       <AppBar position="static">
         <Tabs
           value={value}
           onChange={handleChange}
           indicatorColor="primary"
           textColor="inherit"
-          variant="fullWidth"
+          variant={isMobile ? "scrollable" : "fullWidth"}
+          // scrollButtons={isMobile ? "auto" : "off"}
           aria-label="full width tabs example"
         >
-          <Tab label="Petiticion" {...a11yProps(0)} />
+          <Tab label="Petición" {...a11yProps(0)} />
           <Tab label="Quejas" {...a11yProps(1)} />
           <Tab label="Reclamos" {...a11yProps(2)} />
           <Tab label="Sugerencias" {...a11yProps(3)} />
