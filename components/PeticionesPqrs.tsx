@@ -1,62 +1,74 @@
-import React, { useState } from "react";
-import { TextField, Typography, Button, Box } from "@mui/material";
+"use client";
 
-function PeticionesPqrs() {
-  const [message, setMessage] = useState("Peticiones");
-  const handleSubmit = (e: React.FormEvent) => {
+import { useState, ChangeEvent, FormEvent } from "react";
+import { TextField, Button } from "@mui/material";
+
+interface FormData {
+  name: string;
+  email: string;
+  message: string;
+}
+
+const PetitionForm = () => {
+  const [formData, setFormData] = useState<FormData>({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  const handleChange = (
+    e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    const { name, value } = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value,
+    }));
+  };
+
+  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    // Handle form submission logic here
+    // Aquí puedes realizar la lógica para enviar la petición
+    console.log(formData);
   };
 
   return (
-    <div className="max-w-md mx-auto p-4">
-      <Typography variant="h5" align="center" className="mb-4">
-        {message}
-      </Typography>
-      <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className="p-4 space-y-4">
+      <div className="mb-4">
         <TextField
           label="Nombre"
-          variant="outlined"
+          name="name"
+          value={formData.name}
+          onChange={handleChange}
           fullWidth
-          required
-          margin="normal"
-          className="mb-4"
         />
+      </div>
+      <div className="mb-4">
         <TextField
-          label="Correo electrónico"
-          variant="outlined"
+          label="Correo Electrónico"
+          name="email"
+          value={formData.email}
+          onChange={handleChange}
           fullWidth
-          required
-          type="email"
-          margin="normal"
-          className="mb-4"
         />
-        <TextField
-          label="Asunto"
-          variant="outlined"
-          fullWidth
-          required
-          margin="normal"
-          className="mb-4"
-        />
+      </div>
+      <div className="mb-4">
         <TextField
           label="Mensaje"
-          variant="outlined"
-          fullWidth
-          required
+          name="message"
+          value={formData.message}
+          onChange={handleChange}
           multiline
+          fullWidth
           rows={4}
-          margin="normal"
-          className="mb-4"
         />
-        <Box textAlign="center">
-          <Button type="submit" variant="contained" color="primary">
-            Enviar
-          </Button>
-        </Box>
-      </form>
-    </div>
-  );
-}
+      </div>
 
-export default PeticionesPqrs;
+      <Button type="submit" variant="contained" color="primary">
+        Enviar Peticion
+      </Button>
+    </form>
+  );
+};
+
+export default PetitionForm;
