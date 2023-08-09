@@ -27,6 +27,7 @@ const SuggestionForm = () => {
         label="Nombre"
         variant="outlined"
         fullWidth
+        multiline
         value={name}
         onChange={(e) => setName(e.target.value)}
       />
@@ -34,6 +35,7 @@ const SuggestionForm = () => {
         label="Correo electrónico"
         variant="outlined"
         fullWidth
+        multiline
         value={email}
         onChange={(e) => setEmail(e.target.value)}
       />
