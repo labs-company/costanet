@@ -28,6 +28,7 @@ const PQRSForm = () => {
         variant="outlined"
         fullWidth
         value={name}
+        multiline
         onChange={(e) => setName(e.target.value)}
       />
       <TextField
@@ -35,6 +36,7 @@ const PQRSForm = () => {
         variant="outlined"
         fullWidth
         value={email}
+        multiline
         onChange={(e) => setEmail(e.target.value)}
       />
       <TextField

@@ -41,6 +41,8 @@ const PetitionForm = () => {
           value={formData.name}
           onChange={handleChange}
           fullWidth
+          multiline
+          variant="outlined"
         />
       </div>
       <div className="mb-4">
@@ -50,6 +52,7 @@ const PetitionForm = () => {
           value={formData.email}
           onChange={handleChange}
           fullWidth
+          multiline
         />
       </div>
       <div className="mb-4">
