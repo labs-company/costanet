@@ -48,7 +48,12 @@ const SuggestionForm = () => {
         value={suggestion}
         onChange={(e) => setSuggestion(e.target.value)}
       />
-      <Button variant="contained" color="primary" type="submit">
+      <Button
+        variant="contained"
+        color="primary"
+        type="submit"
+        className="text-gray-600 hover:text-white"
+      >
         Enviar Sugerencia
       </Button>
     </form>

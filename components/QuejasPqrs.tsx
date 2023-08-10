@@ -48,7 +48,12 @@ const PQRSForm = () => {
         value={complaint}
         onChange={(e) => setComplaint(e.target.value)}
       />
-      <Button variant="contained" color="primary" type="submit">
+      <Button
+        variant="contained"
+        color="primary"
+        type="submit"
+        className="text-gray-600 hover:text-white"
+      >
         Enviar Queja
       </Button>
     </form>

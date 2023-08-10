@@ -67,7 +67,12 @@ const PetitionForm = () => {
         />
       </div>
 
-      <Button type="submit" variant="contained" color="primary">
+      <Button
+        type="submit"
+        variant="contained"
+        color="primary"
+        className="text-gray-600 hover:text-white"
+      >
         Enviar Peticion
       </Button>
     </form>
