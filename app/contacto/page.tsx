@@ -63,8 +63,8 @@ export default function PageContacto() {
                   <h3 className="text-xl font-bold">Horarios</h3>
                 </div>
                 <Typography>
-                  De lunes a viernes: de 8:00 am a 6 pm. Sábados: de 9:00 am a
-                  1:00 pm.
+                  De lunes a viernes: de x:xx am a x pm. Sábados: de x:00 am a
+                  x:00 pm.
                 </Typography>
               </Container>
             </Box>
@@ -84,8 +84,7 @@ export default function PageContacto() {
                 </div>
 
                 <Typography>
-                  Carrera 42 # 22A | 23 Edificio BTU Oficina 404 | Barrio Quinta
-                  paredes Bogotá-Colombia.
+                  Carrera xx # xx | 23 x xx xx 404 | xx xx xx xx.
                 </Typography>
               </Container>
             </Box>
@@ -121,7 +120,7 @@ export default function PageContacto() {
                   <h3 className="text-xl font-bold">Llamanos</h3>
                 </div>
                 <Typography>
-                  Llámanos Comunícate con nosotros: +57 3005235531
+                  Llámanos Comunícate con nosotros: +00055550500
                 </Typography>
               </Container>
             </Box>
