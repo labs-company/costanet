@@ -1,8 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-productionBrowserSourceMaps: false,
-    optimizeFonts: false, 
-    minify: false, 
+swcMinify: true,
 };
 
 module.exports = nextConfig;
