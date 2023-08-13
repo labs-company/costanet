@@ -1,14 +1,16 @@
 import { exec } from 'child_process';
 import { ITestFormat } from './dev';
 
-const COMMAND = "speedtest --format=json-pretty"
+
 
 async function runSpeedTest(): Promise<ITestFormat | null> {
 
     return new Promise((resolve, reject) => {
 
-        console.log('Evaluando la velocidad de tu internet');
+        const COMMAND = "speedtest --format=json-pretty"
 
+
+        console.log('Evaluando la velocidad de tu internet');
         exec(COMMAND, (err, stdout, stderr) => {
             if (err) {
                 console.error(`Error executing Speedtest ${err}`)
@@ -25,6 +27,12 @@ async function runSpeedTest(): Promise<ITestFormat | null> {
                 reject(parseError);
             }
         })
+
+
+
+
     })
 }
+
+
 export default runSpeedTest

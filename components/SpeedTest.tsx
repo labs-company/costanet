@@ -20,17 +20,10 @@ export default function SpeedTest() {
     try {
       const response = await fetch(URL_API.production);
       const data = await response.json();
-      const { download, upload, isp, ping }: ITestFormat = data.results;
-
-      const downloadMbps =
-        ((download.bytes * 8) / (download.elapsed / 1000) / 1024 / 1024) * 0.85;
-      const uploadMbps =
-        ((upload.bytes * 8) / (upload.elapsed / 1000) / 1024 / 1024) * 0.85;
+      const downloadMbps = data.results;
 
       setDownloadSpeed(downloadMbps);
-      setUploadSpeed(uploadMbps);
-      setPing(ping.latency);
-      setIsp(isp);
+
       startAnimation(downloadMbps);
     } catch (error) {
       console.error(error);
@@ -87,9 +80,9 @@ export default function SpeedTest() {
             <div className="absolute left-0 top-0 transform -translate-x-1/2 -translate-y-1/2">
               <div className="animate-spin rounded-full h-24 w-25 border-t-4 border-blue-500 border-opacity-50"></div>
             </div>
-            <h2 className="m-5 text-blue-500 p-3 text-6xl">
+            <p className="m-5 text-blue-500 p-3 text-6xl">
               Evaluando la velocidad...
-            </h2>
+            </p>
           </div>
         )}
 
