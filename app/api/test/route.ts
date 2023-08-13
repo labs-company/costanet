@@ -9,7 +9,7 @@ export async function GET() {
     const speedtest = new FastSpeedTest({
 
         token: "YXNkZmFzZGxmbnNkYWZoYXNkZmhrYWxm", // required
-        verbose: true, // default: false
+        verbose: false, // default: false
         timeout: 10000, // default: 5000
         https: true, // default: true
         urlCount: 5, // default: 5
