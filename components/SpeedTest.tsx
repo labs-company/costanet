@@ -10,55 +10,49 @@ export default function SpeedTest() {
     speedTotal: true,
     resultAgain: true,
   });
+
   const [message, setMessage] = useState("EMPEZAR");
+  const handleRequestSpeedTest = async () => {
+    try {
+      const response = await fetch("http://localhost:3000/api/test");
+      const data = await response.json();
 
+      console.log(data);
+      return data;
+    } catch (error) {
+      return console.log(error);
+    }
+  };
   const handleClickTest = () => {
-    const imageLink =
-      "https://upload.wikimedia.org/wikipedia/commons/0/0e/Tokyo_Sky_Tree_2012_%E2%85%A3.JPG";
-    const downloadSize = 8185374;
-    const downloadSrc = new Image();
-
     setElementLoader({
       loaderContent: false,
       loader: false,
       speedTotal: true,
       resultAgain: true,
     });
-    const startTime = new Date().getTime();
+    handleRequestSpeedTest();
 
-    const cacheImage = `?nn=${startTime}`;
+    let i = 0;
 
-    downloadSrc.src = imageLink + cacheImage;
-
-    downloadSrc.onload = () => {
-      const endTime = new Date().getTime();
-      const timeDuration = (endTime - startTime) / 1000;
-      const loadedBytes = downloadSize * 8;
-      const totalSpeed = (loadedBytes / timeDuration / 1024 / 1024).toFixed(2);
-
-      let i = 0;
-
-      const animateMbps = () => {
-        if (i < parseInt(totalSpeed)) {
-          const totalSpeedAnimate = i.toFixed(2);
-          setTotalSpeed(totalSpeedAnimate);
-          setTimeout(animateMbps, 20);
-          i += 1.02;
-        } else {
-          setTotalSpeed(totalSpeed);
-        }
-      };
-
-      animateMbps();
-      setTotalSpeed(totalSpeed);
-      setElementLoader({
-        loaderContent: true,
-        loader: true,
-        speedTotal: false,
-        resultAgain: false,
-      });
-      setMessage("Volver a empezar");
+    const animateMbps = () => {
+      if (i < parseInt(totalSpeed)) {
+        const totalSpeedAnimate = i.toFixed(2);
+        setTotalSpeed(totalSpeedAnimate);
+        setTimeout(animateMbps, 20);
+        i += 1.02;
+      } else {
+        setTotalSpeed(totalSpeed);
+      }
     };
+
+    animateMbps();
+    setElementLoader({
+      loaderContent: true,
+      loader: true,
+      speedTotal: false,
+      resultAgain: false,
+    });
+    setMessage("Volver a empezar");
   };
 
   return (
