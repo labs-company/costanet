@@ -1,9 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+/* 
 @layer utilities {
-  *.hiden {
+  /* *.hiden {
     display: none !important;
   }
   .loader {
@@ -106,5 +106,5 @@
 
   .content small {
     font-size: 60%;
-  }
-}
+  } 
+} */
