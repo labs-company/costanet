@@ -18,7 +18,7 @@ export default function SpeedTest() {
   const handleRequestSpeedTest = async () => {
     setIsLoading(true);
     try {
-      const response = await fetch(URL_API.local);
+      const response = await fetch(URL_API.production);
       const data = await response.json();
       const { download, upload, isp, ping }: ITestFormat = data.results;
 

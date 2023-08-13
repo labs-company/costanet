@@ -1,6 +1,6 @@
 export const URL_API = {
     local: "http://localhost:3000/api/test",
-    production: ""
+    production: "http://164.90.158.172/api/test"
 }
 interface IPing {
     jitter: number;
