@@ -8,11 +8,6 @@ module.exports = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-      },
       boxShadow: {
         shadowus: "0px 0px 16px 20px #bfccd9ad",
       },
@@ -36,4 +31,3 @@ module.exports = {
   },
   plugins: [require("flowbite/plugin")],
 };
-// box-shadow: ;

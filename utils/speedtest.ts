@@ -1,26 +1,7 @@
 import { exec } from 'child_process';
+import { ITestFormat } from './dev';
 
 const COMMAND = "speedtest --format=json-pretty"
-
-interface IPing {
-    jitter: number;
-    latency: number;
-    low: number;
-    high: number;
-}
-
-interface IBytes {
-    bytes: number
-}
-
-interface ITestFormat {
-    ping: IPing;
-    download: IBytes;
-    upload: IBytes;
-    isp: string;
-    externalIp: string
-}
-
 
 async function runSpeedTest(): Promise<ITestFormat | null> {
 

@@ -4,7 +4,7 @@ import SpeedTest from "@/components/SpeedTest";
 export default function TestDeVelocidad() {
   return (
     <section className="flex flex-col justify-center items-center p-8">
-      <div className="bg-white p-2">
+      <article className="bg-white p-2">
         <div className="flex flex-col justify-center items-center text-justify gap-y-4">
           <h2 className="sm:text-5xl font-bold text-letter text-lg">
             TEST DE VELOCIDAD
@@ -19,7 +19,7 @@ export default function TestDeVelocidad() {
             <SpeedTest />
           </div>
         </Container>
-      </div>
+      </article>
     </section>
   );
 }
