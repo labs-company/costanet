@@ -1,6 +1,6 @@
 export const URL_API = {
     local: "http://localhost:3000/api/test",
-    production: "https://costanet.vercel.app",
+    production: "https://costanet.vercel.app/api/test",
 }
 interface IPing {
     jitter: number;
