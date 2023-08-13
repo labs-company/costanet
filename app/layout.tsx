@@ -8,7 +8,7 @@ import ButtonWhatsApp from "@/components/ButtonWhatsapp";
 export const josefin_sans = Josefin_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Costanet",
+  title: "Costanet | el mejor de fibra de la costa",
   description: "Hacemos clientes felices",
   icons: {
     icon: "/costanet.png",
