@@ -4,8 +4,6 @@ import { useState } from "react";
 import { URL_API, ITestFormat } from "@/utils/dev";
 import { Button, Collapse, Paper } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-// @ts-ignore
-import FastSpeedTest from "fast-speedtest-api";
 
 export default function SpeedTest() {
   const [totalSpeed, setTotalSpeed] = useState("0");
@@ -20,26 +18,13 @@ export default function SpeedTest() {
   const handleRequestSpeedTest = async () => {
     setIsLoading(true);
     try {
-      // const response = await fetch(URL_API.production);
-      // const data = await response.json();
-      // const downloadMbps = data.results;
+      const response = await fetch(URL_API.production);
+      const data = await response.json();
+      const downloadMbps = data.results;
 
-      // setDownloadSpeed(downloadMbps);
+      setDownloadSpeed(downloadMbps);
 
-      const speedtest = new FastSpeedTest({
-        token: "YXNkZmFzZGxmbnNkYWZoYXNkZmhrYWxm", // required
-        verbose: true, // default: false
-        timeout: 10000, // default: 5000
-        https: true, // default: true
-        urlCount: 5, // default: 5
-        bufferSize: 8, // default: 8
-        unit: FastSpeedTest.UNITS.Mbps, // default: Bps
-        proxy: "http://optional:auth@my-proxy:123", // def
-      });
-
-      const download = await speedtest.getSpeed();
-
-      startAnimation(download);
+      startAnimation(downloadMbps);
     } catch (error) {
       console.error(error);
     }
