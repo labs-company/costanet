@@ -1,146 +1,111 @@
 "use client";
 
-import { useState } from "react";
-import { URL_API } from "@/utils/dev";
-import { Button, Collapse, Paper } from "@mui/material";
-import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import React, { SetStateAction, useState } from "react";
 
 export default function SpeedTest() {
-  const [totalSpeed, setTotalSpeed] = useState("0");
-  const [isLoading, setIsLoading] = useState(false);
-  const [isCompleted, setIsCompleted] = useState(false);
-  const [isSummaryOpen, setIsSummaryOpen] = useState(false);
-  const [downloadSpeed, setDownloadSpeed] = useState(0);
-  const [uploadSpeed, setUploadSpeed] = useState(0);
-  const [ping, setPing] = useState(0);
-  const [isp, setIsp] = useState("");
+  const [totalDownloadSpeed, setTotalDownloadSpeed] = useState("0");
+  const [totalUploadSpeed, setTotalUploadSpeed] = useState("0");
+  const [elementLoader, setElementLoader] = useState({
+    loader: true,
+    loaderContent: true,
+    speedTotal: true,
+    resultAgain: true,
+  });
+  const [message, setMessage] = useState("EMPEZAR");
 
-  const handleRequestSpeedTest = async () => {
-    setIsLoading(true);
-    try {
-      const response = await fetch(URL_API.production);
-      const data = await response.json();
-      const downloadMbps = data.results;
+  const animateSpeed = (
+    speed: string,
+    setSpeed: React.Dispatch<SetStateAction<string>>
+  ) => {
+    let i = 0;
 
-      setDownloadSpeed(downloadMbps);
-
-      startAnimation(downloadMbps);
-    } catch (error) {
-      console.error(error);
-    }
-  };
-
-  const startAnimation = (downloadMbps: number) => {
-    const animationDuration = 2000;
-    const startTime = Date.now();
-    const endTime = startTime + animationDuration;
-
-    const animateFrame = () => {
-      const now = Date.now();
-      const elapsed = now - startTime;
-
-      if (now < endTime) {
-        const progress = (elapsed / animationDuration) * downloadMbps;
-        setTotalSpeed(progress.toFixed(2));
-        requestAnimationFrame(animateFrame);
+    const animate = () => {
+      if (i < parseFloat(speed)) {
+        const speedAnimate = i.toFixed(2);
+        setSpeed(speedAnimate);
+        setTimeout(animate, 20);
+        i += 1.02;
       } else {
-        setTotalSpeed(downloadMbps.toFixed(2));
-        setIsLoading(false);
-        setIsCompleted(true);
+        setSpeed(speed);
       }
     };
 
-    animateFrame();
+    animate();
   };
 
   const handleClickTest = () => {
-    setIsCompleted(false);
-    setIsSummaryOpen(false);
-    setIsLoading(true);
-    handleRequestSpeedTest();
+    setElementLoader({
+      loaderContent: false,
+      loader: false,
+      speedTotal: true,
+      resultAgain: true,
+    });
+
+    const startTime = new Date().getTime();
+    const downloadSize = 1024 * 1024 * 100;
+    const uploadSize = 1024 * 1024 * 10;
+
+    setTimeout(() => {
+      const endTime = new Date().getTime();
+      const timeDuration = (endTime - startTime) / 1000;
+      const downloadedBytes = downloadSize * 8;
+      const uploadedBytes = uploadSize * 8;
+      const downloadSpeed = (
+        downloadedBytes /
+        timeDuration /
+        1024 /
+        1024
+      ).toFixed(2);
+      const uploadSpeed = (uploadedBytes / timeDuration / 1024 / 1024).toFixed(
+        2
+      );
+
+      animateSpeed(downloadSpeed, setTotalDownloadSpeed);
+      animateSpeed(uploadSpeed, setTotalUploadSpeed);
+
+      setElementLoader({
+        loaderContent: true,
+        loader: true,
+        speedTotal: false,
+        resultAgain: false,
+      });
+      setMessage("Volver a empezar");
+    }, 3000);
   };
 
   return (
-    <div className="pt-24 text-center">
-      <div className="relative">
-        <Button
-          className={`text-gray-600 hover:text-white ${
-            isLoading || isCompleted ? "hidden" : ""
-          }`}
-          onClick={handleClickTest}
-          variant="contained"
-          color="primary"
-          disabled={isLoading || isCompleted}
+    <>
+      <div className="pt-24">
+        <span
+          className={`loader ${elementLoader.loader ? "hiden" : "hiden-none"}`}
+        ></span>
+
+        <div
+          className={`loader-content ${
+            elementLoader.loaderContent ? "hiden-none" : "hiden"
+          } ${elementLoader.resultAgain ? "reuslt-none" : "result"}`}
         >
-          Comenzar
-        </Button>
-
-        {isLoading && (
-          <div className="flex items-center relative">
-            <div className="absolute left-0 top-0 transform -translate-x-1/2 -translate-y-1/2">
-              <div className="animate-spin rounded-full h-24 w-25 border-t-4 border-blue-500 border-opacity-50"></div>
+          <div
+            className={`content ${
+              elementLoader.speedTotal ? "hiden" : "hiden-none"
+            }`}
+          >
+            <div className="flex gap-14 items-center">
+              <div>
+                <p className="sm:text-9xl">{totalDownloadSpeed}</p>
+                <small className="text-md"> Mbps (Download)</small>
+              </div>
+              <div>
+                <p className="sm:text-9xl">{totalUploadSpeed}</p>
+                <small className="text-md"> Mbps (Upload)</small>
+              </div>
             </div>
-            <p className="m-5 text-blue-500 p-3 text-6xl">
-              Evaluando la velocidad...
-            </p>
           </div>
-        )}
-
-        {isCompleted && (
-          <div className="animate-fade-in">
-            <div className="flex items-center gap-3">
-              <p className="text-7xl sm:text-9xl ">
-                {downloadSpeed.toFixed(2)}
-              </p>
-              <small className="text-5xl text-black font-bold self-start">
-                Mbps
-              </small>
-            </div>
-            <Button
-              className={`m-2 text-gray-600 hover:text-white ${
-                isCompleted ? "" : "hidden"
-              }`}
-              onClick={() => {
-                setIsCompleted(false);
-                setIsLoading(false);
-                setIsSummaryOpen(false);
-                setTotalSpeed("0");
-              }}
-              variant="contained"
-              color="primary"
-            >
-              Volver a empezar
-            </Button>
-
-            <Button
-              className="m-2 text-blue-500"
-              onClick={() => setIsSummaryOpen(!isSummaryOpen)}
-              endIcon={<ExpandMoreIcon />}
-              variant="text"
-              color="primary"
-            >
-              Más Información
-            </Button>
-
-            <Collapse in={isSummaryOpen}>
-              <Paper
-                elevation={4}
-                className="p-4 mt-4 border border-gray-200 shadow-md bg-white"
-              >
-                <p className="mb-2">
-                  <b>UPLOAD</b>: {uploadSpeed.toFixed(2)} Mbps
-                </p>
-                <p className="mb-2">
-                  <b>PING:</b> {ping} ms
-                </p>
-                <p className="mb-2">
-                  <b>ISP:</b> {isp}
-                </p>
-              </Paper>
-            </Collapse>
-          </div>
-        )}
+          <button onClick={handleClickTest} className="text-2xl">
+            {message}
+          </button>
+        </div>
       </div>
-    </div>
+    </>
   );
 }
