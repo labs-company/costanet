@@ -10,7 +10,7 @@ export default function FooterWithSocialMediaIcons() {
   return (
     <Footer container className="bg-footer rounded-none p-0">
       <div className="w-full">
-        <div className="grid w-full justify-between sm:flex sm:justify-between md:flex md:grid-cols-1 p-5">
+        <div className="grid w-full justify-between items-center  md:flex md:flex-row md:grid-cols-1 p-5">
           <div>
             <div>
               <Link href="/">
@@ -44,7 +44,7 @@ export default function FooterWithSocialMediaIcons() {
           </div>
         </div>
         <div className="bg-black">
-          <div className="w-full flex-col flex items-center sm:justify-between p-5 gap-y-2 justify-center">
+          <div className="w-full md:flex md:items-center md:justify-between p-5 gap-y-2 justify-center">
             <Footer.Copyright
               by="Copyright 2023 CostaNet S.A.S | Todos los derechos reservados"
               href="#"
