@@ -2,10 +2,15 @@ import { NextResponse } from 'next/server';
 // import speedtest from '@/utils/speedtest';
 // @ts-ignore
 import FastSpeedTest from 'fast-speedtest-api';
+import cors from 'cors';
 
-export async function GET() {
+export async function GET(req: Request) {
     // const results = await speedtest()
-
+    cors({
+        origin: ['http://localhost:3000', 'https://costanet.vercel.app'],
+        methods: ['GET'],
+    })
+    req.headers.set("Access-Control-Allow-Origin", "*")
     const speedtest = new FastSpeedTest({
         token: "YXNkZmFzZGxmbnNkYWZoYXNkZmhrYWxm",
         verbose: false, // default: false
