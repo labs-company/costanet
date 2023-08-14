@@ -11,11 +11,12 @@
   "dependencies": {
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
-    "@mui/icons-material": "^5.14.3",
-    "@mui/material": "^5.14.0",
     "@headlessui/react": "^1.7.15",
     "@heroicons/react": "^2.0.18",
+    "@mui/icons-material": "^5.14.3",
+    "@mui/material": "^5.14.0",
     "autoprefixer": "10.4.14",
+    "cors": "^2.8.5",
     "eslint": "8.44.0",
     "eslint-config-next": "13.4.9",
     "fast-speedtest-api": "^0.3.2",
@@ -29,6 +30,7 @@
     "typescript": "5.1.6"
   },
   "devDependencies": {
+    "@types/cors": "^2.8.13",
     "@types/node": "20.4.0",
     "@types/react": "18.2.14",
     "@types/react-dom": "18.2.6"
