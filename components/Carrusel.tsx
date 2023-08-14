@@ -10,12 +10,18 @@ export default function SlidingInterval() {
   return (
     <Carousel
       slideInterval={5000}
-      className="h-[24vh] sm:h-[31vh] lg:h-[75vh] xl:h-[100vh]"
+      className="h-[24vh] lg:h-[75vh] xl:h-[100vh]"
       indicators={false}
     >
-      <Image alt="costanet" src={carruseluno} />
-      <Image alt="costanet" src={carruseldos} />
-      <Image alt="costanet" src={carruseltres} />
+      <Image
+        alt="costanet | costanet internet rapido y seguro"
+        src={carruseluno}
+      />
+      <Image alt="costanet | Hacemos clientes felices" src={carruseldos} />
+      <Image
+        alt="costanet | El mejor intenernet de fibra optica"
+        src={carruseltres}
+      />
     </Carousel>
   );
 }
