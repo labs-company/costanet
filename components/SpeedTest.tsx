@@ -1,10 +1,9 @@
 "use client";
 
-import React, { SetStateAction, useState } from "react";
+import { useState } from "react";
 
 export default function SpeedTest() {
-  const [totalDownloadSpeed, setTotalDownloadSpeed] = useState("0");
-  const [totalUploadSpeed, setTotalUploadSpeed] = useState("0");
+  const [totalSpeed, setTotalSpeed] = useState("0");
   const [elementLoader, setElementLoader] = useState({
     loader: true,
     loaderContent: true,
@@ -13,56 +12,45 @@ export default function SpeedTest() {
   });
   const [message, setMessage] = useState("EMPEZAR");
 
-  const animateSpeed = (
-    speed: string,
-    setSpeed: React.Dispatch<SetStateAction<string>>
-  ) => {
-    let i = 0;
-
-    const animate = () => {
-      if (i < parseFloat(speed)) {
-        const speedAnimate = i.toFixed(2);
-        setSpeed(speedAnimate);
-        setTimeout(animate, 20);
-        i += 1.02;
-      } else {
-        setSpeed(speed);
-      }
-    };
-
-    animate();
-  };
-
   const handleClickTest = () => {
+    const imageLink =
+      "https://upload.wikimedia.org/wikipedia/commons/0/0e/Tokyo_Sky_Tree_2012_%E2%85%A3.JPG";
+    const downloadSize = 8185374;
+    const downloadSrc = new Image();
+
     setElementLoader({
       loaderContent: false,
       loader: false,
       speedTotal: true,
       resultAgain: true,
     });
-
     const startTime = new Date().getTime();
-    const downloadSize = 1024 * 1024 * 100;
-    const uploadSize = 1024 * 1024 * 10;
 
-    setTimeout(() => {
+    const cacheImage = `?nn=${startTime}`;
+
+    downloadSrc.src = imageLink + cacheImage;
+
+    downloadSrc.onload = () => {
       const endTime = new Date().getTime();
       const timeDuration = (endTime - startTime) / 1000;
-      const downloadedBytes = downloadSize * 8;
-      const uploadedBytes = uploadSize * 8;
-      const downloadSpeed = (
-        downloadedBytes /
-        timeDuration /
-        1024 /
-        1024
-      ).toFixed(2);
-      const uploadSpeed = (uploadedBytes / timeDuration / 1024 / 1024).toFixed(
-        2
-      );
+      const loadedBytes = downloadSize * 8;
+      const totalSpeed = (loadedBytes / timeDuration / 1024 / 1024).toFixed(2);
 
-      animateSpeed(downloadSpeed, setTotalDownloadSpeed);
-      animateSpeed(uploadSpeed, setTotalUploadSpeed);
+      let i = 0;
 
+      const animateMbps = () => {
+        if (i < parseInt(totalSpeed)) {
+          const totalSpeedAnimate = i.toFixed(2);
+          setTotalSpeed(totalSpeedAnimate);
+          setTimeout(animateMbps, 20);
+          i += 1.02;
+        } else {
+          setTotalSpeed(totalSpeed);
+        }
+      };
+
+      animateMbps();
+      setTotalSpeed(totalSpeed);
       setElementLoader({
         loaderContent: true,
         loader: true,
@@ -70,7 +58,7 @@ export default function SpeedTest() {
         resultAgain: false,
       });
       setMessage("Volver a empezar");
-    }, 3000);
+    };
   };
 
   return (
@@ -90,16 +78,8 @@ export default function SpeedTest() {
               elementLoader.speedTotal ? "hiden" : "hiden-none"
             }`}
           >
-            <div className="flex gap-14 items-center">
-              <div>
-                <p className="sm:text-9xl">{totalDownloadSpeed}</p>
-                <small className="text-md"> Mbps (Download)</small>
-              </div>
-              <div>
-                <p className="sm:text-9xl">{totalUploadSpeed}</p>
-                <small className="text-md"> Mbps (Upload)</small>
-              </div>
-            </div>
+            <p className="sm:text-9xl">{totalSpeed}</p>
+            <small className="text-md"> Mbps.</small>
           </div>
           <button onClick={handleClickTest} className="text-2xl">
             {message}
