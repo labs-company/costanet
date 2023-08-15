@@ -9,9 +9,9 @@ export default function Navbar() {
     <nav className="bg-navbar">
       <>
         <div className="w-full px-2 sm:px-6 lg:px-8">
-          <div className="relative flex items-center justify-between">
+          <div className="flex items-center justify-between">
             <DisclosureNavbar />
-            <div className="flex flex-1 items-center justify-center sm:items-center sm:justify-between sm:flex-col lg:flex-row p-5">
+            <div className="flex flex-1 items-center justify-center sm:items-center sm:justify-between sm:flex-col lg:flex-row p-1">
               <div className="flex flex-shrink-0 items-center">
                 <Link href="/">
                   <Image
@@ -20,13 +20,6 @@ export default function Navbar() {
                     className="h-12 w-auto"
                   />
                 </Link>
-                {/* <Link href="/">
-                  <Image
-                    src={logo_cn}
-                    alt="costanet internet mobile | casa servicios | costanet net"
-                    className="hidden h-12 w-auto lg:block"
-                  />
-                </Link> */}
               </div>
               <div className="hidden sm:ml-6 sm:block">
                 <NavbarNavigation />

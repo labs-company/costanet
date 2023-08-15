@@ -1,10 +1,10 @@
 import { Box, Container, Typography } from "@mui/material";
 import Grid from "@mui/material/Unstable_Grid2/Grid2";
 import Image from "next/image";
-import horarios from "@/public/redes/clock-seven-svgrepo-com.svg";
-import locacion from "@/public/redes/location-svgrepo-com.svg";
-import email from "@/public/redes/email.svg";
-import tlf from "@/public/redes/telephone-signal-svgrepo-com.svg";
+import horarios from "@/public/calendar.png";
+import locacion from "@/public/location.png";
+import email from "@/public/email.png";
+import tlf from "@/public/logos/tlf.png";
 
 export default function PageContacto() {
   return (
@@ -35,7 +35,7 @@ export default function PageContacto() {
           >
             <div className="w-full flex justify-center p-2">
               <button className="rounded-xl border border-transparent bg-white px-8 py-3 text-center font-medium text-letter text-2xl md:w-80">
-                PES
+                PSE
               </button>
             </div>
             <div className="w-full flex justify-center p-2">
@@ -59,7 +59,7 @@ export default function PageContacto() {
             >
               <Container>
                 <div className="flex justify-center gap-10 items-center pb-10">
-                  <Image src={horarios} alt="horario" />
+                  <Image src={horarios} alt="horario" className="w-auto h-16" />
                   <h3 className="text-xl font-bold">Horarios</h3>
                 </div>
                 <Typography>
@@ -79,7 +79,11 @@ export default function PageContacto() {
             >
               <Container>
                 <div className="flex justify-center gap-10 items-center pb-10">
-                  <Image src={locacion} alt="localizacion de costanet" />
+                  <Image
+                    src={locacion}
+                    alt="localizacion de costanet"
+                    className="w-auto h-16"
+                  />
                   <h3 className="text-xl font-bold">Visitanos</h3>
                 </div>
 
@@ -99,7 +103,11 @@ export default function PageContacto() {
             >
               <Container>
                 <div className="flex justify-center gap-10 items-center pb-10">
-                  <Image src={email} alt="correo de costanet" />
+                  <Image
+                    src={email}
+                    alt="correo de costanet"
+                    className="w-auto h-16"
+                  />
                   <h3 className="text-xl font-bold">Correo Electronico</h3>
                 </div>
                 <Typography>infocostanet@gmail.com</Typography>
@@ -116,7 +124,7 @@ export default function PageContacto() {
             >
               <Container>
                 <div className="flex justify-center gap-10 items-center pb-10">
-                  <Image src={tlf} alt="horario" />
+                  <Image src={tlf} alt="horario" className="w-auto h-16" />
                   <h3 className="text-xl font-bold">Llamanos</h3>
                 </div>
                 <Typography>
