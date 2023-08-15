@@ -48,7 +48,6 @@ export default function RootLayout({
         <header className="sticky top-0 z-50">
           <Navbar />
         </header>
-
         {children}
         <ButtonWhatsApp />
         {/* <Footer /> */}

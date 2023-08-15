@@ -11,7 +11,7 @@ export default function Navbar() {
         <div className="w-full px-2 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between">
             <DisclosureNavbar />
-            <div className="flex flex-1 items-center justify-center sm:items-center sm:justify-between sm:flex-col lg:flex-row p-5">
+            <div className="flex flex-1 items-center justify-center sm:items-center sm:justify-between sm:flex-col lg:flex-row p-1">
               <div className="flex flex-shrink-0 items-center">
                 <Link href="/">
                   <Image
