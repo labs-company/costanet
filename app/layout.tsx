@@ -2,7 +2,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Josefin_Sans } from "next/font/google";
 import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
+// import Footer from "@/components/Footer";
 import ButtonWhatsApp from "@/components/ButtonWhatsapp";
 
 export const josefin_sans = Josefin_Sans({ subsets: ["latin"] });
@@ -51,7 +51,7 @@ export default function RootLayout({
 
         {children}
         <ButtonWhatsApp />
-        <Footer />
+        {/* <Footer /> */}
       </body>
     </html>
   );
