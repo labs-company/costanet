@@ -26,6 +26,7 @@ module.exports = {
       section: "#C1DEEE",
       bgshadow: "#bfccd9ad",
       footer: "#2b2b2b",
+      green: "#128c7e",
     },
   },
   plugins: [],
