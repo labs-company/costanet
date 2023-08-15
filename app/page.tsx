@@ -1,22 +1,24 @@
 import Carrusel from "@/components/Carrusel";
-import Container from '@mui/material/Container'
 import PageAbout from "./nosotros/page";
+import PageServices from "./servicios/page";
+import PageSpeedTest from "./test-de-velocidad/page";
+import PageContact from "./contacto/page";
+
+import { josefin_sans } from "./layout";
 
 export default function Home() {
   return (
     <>
-      <main>
-        <section>
-          <Carrusel />
-        </section>
-        <section className="bg-navbar">
+      <main className={josefin_sans.className}>
+        <Carrusel />
 
-          <Container className="pt-24">
+        <PageAbout />
 
-            <PageAbout/>
+        <PageServices />
 
-          </Container>
-        </section>
+        <PageSpeedTest />
+
+        <PageContact />
       </main>
     </>
   );
