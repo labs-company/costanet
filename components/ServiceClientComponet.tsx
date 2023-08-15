@@ -49,8 +49,8 @@ export default function ServiceClientComponet() {
       >
         <div className="pt-5 p-0 flex content-center h-auto">
           <p className="text-4xl text-center ml-1 text-white font-medium md:text-6xl xl:text-6xl sm:flex sm:items-center">
-            Con nuestro servicio de <b>TELECOMUNICACION</b> hacemos felices a
-            nuestros clientes
+            Con nuestro servicio de TELECOMUNICACION hacemos felices a nuestros
+            clientes
           </p>
         </div>
 
