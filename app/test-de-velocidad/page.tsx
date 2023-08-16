@@ -20,7 +20,7 @@ export default function TestDeVelocidad() {
           </div>
         </Container>
       </article>
-      <h2 className="text-letter text-end font-bold text-5xl">COSTANET</h2>
+      <h2 className="text-letter text-end font-bold text-5xl mt-4">COSTANET</h2>
     </section>
   );
 }
