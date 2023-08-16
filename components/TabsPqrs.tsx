@@ -41,11 +41,7 @@ function TabPanel(props: TabPanelProps) {
       aria-labelledby={`full-width-tab-${index}`}
       {...other}
     >
-      {value === index && (
-        <Box sx={{ p: 3 }}>
-          <Typography>{children}</Typography>
-        </Box>
-      )}
+      {value === index && <Box sx={{ p: 3 }}>{children}</Box>}
     </div>
   );
 }
@@ -68,35 +64,39 @@ export default function FullWidthTabs() {
   };
 
   return (
-    <Box sx={{ bgcolor: "background.paper", width: "100%" }}>
-      <AppBar position="static">
-        <Tabs
-          value={value}
-          onChange={handleChange}
-          indicatorColor="primary"
-          textColor="inherit"
-          variant={isMobile ? "scrollable" : "fullWidth"}
-          // scrollButtons={isMobile ? "auto" : "off"}
-          aria-label="full width tabs example"
-        >
-          <Tab label="Petición" {...a11yProps(0)} />
-          <Tab label="Quejas" {...a11yProps(1)} />
-          <Tab label="Reclamos" {...a11yProps(2)} />
-          <Tab label="Sugerencias" {...a11yProps(3)} />
-        </Tabs>
-      </AppBar>
-      <TabPanel value={value} index={0} dir={theme.direction}>
-        <Peticiones />
-      </TabPanel>
-      <TabPanel value={value} index={1} dir={theme.direction}>
-        <Quejas />
-      </TabPanel>
-      <TabPanel value={value} index={2} dir={theme.direction}>
-        <Reclamos />
-      </TabPanel>
-      <TabPanel value={value} index={3} dir={theme.direction}>
-        <Sugerencias />
-      </TabPanel>
-    </Box>
+    <>
+      <h2 className="text-2xl font-bold text-center p-3">
+        Comparte tus Comentarios
+      </h2>
+      <Box sx={{ bgcolor: "background.paper" }}>
+        <AppBar position="static">
+          <Tabs
+            value={value}
+            onChange={handleChange}
+            indicatorColor="primary"
+            textColor="inherit"
+            variant={isMobile ? "scrollable" : "fullWidth"}
+            aria-label="full width tabs example"
+          >
+            <Tab label="Petición" {...a11yProps(0)} />
+            <Tab label="Quejas" {...a11yProps(1)} />
+            <Tab label="Reclamos" {...a11yProps(2)} />
+            <Tab label="Sugerencias" {...a11yProps(3)} />
+          </Tabs>
+        </AppBar>
+        <TabPanel value={value} index={0} dir={theme.direction}>
+          <Peticiones />
+        </TabPanel>
+        <TabPanel value={value} index={1} dir={theme.direction}>
+          <Quejas />
+        </TabPanel>
+        <TabPanel value={value} index={2} dir={theme.direction}>
+          <Reclamos />
+        </TabPanel>
+        <TabPanel value={value} index={3} dir={theme.direction}>
+          <Sugerencias />
+        </TabPanel>
+      </Box>
+    </>
   );
 }

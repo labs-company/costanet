@@ -4,6 +4,7 @@ import { Josefin_Sans } from "next/font/google";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import ButtonWhatsApp from "@/components/ButtonWhatsapp";
+import Head from "next/head";
 
 export const josefin_sans = Josefin_Sans({ subsets: ["latin"] });
 
@@ -26,7 +27,6 @@ export const metadata: Metadata = {
     "net",
     "costa",
   ],
-
   robots: "/robots.txt",
   icons: {
     icon: "/costanet.png",
@@ -44,6 +44,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <Head>
+        <link rel="preload" href="style.css" as="style" />
+      </Head>
       <body className={josefin_sans.className}>
         <header className="fixed top-0 z-50 left-0 right-0">
           <Navbar />

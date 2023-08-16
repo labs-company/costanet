@@ -34,44 +34,40 @@ const PetitionForm = () => {
 
   return (
     <form onSubmit={handleSubmit} className="p-4 space-y-4">
-      <div className="mb-4">
-        <TextField
-          label="Nombre"
-          name="name"
-          value={formData.name}
-          onChange={handleChange}
-          fullWidth
-          multiline
-          variant="outlined"
-        />
-      </div>
-      <div className="mb-4">
-        <TextField
-          label="Correo Electrónico"
-          name="email"
-          value={formData.email}
-          onChange={handleChange}
-          fullWidth
-          multiline
-        />
-      </div>
-      <div className="mb-4">
-        <TextField
-          label="Mensaje"
-          name="message"
-          value={formData.message}
-          onChange={handleChange}
-          multiline
-          fullWidth
-          rows={4}
-        />
-      </div>
+      <TextField
+        label="Nombre"
+        name="name"
+        value={formData.name}
+        onChange={handleChange}
+        fullWidth
+        multiline
+        variant="outlined"
+      />
+
+      <TextField
+        label="Correo Electrónico"
+        name="email"
+        value={formData.email}
+        onChange={handleChange}
+        fullWidth
+        multiline
+      />
+
+      <TextField
+        label="Mensaje"
+        name="message"
+        value={formData.message}
+        onChange={handleChange}
+        multiline
+        fullWidth
+        rows={4}
+      />
 
       <Button
         type="submit"
         variant="contained"
         color="primary"
-        className="text-gray-600 hover:text-white"
+        className="text-black hover:text-white"
       >
         Enviar Peticion
       </Button>

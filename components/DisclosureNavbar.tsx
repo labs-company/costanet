@@ -10,28 +10,14 @@ export default function DisclosureNavbar() {
     navigation.find((item) => item.current)
   );
 
-  const [isOpen, setIsOpen] = useState(false);
-
-  const handleLinkClick = () => {
-    setIsOpen(false);
-  };
-
-  const handleHamburgerClick = () => {
-    setIsOpen(!isOpen);
-  };
-
   return (
     <Disclosure as="div" className="sm:hidden">
       {({ open }) => {
-        setIsOpen(open);
         return (
           <>
-            <Disclosure.Button
-              className="inline-flex items-center justify-center rounded-md p-2 text-letter hover:bg-letter hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
-              onClick={handleHamburgerClick}
-            >
+            <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-letter hover:bg-letter hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
               <span className="sr-only">Open main menu</span>
-              {isOpen ? (
+              {open ? (
                 <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
               ) : (
                 <Bars3Icon className="block h-6 w-6" aria-hidden="true" />
@@ -39,7 +25,7 @@ export default function DisclosureNavbar() {
             </Disclosure.Button>
             <Disclosure.Panel
               className={`sm:hidden bg-navbar p-4 absolute top-12 w-full left-0 ${
-                isOpen ? "block" : "hidden"
+                open ? "block" : "hidden"
               }`}
             >
               <div className="pb-3 pt-2">
@@ -47,10 +33,7 @@ export default function DisclosureNavbar() {
                   <Link
                     key={item.name}
                     href={item.href}
-                    onClick={() => {
-                      setCurrentNavItem(item);
-                      handleLinkClick(); // Close the panel
-                    }}
+                    onClick={() => setCurrentNavItem(item)}
                     className={classNames(
                       item.name === currentNavItem?.name
                         ? "bg-letter text-white"
