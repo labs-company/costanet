@@ -151,7 +151,7 @@ export default function PageContacto() {
                 </Typography>
                 <ul className="text-center">
                   <li className="font-light pt-2">
-                    <strong>SANTA ANA:</strong> 3205233639
+                    <strong>SANTA ANA:</strong> 3205133639
                   </li>
                   <li className="font-light pt-2">
                     <strong>CICUCO:</strong> 3160269611
