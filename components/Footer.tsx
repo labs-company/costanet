@@ -79,7 +79,7 @@ export default function FooterWithSocialMediaIcons() {
                 </li>
                 <li className="flex items-center gap-2 pt-4 pl-4">
                   <a
-                    href="https://facebook.com"
+                    href="https://www.facebook.com/costanetiptv.santaana"
                     className="cursor-pointer"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -91,7 +91,7 @@ export default function FooterWithSocialMediaIcons() {
                     />
                   </a>
                   <a
-                    href="https://instagram.com"
+                    href="https://www.instagram.com/costanetsantaana/"
                     className="cursor-pointer"
                     target="_blank"
                     rel="noopener noreferrer"

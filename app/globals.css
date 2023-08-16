@@ -53,9 +53,9 @@
   }
 
   .loader-content.result button {
-    height: 120px;
-    width: 120px;
-    margin-top: 16px;
+    height: 180px;
+    width: 180px;
+    padding: 1rem;
   }
   .loader-content button::before {
     content: "";
