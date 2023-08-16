@@ -1,3 +1,3 @@
 export default function SeoCostanet() {
-  return <h1>Seoo...</h1>;
+  return <h2>Seoo...</h2>;
 }
