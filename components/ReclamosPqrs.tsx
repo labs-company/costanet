@@ -52,7 +52,7 @@ const ComplaintForm = () => {
         variant="contained"
         color="primary"
         type="submit"
-        className="text-gray-600 hover:text-white"
+        className="text-black hover:text-white"
       >
         Enviar Reclamo
       </Button>
