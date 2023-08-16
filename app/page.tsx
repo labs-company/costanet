@@ -3,7 +3,7 @@ import PageAbout from "./nosotros/page";
 import PageServices from "./servicios/page";
 import PageSpeedTest from "./test-de-velocidad/page";
 import PageContact from "./contacto/page";
-import { josefin_sans } from "./layout";
+
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -25,17 +25,15 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <>
-      <main className={josefin_sans.className}>
-        <Carrusel />
+      <Carrusel />
 
-        <PageAbout />
+      <PageAbout />
 
-        <PageServices />
+      <PageServices />
 
-        <PageSpeedTest />
+      <PageSpeedTest />
 
-        <PageContact />
-      </main>
+      <PageContact />
     </>
   );
 }
