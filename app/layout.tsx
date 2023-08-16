@@ -8,7 +8,7 @@ import ButtonWhatsApp from "@/components/ButtonWhatsapp";
 export const josefin_sans = Josefin_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Costanet | el mejor internet de fibra de la costa",
+  title: "Costanet | Telecomunicacion",
   description: "Costanet costanet | Hacemos clientes felices",
   applicationName: "costanet servicio de internet",
   keywords: [
@@ -45,10 +45,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={josefin_sans.className}>
-        <header className="sticky top-0 z-50">
+        <header className="fixed top-0 z-50 left-0 right-0">
           <Navbar />
         </header>
-        {children}
+        <main className={`mt-14 ${josefin_sans.className}`}>{children}</main>
         <ButtonWhatsApp />
         <Footer />
       </body>

@@ -28,6 +28,7 @@ module.exports = {
       bgshadow: "#bfccd9ad",
       footer: "#2b2b2b",
       green: "#128c7e",
+      gray: "#e2e8f0",
     },
   },
   plugins: [],
