@@ -87,7 +87,7 @@ export default function FooterWithSocialMediaIcons() {
                     <Image
                       src={facebookIcon}
                       alt="Facebook de CostaNet"
-                      className="w-auto h-6"
+                      className="w-auto h-8"
                     />
                   </a>
                   <a
@@ -99,7 +99,7 @@ export default function FooterWithSocialMediaIcons() {
                     <Image
                       src={instagramIcon}
                       alt="Instagram de CostaNet"
-                      className="w-auto h-5 -mt-1"
+                      className="w-auto h-7 -mt-1"
                     />
                   </a>
                 </li>
@@ -108,7 +108,7 @@ export default function FooterWithSocialMediaIcons() {
           </div>
         </div>
         <div className="bg-black">
-          <div className="w-full md:flex md:items-center md:justify-between px-2 gap-2 justify-center">
+          <div className="w-full flex md:items-center md:justify-between px-2 gap-2 justify-center flex-col md:flex-row items-center">
             <Link href="/" className="hover:underline text-gray px-2">
               © 2023 CostaNet S.A.S. | Todos los derechos reservados
             </Link>
