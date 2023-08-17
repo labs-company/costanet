@@ -2,7 +2,6 @@
 import { navigation, classNames } from "@/utils/costanet_routes";
 import { Disclosure } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-import Link from "next/link";
 import { useState } from "react";
 
 export default function DisclosureNavbar() {
@@ -30,14 +29,15 @@ export default function DisclosureNavbar() {
             >
               <div className="pb-3 pt-2">
                 {navigation.map((item) => (
-                  <Link
+                  <Disclosure.Button
+                    as="a"
                     key={item.name}
                     href={item.href}
                     onClick={() => setCurrentNavItem(item)}
                     className={classNames(
                       item.name === currentNavItem?.name
-                        ? "bg-letter text-white"
-                        : "text-letter hover:bg-letter hover:text-white",
+                        ? "text-letter hover:underline"
+                        : "text-letter hover:underline",
                       "block rounded-md px-2 py-2 text-base font-medium"
                     )}
                     aria-current={
@@ -45,7 +45,7 @@ export default function DisclosureNavbar() {
                     }
                   >
                     {item.name}
-                  </Link>
+                  </Disclosure.Button>
                 ))}
               </div>
             </Disclosure.Panel>
