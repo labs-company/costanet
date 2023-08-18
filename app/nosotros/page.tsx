@@ -3,6 +3,7 @@ import Container from "@mui/material/Container";
 import { Typography } from "@mui/material";
 import backgroundus from "@/public/sectionDos/backgroundUs.png";
 import Popup from "@/components/Popup";
+
 export default function PageAbout() {
   return (
     <>
@@ -13,7 +14,7 @@ export default function PageAbout() {
         }}
         id="nosotros"
       >
-        <Container className="bg-bgshadow p-12 md:shadow-shadowus">
+        <Container className="bg-bgshadow p-12 xl:shadow-shadowus">
           <Grid container spacing={2}>
             <Grid xs={12}>
               <h2 className="text-4xl font-bold leading-7 xl:text-6xl sm:tracking-tight text-letter flex justify-center text-center">
