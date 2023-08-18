@@ -32,11 +32,11 @@ export default function AlertDialogSlide() {
   return (
     <div className="mt-5">
       <Button
-        className="btnUs bg-vermas"
+        className="btnUs bg-vermas-100 text-white hover:bg-white hover:text-vermas-100 border-none"
         variant="outlined"
         onClick={handleClickOpen}
       >
-        Ver más{">>"}
+        Ver más {">>"}
       </Button>
       <Dialog
         open={open}
