@@ -10,7 +10,7 @@ import Link from "next/link";
 export default function PageContacto() {
   return (
     <>
-      <section className="bg-letter">
+      <section className="bg-letter" id="contacto">
         <div style={{ padding: "3rem" }}>
           <div
             style={{

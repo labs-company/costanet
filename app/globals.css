@@ -3,6 +3,9 @@
 @tailwind utilities;
 
 @layer utilities {
+  html {
+    scroll-behavior: smooth;
+  }
   *.hiden {
     display: none !important;
   }
