@@ -11,6 +11,7 @@ export default function PageAbout() {
         style={{
           backgroundImage: `url(${backgroundus.src})`,
         }}
+        id="nosotros"
       >
         <Container className="bg-bgshadow p-12 md:shadow-shadowus">
           <Grid container spacing={2}>
