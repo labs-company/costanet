@@ -12,7 +12,7 @@ export default function PageAbout() {
           backgroundImage: `url(${backgroundus.src})`,
         }}
       >
-        <Container className="bg-bgshadow p-12 shadow-shadowus">
+        <Container className="bg-bgshadow p-12 md:shadow-shadowus">
           <Grid container spacing={2}>
             <Grid xs={12}>
               <h2 className="text-4xl font-bold leading-7 xl:text-6xl sm:tracking-tight text-letter flex justify-center text-center">

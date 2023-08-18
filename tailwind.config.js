@@ -17,7 +17,10 @@ module.exports = {
       white: "#FFFFFF",
       black: "#000000",
       section: "#C1DEEE",
-      vermas: "#18007f",
+      vermas: {
+        50: "#180F7f",
+        100: "#18007f",
+      },
       bgshadow: "#bfccd9ad",
       footer: "#2b2b2b",
       green: "#128c7e",
