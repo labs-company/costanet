@@ -11,7 +11,7 @@ export default function PageContacto() {
   return (
     <>
       <section className="bg-letter" id="contacto">
-        <div style={{ padding: "3rem" }}>
+        <article style={{ padding: "3rem" }}>
           <div
             style={{
               display: "flex",
@@ -23,7 +23,7 @@ export default function PageContacto() {
             <h2 className="text-white font-bold text-5xl tracking-wide leading-tight">
               Aqui puedes contactarnos!
             </h2>
-            <p className="">RESPONDEREMOS TODAS TUS DUDAS EN BREVE</p>
+            <h5>RESPONDEREMOS TODAS TUS DUDAS EN BREVE</h5>
           </div>
           <div
             style={{
@@ -51,7 +51,7 @@ export default function PageContacto() {
               </Link>
             </div>
           </div>
-        </div>
+        </article>
         <Grid
           container
           sx={{ paddingTop: "1.5rem", color: "#fff", textAlign: "center" }}
@@ -70,8 +70,8 @@ export default function PageContacto() {
                   <h3 className="text-xl font-bold">Horarios</h3>
                 </div>
                 <Typography>
-                  De lunes a viernes: de 8:00 am a 12pm. - Sábados: de 2:00 pm a
-                  6:00 pm.
+                  lunes a viernes: de 8:00 am a 12pm. y 2:00pm a 5:30 Sábados:
+                  de 2:00 pm a 6:00 pm.
                 </Typography>
               </Container>
             </Box>
