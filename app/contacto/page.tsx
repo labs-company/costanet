@@ -70,8 +70,8 @@ export default function PageContacto() {
                   <h3 className="text-xl font-bold">Horarios</h3>
                 </div>
                 <Typography>
-                  lunes a viernes: de 8:00 am a 12pm. y 2:00pm a 5:30 Sábados:
-                  de 2:00 pm a 6:00 pm.
+                  lunes a viernes: de 8:00 am a 12pm. y 2:00pm a 5:30pm <br />
+                  Sábados: de 2:00 pm a 6:00 pm.
                 </Typography>
               </Container>
             </Box>
