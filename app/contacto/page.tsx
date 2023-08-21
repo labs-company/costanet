@@ -123,7 +123,9 @@ export default function PageContacto() {
                     alt="correo de costanet"
                     className="w-auto h-16"
                   />
-                  <h3 className="text-xl font-bold">Correo Electronico</h3>
+                  <h3 className="text-xl font-bold">
+                    Correo <br /> Electronico
+                  </h3>
                 </div>
                 <Typography>juridicocostanet@gmail.com</Typography>
               </Container>
