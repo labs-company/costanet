@@ -93,10 +93,6 @@ export default function PageContacto() {
                   />
                   <h3 className="text-xl font-bold">Visitanos</h3>
                 </div>
-
-                <Typography className="text-start font-bold font-md">
-                  Sedes:
-                </Typography>
                 <ul className="text-center">
                   <li className="font-light pt-2">
                     <strong>SANTA ANA:</strong> CRA 8 #9-04 LOCAL 2 BARRIO LA
@@ -146,9 +142,6 @@ export default function PageContacto() {
                   <Image src={tlf} alt="horario" className="w-auto h-16" />
                   <h3 className="text-xl font-bold">Llamanos</h3>
                 </div>
-                <Typography className="text-start font-bold font-md mb-3">
-                  Telefonos:
-                </Typography>
                 <ul className="text-center">
                   <li className="font-light pt-2">
                     <strong>SANTA ANA:</strong> 3205133639
