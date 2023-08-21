@@ -32,8 +32,8 @@ export default function AlertDialogSlide() {
   return (
     <div className="mt-5">
       <Button
-        className="btnUs bg-vermas-100 text-white hover:bg-white hover:text-vermas-100 border-none"
-        variant="outlined"
+        className="btnUs text-vermas-100 border-none hover:underline"
+        variant="text"
         onClick={handleClickOpen}
       >
         Ver más {">>"}
@@ -45,9 +45,14 @@ export default function AlertDialogSlide() {
         onClose={handleClose}
         aria-describedby="alert-dialog-slide-description"
       >
-        <DialogTitle>{"Misión"}</DialogTitle>
-        <DialogContent className="text-justify">
-          <DialogContentText id="alert-dialog-slide-description">
+        <DialogContent className="bg-letter text-white flex flex-col justify-center">
+          <DialogTitle className="p-0">
+            <b>Misión</b>
+          </DialogTitle>
+          <DialogContentText
+            id="alert-dialog-slide-description"
+            className="text-white"
+          >
             CostaNet es una empresa de telecomunicaciones que orientará sus
             actividades hacia la promoción y comercialización de internet por
             medio de la fibra óptica de última generación, enfocados en mantener
@@ -57,9 +62,14 @@ export default function AlertDialogSlide() {
             nos permita hacer clientes felices.
           </DialogContentText>
         </DialogContent>
-        <DialogTitle>{"Visión"}</DialogTitle>
-        <DialogContent className="text-justify">
-          <DialogContentText id="alert-dialog-slide-description">
+        <DialogContent className="bg-letter text-white flex flex-col justify-center">
+          <DialogTitle className="p-0">
+            <b>Vision</b>
+          </DialogTitle>
+          <DialogContentText
+            id="alert-dialog-slide-description"
+            className="text-white"
+          >
             Para el año 2025 CostaNet será una empresa reconocida nacionalmente,
             con una extensa variedad de planes domiciliarios y empresariales
             disponibles para todo público gracias a la oportuna adecuación de
@@ -69,9 +79,10 @@ export default function AlertDialogSlide() {
             empleo local en cada una de nuestras sedes.
           </DialogContentText>
         </DialogContent>
-
-        <DialogActions>
-          <Button onClick={handleClose}>Volver</Button>
+        <DialogActions className="bg-letter">
+          <Button onClick={handleClose} className="text-white hover:underline">
+            Volver
+          </Button>
         </DialogActions>
       </Dialog>
     </div>
