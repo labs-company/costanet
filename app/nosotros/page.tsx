@@ -22,13 +22,13 @@ export default function PageAbout() {
               </h2>
               <Typography
                 mt={3}
-                className="sm:text-3xl md:text-4xl text-justify text-letter font-semibold"
+                className="sm:text-3xl md:text-4xl text-letter font-semibold leading-8"
               >
                 Costanet es una empresa de telecomunicaciones, creada en el año
                 2018 para brindar un excelente servicio al cliente basado en el
                 respeto, confiabilidad y compromiso. Buscamos, junto a nuestros
-                colaboradores, prestar el mejor servicio de telecomunicaciones.
-                “HACEMOS CLIENTES FELICES”
+                colaboradores, prestar el mejor servicio de telecomunicaciones.{" "}
+                <b>“HACEMOS CLIENTES FELICES”</b>
               </Typography>
 
               <Popup />
