@@ -93,7 +93,6 @@ export default function PageContacto() {
                   />
                   <h3 className="text-xl font-bold">Visitanos</h3>
                 </div>
-
                 <ul className="text-center">
                   <li className="font-light pt-2">
                     <strong>SANTA ANA:</strong> CRA 8 #9-04 LOCAL 2 BARRIO LA
