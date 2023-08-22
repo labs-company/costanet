@@ -69,10 +69,10 @@ export default function PageContacto() {
                   <Image src={horarios} alt="horario" className="w-auto h-16" />
                   <h3 className="text-xl font-bold">Horarios</h3>
                 </div>
-                <Typography>
-                  lunes a viernes: de 8:00 am a 12pm. y 2:00pm a 5:30pm <br />
-                  Sábados: de 2:00 pm a 6:00 pm.
-                </Typography>
+                <ul className="text-start">
+                  <li>Lunes a viernes: 8 am-12 pm. 2 pm-5:30pm</li>
+                  <li> Sábados: de 2:00 pm a 6:00 pm. </li>
+                </ul>
               </Container>
             </Box>
           </Grid>
