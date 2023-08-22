@@ -1,7 +1,6 @@
 import Image from "next/image";
 import facebookIcon from "@/public/redes/facebook.png";
 import instagramIcon from "@/public/redes/instagram.png";
-import twitterIcon from "@/public/redes/twitter.png";
 import Link from "next/link";
 
 export default function FooterWithSocialMediaIcons() {
@@ -11,12 +10,9 @@ export default function FooterWithSocialMediaIcons() {
         <div className="grid w-full justify-between items-center md:flex md:flex-row md:grid-cols-1 p-5">
           <div>
             <div>
-              <h1
-                className="font-bold text-5xl hover:font-light transition-all cursor-pointer"
-                role="heading"
-              >
+              <h2 className="font-bold text-5xl hover:font-light transition-all cursor-pointer mb-5">
                 COSTANET
-              </h1>
+              </h2>
             </div>
           </div>
           <div className="grid grid-cols-2 gap-6 sm:mt-4 sm:grid-cols-4 sm:gap-4 pl-3">
