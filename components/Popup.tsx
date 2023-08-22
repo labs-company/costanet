@@ -32,7 +32,7 @@ export default function AlertDialogSlide() {
   return (
     <div className="mt-5">
       <Button
-        className="btnUs text-vermas-100 border-none hover:underline"
+        className="btnUs text-white border-none bg-letter hover:bg-white hover:text-letter hover:font-semibold"
         variant="text"
         onClick={handleClickOpen}
       >
@@ -44,6 +44,7 @@ export default function AlertDialogSlide() {
         keepMounted
         onClose={handleClose}
         aria-describedby="alert-dialog-slide-description"
+        className=" bg-letter"
       >
         <DialogContent className="bg-letter text-white flex flex-col justify-center">
           <DialogTitle className="p-0">

@@ -20,10 +20,12 @@ export default function PageContacto() {
               justifyContent: "flex-end",
             }}
           >
-            <h2 className="text-white font-bold text-5xl tracking-wide leading-tight">
+            <h2 className="text-white font-bold text-5xl tracking-wide leading-tight text-center">
               Aqui puedes contactarnos!
             </h2>
-            <h5>RESPONDEREMOS TODAS TUS DUDAS EN BREVE</h5>
+            <h5 className="text-center">
+              RESPONDEREMOS TODAS TUS DUDAS EN BREVE
+            </h5>
           </div>
           <div
             style={{
@@ -47,15 +49,12 @@ export default function PageContacto() {
                 href="/pqrs"
                 className="rounded-xl border border-transparent bg-white px-8 py-3 text-center font-medium text-letter text-2xl md:w-80"
               >
-                PQRSF
+                PQRS
               </Link>
             </div>
           </div>
         </article>
-        <Grid
-          container
-          sx={{ paddingTop: "1.5rem", color: "#fff", textAlign: "center" }}
-        >
+        <Grid container sx={{ paddingTop: "1.5rem", color: "#fff" }}>
           <Grid xs={12} sm={6} md={3}>
             <Box
               sx={{
@@ -66,12 +65,15 @@ export default function PageContacto() {
             >
               <Container>
                 <div className="flex justify-center gap-10 items-center pb-10">
-                  <Image src={horarios} alt="horario" className="w-auto h-16" />
+                  <Image src={horarios} alt="horario" className="w-auto h-10" />
                   <h3 className="text-xl font-bold">Horarios</h3>
                 </div>
-                <ul className="text-start">
-                  <li>Lunes a viernes: 8 am-12 pm. 2 pm-5:30pm</li>
-                  <li> Sábados: de 2:00 pm a 6:00 pm. </li>
+                <ul>
+                  <li className="uppercase">Lunes a viernes:</li>
+                  <p> 8 am-12 pm. y 2 pm-5:30pm</p>
+                  <br />
+                  <li className="uppercase"> Sábados: </li>
+                  <p>2 pm-6 pm.</p>
                 </ul>
               </Container>
             </Box>
@@ -89,20 +91,20 @@ export default function PageContacto() {
                   <Image
                     src={locacion}
                     alt="localizacion de costanet"
-                    className="w-auto h-16"
+                    className="w-auto h-10"
                   />
                   <h3 className="text-xl font-bold">Visitanos</h3>
                 </div>
-                <ul className="text-center">
+                <ul>
                   <li className="font-light pt-2">
-                    <strong>SANTA ANA:</strong> CRA 8 #9-04 LOCAL 2 BARRIO LA
-                    CONCEPCION{" "}
+                    <strong>SANTA ANA:</strong> Cra 8 #9-04 local 2 barrio la
+                    concepción{" "}
                   </li>
                   <li className="font-light pt-2">
-                    <strong>CICUCO:</strong> CALLE 8 #5-48 AV. Los Cañahuates
+                    <strong>CICUCO:</strong> Calle 8 #5-48 AV. los Cañahuates
                   </li>
                   <li className="font-light pt-2">
-                    <strong>TALAIGUA:</strong> CRA 3 #14A-65 BARRIO CENTRO
+                    <strong>TALAIGUA:</strong> Cra 3 #14A-65 barrio centro
                   </li>
                 </ul>
               </Container>
@@ -121,13 +123,15 @@ export default function PageContacto() {
                   <Image
                     src={email}
                     alt="correo de costanet"
-                    className="w-auto h-16"
+                    className="w-auto h-10"
                   />
-                  <h3 className="text-xl font-bold">
+                  <h3 className="text-xl font-bold text-center">
                     Correo <br /> Electronico
                   </h3>
                 </div>
-                <Typography>juridicocostanet@gmail.com</Typography>
+                <Typography className="sm:text-center">
+                  juridicocostanet@gmail.com
+                </Typography>
               </Container>
             </Box>
           </Grid>
@@ -141,10 +145,10 @@ export default function PageContacto() {
             >
               <Container>
                 <div className="flex justify-center gap-10 items-center pb-10">
-                  <Image src={tlf} alt="horario" className="w-auto h-16" />
+                  <Image src={tlf} alt="horario" className="w-auto h-10" />
                   <h3 className="text-xl font-bold">Llamanos</h3>
                 </div>
-                <ul className="text-center">
+                <ul>
                   <li className="font-light pt-2">
                     <strong>SANTA ANA:</strong> 3205133639
                   </li>
