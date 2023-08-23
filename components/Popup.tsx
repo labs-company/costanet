@@ -47,7 +47,7 @@ export default function AlertDialogSlide() {
         className=" bg-letter"
       >
         <DialogContent className="bg-letter text-white flex flex-col justify-center">
-          <DialogTitle className="mt-14 p-0">
+          <DialogTitle className="mt-28 md:mt-0 p-0">
             <b>Misión</b>
           </DialogTitle>
           <DialogContentText
@@ -64,7 +64,7 @@ export default function AlertDialogSlide() {
           </DialogContentText>
         </DialogContent>
         <DialogContent className="bg-letter text-white flex flex-col justify-center">
-          <DialogTitle className="p-0 mt-14">
+          <DialogTitle className="p-0 mt-28 md:mt-0">
             <b>Vision</b>
           </DialogTitle>
           <DialogContentText
