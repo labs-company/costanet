@@ -52,7 +52,7 @@ export default function FooterWithSocialMediaIcons() {
                 </li>
                 <li className="mt-1">
                   <Link href="/pqrs" className="hover:underline font-light">
-                    PQRS
+                    PQR
                   </Link>
                 </li>
                 <li className="mt-1">
