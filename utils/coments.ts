@@ -191,4 +191,6 @@ export default function TestDeVelocidad() {
   );
 }
 
+CSS
+border-4 border-white hover:border-pymes rounded text-white hover:text-pymes p-6 hover:shadow-shadowpymes
 */

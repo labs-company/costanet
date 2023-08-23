@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Marck+Script&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -109,5 +111,20 @@
 
   .content small {
     font-size: 60%;
+  }
+  .service-text {
+    font-family: "Marck Script", cursive;
+  }
+  .btnpymes {
+    color: #fff;
+    border: 0.3rem solid #fff;
+    padding: 1.5rem;
+    font-size: 1.5rem;
+    width: 13rem;
+  }
+  .btnpymes:hover {
+    box-shadow: 0px 5px 1rem 0rem #fff;
+    transform: translate(0px, -1rem);
+    transition: transform 0.5s;
   }
 }
