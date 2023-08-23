@@ -55,7 +55,7 @@ export default function ServiceClientComponet() {
             nuestros clientes
           </p>
         </div>
-        <div className="flex justify-around">
+        <div className="flex justify-around flex-col items-center gap-5 md:flex-row">
           <button className="btnpymes">Pymes</button>
           <button className="btnpymes">Domiciliario</button>
         </div>
