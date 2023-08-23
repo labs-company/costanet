@@ -43,25 +43,22 @@ export default function ServiceClientComponet() {
         xs={7}
         sx={{
           display: "flex",
-          justifyContent: "center",
+          justifyContent: "space-between",
+          // justifyContent: "center",
           flexDirection: "column",
           width: matches ? "calc(100% * 7 / var(--Grid-columns))" : "inherit",
         }}
       >
         <div className="pt-5 p-0 flex content-center h-auto w-full">
-          <p className="text-3xl text-center ml-1 text-white font-semibold md:text-4xl xl:text-6xl sm:flex sm:items-center whitespace-pre-wrap">
+          <p className="text-3xl text-center ml-1 text-white font-semibold md:text-4xl xl:text-6xl sm:flex sm:items-center whitespace-pre-wrap service-text mb-20">
             Con nuestros servicios de telecomunicaciones hacemos felices a
             nuestros clientes
           </p>
         </div>
-
-        <figure className="flex flex-col items-center justify-end">
-          <Image
-            src={wifiCostanet}
-            alt="Servicio de wifi"
-            width={matches ? 200 : 150}
-          />
-        </figure>
+        <div className="flex justify-around">
+          <button className="btnpymes">Pymes</button>
+          <button className="btnpymes">Domiciliario</button>
+        </div>
       </Grid>
     </Grid>
   );

@@ -9,6 +9,7 @@ module.exports = {
     extend: {
       boxShadow: {
         shadowus: "0px 0px 16px 20px #bfccd9ad",
+        shadowpymes: "0px 8px 16px -3px #9932cc",
       },
     },
     colors: {
@@ -25,6 +26,7 @@ module.exports = {
       footer: "#2b2b2b",
       green: "#128c7e",
       gray: "#e2e8f0",
+      pymes: "#16031e",
     },
   },
   plugins: [],
