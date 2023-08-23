@@ -1,7 +1,7 @@
 import { Box, Container, Typography } from "@mui/material";
 import Grid from "@mui/material/Unstable_Grid2/Grid2";
 import Image from "next/image";
-import horarios from "@/public/calendar.png";
+import horarios from "@/public/clock.svg";
 import locacion from "@/public/location.png";
 import email from "@/public/email.png";
 import tlf from "@/public/logos/tlf.png";
@@ -73,7 +73,7 @@ export default function PageContacto() {
                   <p> 8 am-12 pm. y 2 pm-5:30pm</p>
                   <br />
                   <li className="uppercase"> Sábados: </li>
-                  <p>2 pm-6 pm.</p>
+                  <p>8 am-2 pm.</p>
                 </ul>
               </Container>
             </Box>
