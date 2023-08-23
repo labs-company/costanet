@@ -49,7 +49,7 @@ export default function PageContacto() {
                 href="/pqrs"
                 className="rounded-xl border border-transparent bg-white px-8 py-3 text-center font-medium text-letter text-2xl md:w-80"
               >
-                PQRS
+                PQR
               </Link>
             </div>
           </div>
