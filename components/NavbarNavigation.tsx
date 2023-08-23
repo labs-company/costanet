@@ -20,7 +20,7 @@ export default function NavbarNavigation() {
               item.name === currentNavItem?.name
                 ? "text-letter hover:underline"
                 : "text-letter hover:underline",
-              "rounded-md md:px-3 md:py-2 px-2 py-1 text-center mx-0 text-sm font-medium flex items-center"
+              "rounded-md md:px-3 md:py-2 px-2 py-1 text-center mx-0 text-sm font-medium flex items-center scroll-smooth"
             )}
             aria-current={
               item.name === currentNavItem?.name ? "page" : undefined

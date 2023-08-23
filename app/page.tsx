@@ -7,7 +7,7 @@ import PageContact from "./contacto/page";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Costanet | Telecomunicacion colombia",
+  title: "Telecomunicacion colombia | Costanet | Internet | Servicios",
   description:
     "Costanet es una empresa de telecomunicacion que brinda servicios con fibra optica",
   keywords: [
