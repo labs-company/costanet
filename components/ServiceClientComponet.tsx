@@ -3,7 +3,6 @@ import Grid from "@mui/material/Unstable_Grid2/Grid2";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import Image from "next/image";
 import clientHappy from "@/public/sectionTres/clientHappy.png";
-import wifiCostanet from "@/public/sectionTres/wifi-costanet.png";
 
 export default function ServiceClientComponet() {
   const matches = useMediaQuery("(min-width:600px)");
@@ -33,6 +32,7 @@ export default function ServiceClientComponet() {
         <Image
           style={{
             width: matches ? "100%" : "60%",
+            marginTop: "6%",
           }}
           src={clientHappy}
           alt="Hacemos clientes felices"

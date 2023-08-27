@@ -1,21 +1,22 @@
-import Image from "next/image";
-import facebookIcon from "@/public/redes/facebook.png";
-import instagramIcon from "@/public/redes/instagram.png";
 import Link from "next/link";
-
+import Popupfooter from "@/components/PopupFooter";
 export default function FooterWithSocialMediaIcons() {
   return (
     <footer className="bg-footer rounded-none p-0 text-white">
       <div className="w-full">
-        <div className="grid w-full justify-between items-center md:flex md:flex-row md:grid-cols-1 p-5">
+        <div
+          className="grid w-full p-5 relative"
+          style={{ gridTemplateColumns: "40% 60%" }}
+        >
           <div>
             <div>
-              <h2 className="font-bold text-5xl hover:font-light transition-all cursor-pointer mb-5">
+              <h2 className="font-bold text-5xl hover:font-light transition-all cursor-pointer mb-5 inline-block">
                 COSTANET
               </h2>
             </div>
           </div>
-          <div className="grid grid-cols-2 gap-6 sm:mt-4 sm:grid-cols-4 sm:gap-4 pl-3">
+          <div className="grid grid-cols-3 gap-6 sm:mt-4 sm:grid-cols-4 sm:gap-4 pl-3">
+            <Popupfooter />
             <div>
               <h2 className="mb-2">ACERCA DE</h2>
               <ul>
@@ -73,7 +74,7 @@ export default function FooterWithSocialMediaIcons() {
                     Test de Velocidad
                   </Link>
                 </li>
-                <li className="flex items-center gap-2 pt-4 pl-4">
+                {/* <li className="flex items-center gap-2 pt-4 pl-4">
                   <a
                     href="https://www.facebook.com/costanetiptv.santaana"
                     className="cursor-pointer"
@@ -98,7 +99,7 @@ export default function FooterWithSocialMediaIcons() {
                       className="w-auto h-7 -mt-1"
                     />
                   </a>
-                </li>
+                </li> */}
               </ul>
             </div>
           </div>
