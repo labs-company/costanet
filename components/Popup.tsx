@@ -32,11 +32,11 @@ export default function AlertDialogSlide() {
   return (
     <div className="mt-5">
       <Button
-        className="btnUs bg-vermas"
-        variant="outlined"
+        className="btnUs text-white border-none bg-letter hover:bg-white hover:text-letter hover:font-semibold"
+        variant="text"
         onClick={handleClickOpen}
       >
-        Ver más{">>"}
+        Ver más {">>"}
       </Button>
       <Dialog
         open={open}
@@ -44,10 +44,16 @@ export default function AlertDialogSlide() {
         keepMounted
         onClose={handleClose}
         aria-describedby="alert-dialog-slide-description"
+        className=" bg-letter"
       >
-        <DialogTitle>{"Misión"}</DialogTitle>
-        <DialogContent className="text-justify">
-          <DialogContentText id="alert-dialog-slide-description">
+        <DialogContent className="bg-letter text-white flex flex-col justify-center">
+          <DialogTitle className="mt-36 md:mt-0 p-0">
+            <b>Misión</b>
+          </DialogTitle>
+          <DialogContentText
+            id="alert-dialog-slide-description"
+            className="text-white"
+          >
             CostaNet es una empresa de telecomunicaciones que orientará sus
             actividades hacia la promoción y comercialización de internet por
             medio de la fibra óptica de última generación, enfocados en mantener
@@ -57,9 +63,14 @@ export default function AlertDialogSlide() {
             nos permita hacer clientes felices.
           </DialogContentText>
         </DialogContent>
-        <DialogTitle>{"Visión"}</DialogTitle>
-        <DialogContent className="text-justify">
-          <DialogContentText id="alert-dialog-slide-description">
+        <DialogContent className="bg-letter text-white flex flex-col justify-center">
+          <DialogTitle className="p-0 mt-36 md:mt-0">
+            <b>Vision</b>
+          </DialogTitle>
+          <DialogContentText
+            id="alert-dialog-slide-description"
+            className="text-white"
+          >
             Para el año 2025 CostaNet será una empresa reconocida nacionalmente,
             con una extensa variedad de planes domiciliarios y empresariales
             disponibles para todo público gracias a la oportuna adecuación de
@@ -69,9 +80,10 @@ export default function AlertDialogSlide() {
             empleo local en cada una de nuestras sedes.
           </DialogContentText>
         </DialogContent>
-
-        <DialogActions>
-          <Button onClick={handleClose}>Volver</Button>
+        <DialogActions className="bg-letter">
+          <Button onClick={handleClose} className="text-white hover:underline">
+            Volver
+          </Button>
         </DialogActions>
       </Dialog>
     </div>

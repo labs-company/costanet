@@ -154,3 +154,43 @@
     font-size: 60%;
   } 
 } */
+
+/*
+import { Container } from "@mui/material";
+import SpeedTest from "@/components/SpeedTest";
+import Image from "next/image";
+import imageTest from "@/public/sectionOne/andre-pik.jpg";
+
+export default function TestDeVelocidad() {
+  return (
+    <section className="flex flex-col sm:flex-row">
+      <article className="flex-shrink-0 w-full sm:w-1/2 p-2">
+        <div className="flex flex-col justify-center items-center text-justify gap-y-4">
+          <h2 className="sm:text-5xl font-bold text-letter text-lg">
+            TEST DE VELOCIDAD
+          </h2>
+          <p>Examina la velocidad de tu red</p>
+          <p className="whitespace-pre-wrap text-center">
+            Realiza la medición de tus servicios de internet
+          </p>
+        </div>
+        <Container>
+          <div className="loader-widget flex justify-center items-start">
+            <SpeedTest />
+          </div>
+        </Container>
+      </article>
+      <article className="flex-grow w-full sm:w-1/2">
+        <Image
+          src={imageTest}
+          alt="Mide la velocidad de tu red"
+          className="w-full h-auto"
+        />
+      </article>
+    </section>
+  );
+}
+
+CSS
+border-4 border-white hover:border-pymes rounded text-white hover:text-pymes p-6 hover:shadow-shadowpymes
+*/

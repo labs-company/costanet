@@ -18,9 +18,9 @@ export default function NavbarNavigation() {
             onClick={() => setCurrentNavItem(item)}
             className={classNames(
               item.name === currentNavItem?.name
-                ? "bg-letter text-white"
-                : "text-letter hover:bg-letter hover:text-white",
-              "rounded-md md:px-3 md:py-2 px-2 py-1 text-center mx-0 text-sm font-medium flex items-center"
+                ? "text-letter hover:underline"
+                : "text-letter hover:underline",
+              "rounded-md md:px-3 md:py-2 px-2 py-1 text-center mx-0 text-sm font-medium flex items-center scroll-smooth"
             )}
             aria-current={
               item.name === currentNavItem?.name ? "page" : undefined

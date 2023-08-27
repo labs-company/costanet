@@ -9,13 +9,7 @@ module.exports = {
     extend: {
       boxShadow: {
         shadowus: "0px 0px 16px 20px #bfccd9ad",
-      },
-      height: {
-        640: "24vh",
-        768: "31vh",
-        1024: "53vh",
-        1280: "75vh",
-        1536: "100vh",
+        shadowpymes: "0px 8px 16px -3px #9932cc",
       },
     },
     colors: {
@@ -24,10 +18,15 @@ module.exports = {
       white: "#FFFFFF",
       black: "#000000",
       section: "#C1DEEE",
-      vermas: "#18007f",
+      vermas: {
+        50: "#180F7f",
+        100: "#18007f",
+      },
       bgshadow: "#bfccd9ad",
       footer: "#2b2b2b",
       green: "#128c7e",
+      gray: "#e2e8f0",
+      pymes: "#16031e",
     },
   },
   plugins: [],
