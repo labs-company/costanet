@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Popupfooter from "@/components/PopupFooter";
+// import Popupfooter from "@/components/PopupFooter";
 export default function FooterWithSocialMediaIcons() {
   return (
     <footer className="bg-footer rounded-none p-0 text-white">
@@ -16,7 +16,7 @@ export default function FooterWithSocialMediaIcons() {
             </div>
           </div>
           <div className="grid grid-cols-3 gap-6 sm:mt-4 sm:grid-cols-4 sm:gap-4 pl-3">
-            <Popupfooter />
+{/*             <Popupfooter /> */}
             <div>
               <h2 className="mb-2">ACERCA DE</h2>
               <ul>
