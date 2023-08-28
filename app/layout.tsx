@@ -8,18 +8,17 @@ import ButtonWhatsApp from "@/components/ButtonWhatsapp";
 export const josefin_sans = Josefin_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Costanet | Telecomunicacion",
-  description: "Costanet costanet | Hacemos clientes felices",
-  applicationName: "costanet servicio de internet",
+  title: "Telecomunicaciones | Costanet | Test de velocidad",
+  description: "Hacemos clientes felices | Costanet | internet fibra optica",
   keywords:
-    "costanet,internet,fibra,optica,internet de fibra optica,colombia intenert,colombia,valledupar,cesar,servicios,clientes,net,costa,costanetcolombia",
+    "internet,fibra,optica, costanet, internet de fibra optica,colombia intenert,colombia,valledupar,cesar,servicios,clientes,net,costa,costanetcolombia",
   robots: "/robots.txt",
   icons: {
     icon: "/costanet.png",
   },
   authors: {
     name: "costanet",
-    url: "https://costanet.vercel.app",
+    url: "www.costanetcolombia.com",
   },
 };
 

@@ -1,11 +1,11 @@
 import Link from "next/link";
-import Popupfooter from "@/components/PopupFooter";
+// import Popupfooter from "@/components/PopupFooter";
 export default function FooterWithSocialMediaIcons() {
   return (
     <footer className="bg-footer rounded-none p-0 text-white">
       <div className="w-full">
         <div
-          className="grid w-full p-5 relative"
+          className=" flex flex-col md:grid w-full p-5 relative"
           style={{ gridTemplateColumns: "40% 60%" }}
         >
           <div>
@@ -16,25 +16,28 @@ export default function FooterWithSocialMediaIcons() {
             </div>
           </div>
           <div className="grid grid-cols-3 gap-6 sm:mt-4 sm:grid-cols-4 sm:gap-4 pl-3">
-            <Popupfooter />
+            {/*             <Popupfooter /> */}
             <div>
               <h2 className="mb-2">ACERCA DE</h2>
               <ul>
                 <li className="mt-1">
-                  <Link href="/nosotros" className="hover:underline font-light">
+                  <Link
+                    href="/#nosotros"
+                    className="hover:underline font-light"
+                  >
                     Nosotros
                   </Link>
                 </li>
                 <li className="mt-1">
-                  <Link
-                    href="/contactos"
-                    className="hover:underline font-light"
-                  >
+                  <Link href="/#sedes" className="hover:underline font-light">
                     Sedes
                   </Link>
                 </li>
                 <li className="mt-1">
-                  <Link href="/contacto" className="hover:underline font-light">
+                  <Link
+                    href="/#contacto"
+                    className="hover:underline font-light"
+                  >
                     Contáctanos
                   </Link>
                 </li>
@@ -45,7 +48,7 @@ export default function FooterWithSocialMediaIcons() {
               <ul>
                 <li className="mt-1">
                   <Link
-                    href="/servicios"
+                    href="/#servicios"
                     className="hover:underline font-light"
                   >
                     Internet de Fibra Óptica
@@ -68,7 +71,7 @@ export default function FooterWithSocialMediaIcons() {
               <ul>
                 <li>
                   <Link
-                    href="/test-de-velocidad"
+                    href="/#test-de-velocidad"
                     className="hover:underline font-light"
                   >
                     Test de Velocidad
@@ -110,12 +113,12 @@ export default function FooterWithSocialMediaIcons() {
               © 2023 CostaNet S.A.S. | Todos los derechos reservados
             </Link>
             <Link
-              href="https://github.com/netlabs-team"
+              href="https://github.com/graphicsdev-labs"
               className="hover:underline text-gray"
               target="_blank"
               rel="noopener noreferrer"
             >
-              By netnovice
+              By Graphics Dev
             </Link>
           </div>
         </div>
