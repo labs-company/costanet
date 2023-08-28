@@ -5,7 +5,6 @@ import { useTheme, Theme, useMediaQuery } from "@mui/material";
 import AppBar from "@mui/material/AppBar";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
-import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import dynamic from "next/dynamic";
 
@@ -17,9 +16,6 @@ const Quejas = dynamic(() => import("./QuejasPqrs"), {
 });
 
 const Reclamos = dynamic(() => import("./ReclamosPqrs"), {
-  ssr: false,
-});
-const Sugerencias = dynamic(() => import("./SugerenciasPqrs"), {
   ssr: false,
 });
 
@@ -77,11 +73,11 @@ export default function FullWidthTabs() {
             textColor="inherit"
             variant={isMobile ? "scrollable" : "fullWidth"}
             aria-label="full width tabs example"
+            className="flex justify-center"
           >
             <Tab label="Petición" {...a11yProps(0)} />
             <Tab label="Quejas" {...a11yProps(1)} />
             <Tab label="Reclamos" {...a11yProps(2)} />
-            <Tab label="Sugerencias" {...a11yProps(3)} />
           </Tabs>
         </AppBar>
         <TabPanel value={value} index={0} dir={theme.direction}>
@@ -92,9 +88,6 @@ export default function FullWidthTabs() {
         </TabPanel>
         <TabPanel value={value} index={2} dir={theme.direction}>
           <Reclamos />
-        </TabPanel>
-        <TabPanel value={value} index={3} dir={theme.direction}>
-          <Sugerencias />
         </TabPanel>
       </Box>
     </>
