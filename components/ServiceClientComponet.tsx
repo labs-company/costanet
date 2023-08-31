@@ -60,14 +60,14 @@ export default function ServiceClientComponet() {
             href="https://wa.me/573205133639?text=Hola%20¡Estoy%20interesado%20en%20sus%20servicios%20pymes!"
             className="btnpymes text-center"
           >
-            PYMES
+            Pymes
           </a>
 
           <a
             href="https://wa.me/573205133639?text=Hola%20¡Estoy%20interesado%20en%20sus%20servicios%20domiciliario!"
             className="btnpymes text-center"
           >
-            DOMICILIARIO
+            Domiciliario
           </a>
         </div>
       </Grid>
