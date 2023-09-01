@@ -8,11 +8,12 @@ import ButtonWhatsApp from "@/components/ButtonWhatsapp";
 export const josefin_sans = Josefin_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Costanet S.A.S | Telecomunicaciones | Test de velocidad",
-  description: "Empresa de telecomunicaciones en cesar | Hacemos clientes felices | Costanet | internet fibra optica",
+  title: "Costanet S.A.S",
+  description:
+    "Empresa de telecomunicaciones en cesar | Test de velocidad | Costanet | internet fibra optica",
   keywords:
     "internet,fibra,optica, costanet, internet de fibra optica,colombia intenert,colombia,valledupar,cesar,servicios,clientes,net,costa,costanetcolombia",
-  robots: "/robots.txt",
+  robots: "./robots.txt",
   icons: {
     icon: "/costanet.png",
   },
