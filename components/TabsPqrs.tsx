@@ -65,15 +65,14 @@ export default function FullWidthTabs() {
         Comparte tus Comentarios
       </h2>
       <Box sx={{ bgcolor: "background.paper" }}>
-        <AppBar position="static">
+        <AppBar position="static" className="flex justify-center">
           <Tabs
             value={value}
             onChange={handleChange}
             indicatorColor="primary"
             textColor="inherit"
-            variant={isMobile ? "scrollable" : "fullWidth"}
             aria-label="full width tabs example"
-            className="flex justify-center"
+            centered
           >
             <Tab label="Petición" {...a11yProps(0)} />
             <Tab label="Quejas" {...a11yProps(1)} />
