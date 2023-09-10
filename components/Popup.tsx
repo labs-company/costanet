@@ -32,7 +32,7 @@ export default function AlertDialogSlide() {
   return (
     <div className="mt-5">
       <Button
-        className="btnUs text-white border-none bg-letter hover:bg-white hover:text-letter hover:font-semibold"
+        className="flex-row justify-center bg-letter text-white cursor-pointer hover:bg-letter focus:ring-4 focus:outline-none focus:ring-[#1da1f2]/50 rounded-lg px-10 py-2.5 text-center inline-flex items-center dark:focus:ring-[#1da1f2]/55 mr-2 mb-2 hover:shadow-lg transition-all duration-200 ease-in-out hover:scale-105 scale-90 gap-x-2 opacity-90 hover:opacity-100 font-bold"
         variant="text"
         onClick={handleClickOpen}
       >

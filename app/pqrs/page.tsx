@@ -4,7 +4,7 @@ import imagenPqrs from "@/public/imagen-pqrs.jpg";
 
 export default function PagePqrs() {
   return (
-    <section className="flex flex-col sm:flex-row">
+    <section className="flex flex-col sm:flex-row font-monset">
       <figure className="flex-shrink-0 w-full sm:w-1/2">
         <Image
           src={imagenPqrs}
