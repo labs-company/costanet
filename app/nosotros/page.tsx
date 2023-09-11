@@ -8,7 +8,7 @@ export default function PageAbout() {
   return (
     <>
       <section
-        className="bg-section w-full bg-no-repeat bg-cover flex justify-center items-center md:bg-center bg-center xl:h-screen font-monset"
+        className="w-full bg-no-repeat bg-cover flex justify-center items-center md:bg-center bg-center xl:h-screen font-monset"
         style={{
           backgroundImage: `url(${backgroundus.src})`,
         }}

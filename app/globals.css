@@ -117,13 +117,12 @@
   }
 
   .btnpymes {
-    color: #274a99;
     border: 0.3rem solid #fff;
     padding: 0.9rem;
     font-size: 1.5rem;
     width: 13rem;
     border-radius: 1.5rem;
-    background-color: #fff;
+
     font-weight: 900;
   }
   .btnpymes:hover {
