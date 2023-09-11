@@ -86,7 +86,7 @@ export default function PageContacto() {
             </div>
           </div>
         </article>
-        <article className="flex justify-center items-center gap-8 px-8 py-6">
+        <article className="flex justify-center items-center gap-8 px-8 py-6 flex-wrap md:flex-nowrap">
           <CardContact
             icon="horarios"
             title="Horarios"
