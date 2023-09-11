@@ -80,10 +80,26 @@ export default function PageContacto() {
           </div>
         </article>
         <article className="flex justify-center items-center gap-8 px-8 py-6">
-          <CardContact />
-          <CardContact />
-          <CardContact />
-          <CardContact />
+          <CardContact
+            icon="horarios"
+            title="Horarios"
+            description={{ titleDescription: "Lunes a Viernes" }}
+          />
+          <CardContact
+            icon="horarios"
+            title="Horarios"
+            description={{ titleDescription: "Lunes a Viernes" }}
+          />
+          <CardContact
+            icon="horarios"
+            title="Horarios"
+            description={{ titleDescription: "Lunes a Viernes" }}
+          />
+          <CardContact
+            icon="horarios"
+            title="Horarios"
+            description={{ titleDescription: "Lunes a Viernes" }}
+          />
         </article>
       </section>
     </>
