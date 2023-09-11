@@ -2,7 +2,7 @@ import Link from "next/link";
 // import Popupfooter from "@/components/PopupFooter";
 export default function FooterWithSocialMediaIcons() {
   return (
-    <footer className="rounded-none p-0 text-letter font-monset">
+    <footer className="bg-letter rounded-none p-0 text-white font-monset">
       <div className="w-full">
         <div
           className=" flex flex-col md:grid w-full p-5 relative"
@@ -107,14 +107,17 @@ export default function FooterWithSocialMediaIcons() {
             </div>
           </div>
         </div>
-        <div className="bg-black py-2">
+        <div className="bg-letter border-t border-white py-2">
           <div className="w-full flex md:items-center md:justify-between px-2 gap-2 justify-center flex-col md:flex-row items-center">
-            <Link href="/" className="hover:underline text-gray px-2">
+            <Link
+              href="/"
+              className="hover:underline text-gray px-2 font-bold text-sm"
+            >
               © 2023 CostaNet S.A.S. | Todos los derechos reservados
             </Link>
             <Link
               href="https://github.com/graphicsdev-labs"
-              className="hover:underline text-gray"
+              className="hover:underline text-gray font-bold text-sm"
               target="_blank"
               rel="noopener noreferrer"
             >

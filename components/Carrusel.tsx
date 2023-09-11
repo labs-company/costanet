@@ -7,11 +7,6 @@ import carruseluno from "@/public/sectionOne/carruselUno.jpg";
 import carruseldos from "@/public/sectionOne/carruselDos.jpg";
 import carruseltres from "@/public/sectionOne/carruselTres.jpg";
 
-import "swiper/css";
-import "swiper/css/effect-fade";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-
 export default function Carrusel() {
   return (
     <>

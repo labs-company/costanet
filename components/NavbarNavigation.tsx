@@ -20,7 +20,7 @@ export default function NavbarNavigation() {
               item.name === currentNavItem?.name
                 ? "text-letter hover:text-vermas-100"
                 : "text-letter hover:text-vermas-50",
-              "rounded-md md:px-3 md:py-2 px-2 py-1 text-center mx-0 text-sm flex items-center scroll-smooth font-bold"
+              "px-1 text-center mx-0 text-sm flex items-center"
             )}
             aria-current={
               item.name === currentNavItem?.name ? "page" : undefined

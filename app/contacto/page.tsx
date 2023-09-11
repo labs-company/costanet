@@ -1,3 +1,4 @@
+"use client";
 import { Box, Container, Typography } from "@mui/material";
 import Grid from "@mui/material/Unstable_Grid2/Grid2";
 import Image from "next/image";
@@ -7,20 +8,16 @@ import email from "@/public/email.png";
 import tlf from "@/public/logos/tlf.png";
 import Link from "next/link";
 import contactImage from "@/public/contact.jpg";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { EffectCoverflow, Pagination } from "swiper/modules";
+import CardContact from "@/components/CardContact";
 
 export default function PageContacto() {
   return (
     <>
       <section className="font-monset text-letter" id="contacto">
-        <article style={{ padding: "3rem" }}>
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              alignItems: "center",
-              justifyContent: "flex-end",
-            }}
-          >
+        <article className="p-8">
+          <div className="flex flex-col items-center justify-center">
             <h2 className="font-bold text-5xl tracking-wide leading-tight text-center">
               Aqui puedes contactarnos!
             </h2>
@@ -28,15 +25,7 @@ export default function PageContacto() {
               RESPONDEREMOS TODAS TUS DUDAS EN BREVE
             </h5>
           </div>
-          <div
-            style={{
-              display: "flex",
-              gap: "6%",
-              justifyContent: "center",
-              alignItems: "center",
-              width: "100%",
-            }}
-          >
+          <div className="flex justify-center items-center">
             <div className="w-full flex justify-center p-2 m-4">
               <Link
                 href="/pse"
@@ -89,6 +78,12 @@ export default function PageContacto() {
               </Link>
             </div>
           </div>
+        </article>
+        <article className="flex justify-center items-center gap-8 px-8 py-6">
+          <CardContact />
+          <CardContact />
+          <CardContact />
+          <CardContact />
         </article>
       </section>
     </>

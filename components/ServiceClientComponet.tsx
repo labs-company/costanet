@@ -50,7 +50,7 @@ export default function ServiceClientComponet() {
         }}
       >
         <div className="pt-5 p-0 flex content-center h-auto w-full">
-          <p className="text-3xl text-center ml-1 text-white font-semibold md:text-4xl xl:text-6xl sm:flex sm:items-center whitespace-pre-wrap mb-20 font-monset">
+          <p className="text-2xl text-center ml-1 text-white font-semibold md:text-3xl xl:text-6xl sm:flex sm:items-center whitespace-pre-wrap mb-20 font-monset">
             Con nuestros servicios de telecomunicaciones hacemos felices a
             nuestros clientes
           </p>
@@ -58,14 +58,14 @@ export default function ServiceClientComponet() {
         <div className="flex justify-around flex-col items-center gap-5 md:flex-row">
           <a
             href="https://wa.me/573205133639?text=Hola%20¡Estoy%20interesado%20en%20sus%20servicios%20pymes!"
-            className="btnpymes text-center font-monset"
+            className="btnpymes text-center font-monset bg-white text-letter"
           >
             Pymes
           </a>
 
           <a
             href="https://wa.me/573205133639?text=Hola%20¡Estoy%20interesado%20en%20sus%20servicios%20domiciliario!"
-            className="btnpymes text-center font-monset"
+            className="btnpymes text-center font-monset bg-white text-letter"
           >
             Domiciliario
           </a>
