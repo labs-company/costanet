@@ -15,7 +15,14 @@ import CardContact from "@/components/CardContact";
 export default function PageContacto() {
   return (
     <>
-      <section className="font-monset text-letter" id="contacto">
+      <section
+        className="font-monset text-letter"
+        id="contacto"
+        style={{
+          background:
+            "linear-gradient(180deg, #F1F9FE, #F1F9FE 60%, #FFFFFF 55%, #FFFFFF)",
+        }}
+      >
         <article className="p-8">
           <div className="flex flex-col items-center justify-center">
             <h2 className="font-bold text-5xl tracking-wide leading-tight text-center">
