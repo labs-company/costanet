@@ -1,7 +1,6 @@
 import Image from "next/image";
 import facebookIcon from "@/public/redes/facebook.png";
 import instagramIcon from "@/public/redes/instagram.png";
-import Grid from "@mui/material/Unstable_Grid2/Grid2";
 
 export default function FooterPopup() {
   return (
@@ -9,7 +8,7 @@ export default function FooterPopup() {
       <div className="absolute bg-gray left-1/3 text-letter bottom-5">
         <ul>
           <li className="flex flex-col items-center gap-2 pt-4 pl-4">
-            <Grid>
+            <>
               <a
                 href="https://www.facebook.com/costanetiptv.santaana"
                 className="cursor-pointer"
@@ -70,7 +69,7 @@ export default function FooterPopup() {
                   className="w-auto h-7 -mt-1"
                 />
               </a>
-            </Grid>
+            </>
           </li>
         </ul>
       </div>

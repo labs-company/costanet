@@ -1,6 +1,6 @@
 "use client";
 
-import { navigation, classNames } from "@/utils/costanet_routes";
+import { navigation, classNames } from "@/app/navbar";
 import Link from "next/link";
 import { useState } from "react";
 

@@ -1,4 +1,4 @@
-export const navigation = [
+const navigation = [
   { name: "Costanet", href: "/", current: true },
   { name: "Nosotros", href: "/#nosotros", current: false },
   { name: "Servicios", href: "/#servicios", current: false },
@@ -8,6 +8,8 @@ export const navigation = [
   { name: "PSE", href: "/pse", current: false },
 ];
 
-export function classNames(...classes: string[]) {
+function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(" ");
 }
+
+export { navigation, classNames };

@@ -1,9 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
-import test from "@/public/test.png";
-import reload from "@/public/reload.png";
-import ImageComponent, { StaticImageData } from "next/image";
+import { useState } from "react";
 
 export default function SpeedTest() {
   const [totalSpeed, setTotalSpeed] = useState("0");
@@ -13,7 +10,7 @@ export default function SpeedTest() {
     speedTotal: true,
     resultAgain: true,
   });
-  const [message, setMessage] = useState(test);
+  const [message, setMessage] = useState("Comenzar");
   const handleClickTest = () => {
     const imageLink =
       "https://mirror.nforce.com/pub/speedtests/mini/speedtest/random500x500.jpg";
@@ -56,7 +53,7 @@ export default function SpeedTest() {
         speedTotal: false,
         resultAgain: false,
       });
-      setMessage(reload);
+      setMessage("De nuevo");
     };
   };
 
@@ -82,9 +79,9 @@ export default function SpeedTest() {
           </div>
           <button
             onClick={handleClickTest}
-            className="text-2xl text-center flex justify-center items-center"
+            className="text-3xl text-center font-monset flex justify-center items-center"
           >
-            <ImageComponent src={message} alt="Test de velocidad de costanet" />
+            {message}
           </button>
         </div>
       </div>

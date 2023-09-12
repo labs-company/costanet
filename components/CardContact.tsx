@@ -24,7 +24,7 @@ export default function CardContact({
   const SIZE_ICON = "80";
   return (
     <>
-      <div className="bg-white shadow-xl w-full px-6 py-10 rounded transition hover:scale-105">
+      <div className="bg-white shadow-xl min-w-max px-6 py-10 rounded transition hover:scale-105 flex-1">
         <figure className="flex items-center justify-center">
           {icon === "horarios" ? (
             <HorariosIcon SIZE_ICON={SIZE_ICON} />
@@ -42,18 +42,16 @@ export default function CardContact({
           {title}
         </h3>
         <ul className="mt-8">
-          <li className="uppercase font-bold text-sm">
-            {description.titleDescription}
-          </li>
+          <li className="font-bold">{description.titleDescription}</li>
           <p> {description.text}</p>
           <br />
-          <li className="uppercase font-bold text-sm">
+          <li className="font-bold">
             {" "}
             {description.titleDescriptionSecundary}{" "}
           </li>
           <p>{description.textSecundary}</p>
           <br />
-          <li className="uppercase font-bold text-sm">
+          <li className="font-bold">
             {" "}
             {description.titleDescriptionTerceary}{" "}
           </li>

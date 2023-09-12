@@ -4,12 +4,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  html {
-    font-family: "Montserrat Alternates", sans-serif !important;
-    scroll-behavior: smooth;
-  }
-}
 @layer utilities {
   *.hiden {
     display: none !important;
