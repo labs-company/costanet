@@ -24,7 +24,7 @@ export default function CardContact({
   const SIZE_ICON = "80";
   return (
     <>
-      <div className="bg-white shadow-xl min-w-max px-6 py-10 rounded transition hover:scale-105 flex-1">
+      <div className="bg-white shadow-xl min-w-max px-6 py-10 rounded transition scale-90 hover:scale-100 flex-1">
         <figure className="flex items-center justify-center">
           {icon === "horarios" ? (
             <HorariosIcon SIZE_ICON={SIZE_ICON} />

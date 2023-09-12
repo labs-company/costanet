@@ -15,7 +15,7 @@ export default function FooterWithSocialMediaIcons() {
               </h2>
             </div>
           </div>
-          <div className="grid grid-cols-3 gap-6 sm:mt-4 sm:grid-cols-4 sm:gap-4 pl-3">
+          <div className="md:grid md:grid-cols-3 gap-6 sm:mt-4 sm:grid-cols-4 sm:gap-4 pl-3 flex flex-col justify-center">
             {/*             <Popupfooter /> */}
             <div>
               <h2 className="mb-2 font-bold">ACERCA DE</h2>
