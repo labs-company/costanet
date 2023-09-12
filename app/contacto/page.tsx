@@ -26,7 +26,7 @@ export default function PageContacto() {
             <div className="w-full flex justify-center p-2 m-4">
               <Link
                 href="/pse"
-                className="flex-row justify-center bg-letter text-white cursor-pointer hover:bg-sky-600 focus:ring-4 focus:outline-none focus:ring-[#1da1f2]/50 font-medium rounded-lg px-10 py-2.5 text-center inline-flex items-center dark:focus:ring-[#1da1f2]/55 mr-2 mb-2 hover:shadow-lg transition-all duration-200 ease-in-out hover:scale-110 scale-90 gap-x-2 opacity-90 hover:opacity-100"
+                className="flex-row justify-center bg-letter text-white cursor-pointer hover:bg-sky-600 focus:ring-4 focus:outline-none focus:ring-[#1da1f2]/50 font-bold rounded-lg px-10 py-2.5 text-center inline-flex items-center dark:focus:ring-[#1da1f2]/55 mr-2 mb-2 hover:shadow-lg transition-all duration-200 ease-in-out hover:scale-110 scale-90 gap-x-2 opacity-90 hover:opacity-100"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -76,7 +76,7 @@ export default function PageContacto() {
             </div>
           </div>
         </article>
-        <article className="flex justify-center items-center gap-8 px-8 py-6 flex-wrap lg:flex-nowrap">
+        <article className="flex justify-center items-center gap-8 px-8 py-6 flex-wrap">
           <CardContact
             icon="horarios"
             title="Horarios"
@@ -93,9 +93,9 @@ export default function PageContacto() {
             icon="ubicacion"
             title="Ubicacion"
             description={{
-              titleDescription: "SANTA ANA",
-              titleDescriptionSecundary: "CICUCO",
-              titleDescriptionTerceary: "TALAIGUA",
+              titleDescription: "Santa Ana",
+              titleDescriptionSecundary: "Cicuco",
+              titleDescriptionTerceary: "Talaigua",
               text: "Cra 8 #9-04 local 2 barrio",
               textSecundary: "Calle 8 #5-48 AV. los Cañahuates",
               textTerceary: "Cra 3 #14A-65 barrio centro",
@@ -117,9 +117,9 @@ export default function PageContacto() {
             icon="llamadas"
             title="Contactos"
             description={{
-              titleDescription: "SANTA ANA",
-              titleDescriptionSecundary: "CICUCO",
-              titleDescriptionTerceary: "TALAIGUA",
+              titleDescription: "Santa Ana",
+              titleDescriptionSecundary: "Cicuco",
+              titleDescriptionTerceary: "Talaigua",
               text: "3205133639",
               textSecundary: "3160269611",
               textTerceary: "3215748550",

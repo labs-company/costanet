@@ -1,5 +1,5 @@
 "use client";
-import { navigation, classNames } from "@/utils/costanet_routes";
+import { navigation, classNames } from "@/app/navbar";
 import { Disclosure } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { useState } from "react";
