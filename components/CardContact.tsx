@@ -1,12 +1,18 @@
-import Image from "next/image";
 import HorariosIcon from "./icons/HorariosIcon";
+import LocationIcon from "./icons/LocationIcon";
+import GmailIcon from "./icons/GmailIcon";
+import TelephoneIcon from "./icons/TelephoneIcon";
 
 interface IMessageContact {
   icon: string;
   title: string;
   description: {
     titleDescription: string;
+    titleDescriptionSecundary?: string;
+    titleDescriptionTerceary?: string;
     text?: string;
+    textSecundary?: string;
+    textTerceary: string;
   };
 }
 
@@ -22,8 +28,14 @@ export default function CardContact({
         <figure className="flex items-center justify-center">
           {icon === "horarios" ? (
             <HorariosIcon SIZE_ICON={SIZE_ICON} />
+          ) : icon === "ubicacion" ? (
+            <LocationIcon SIZE_ICON={SIZE_ICON} />
+          ) : icon === "correos" ? (
+            <GmailIcon SIZE_ICON={SIZE_ICON} />
+          ) : icon === "llamadas" ? (
+            <TelephoneIcon SIZE_ICON={SIZE_ICON} />
           ) : (
-            "icon"
+            <>{"Something"}</>
           )}
         </figure>
         <h3 className="mt-4 text-2xl font-bold text-center text-letter">
@@ -33,10 +45,19 @@ export default function CardContact({
           <li className="uppercase font-bold">
             {description.titleDescription}
           </li>
-          <p> 8 am-12 pm. y 2 pm-5:30pm</p>
+          <p> {description.text}</p>
           <br />
-          <li className="uppercase font-bold"> Sábados: </li>
-          <p>8 am-2 pm.</p>
+          <li className="uppercase font-bold">
+            {" "}
+            {description.titleDescriptionSecundary}{" "}
+          </li>
+          <p>{description.textSecundary}</p>
+          <br />
+          <li className="uppercase font-bold">
+            {" "}
+            {description.titleDescriptionTerceary}{" "}
+          </li>
+          <p>{description.textTerceary}</p>
         </ul>
       </div>
     </>
