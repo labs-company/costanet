@@ -30,13 +30,9 @@ export default function ServiceClientComponet() {
         }}
       >
         <Image
-          style={{
-            width: matches ? "100%" : "60%",
-            marginTop: "6%",
-          }}
           src={clientHappy}
           alt="Hacemos clientes felices"
-          className="flex items-end"
+          className="flex items-end show-image object-cover"
         />
       </Grid>
       <Grid

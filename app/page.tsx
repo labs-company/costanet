@@ -9,8 +9,8 @@ export default function Home() {
     <>
       <PageCarrusel />
       <PageAbout />
-      <PageSpeedTest />
       <PageServices />
+      <PageSpeedTest />
       <PageContact />
     </>
   );

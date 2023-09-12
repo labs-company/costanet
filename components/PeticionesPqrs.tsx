@@ -7,6 +7,7 @@ interface FormData {
   name: string;
   email: string;
   message: string;
+  number: string;
 }
 
 const PetitionForm = () => {
@@ -14,6 +15,7 @@ const PetitionForm = () => {
     name: "",
     email: "",
     message: "",
+    number: "",
   });
 
   const handleChange = (
@@ -47,6 +49,14 @@ const PetitionForm = () => {
       <TextField
         label="Correo Electrónico"
         name="email"
+        value={formData.email}
+        onChange={handleChange}
+        fullWidth
+        multiline
+      />
+      <TextField
+        label="Numero de telefono"
+        name="message"
         value={formData.email}
         onChange={handleChange}
         fullWidth

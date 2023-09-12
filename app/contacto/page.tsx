@@ -1,15 +1,5 @@
 "use client";
-import { Box, Container, Typography } from "@mui/material";
-import Grid from "@mui/material/Unstable_Grid2/Grid2";
-import Image from "next/image";
-import horarios from "@/public/clock.svg";
-import locacion from "@/public/location.png";
-import email from "@/public/email.png";
-import tlf from "@/public/logos/tlf.png";
 import Link from "next/link";
-import contactImage from "@/public/contact.jpg";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { EffectCoverflow, Pagination } from "swiper/modules";
 import CardContact from "@/components/CardContact";
 
 export default function PageContacto() {
@@ -23,7 +13,7 @@ export default function PageContacto() {
             "linear-gradient(180deg, #F1F9FE, #F1F9FE 60%, #FFFFFF 55%, #FFFFFF)",
         }}
       >
-        <article className="p-8">
+        <article>
           <div className="flex flex-col items-center justify-center">
             <h2 className="font-bold text-5xl tracking-wide leading-tight text-center">
               Aqui puedes contactarnos!
@@ -62,7 +52,7 @@ export default function PageContacto() {
             <div className="w-full flex justify-center p-2">
               <Link
                 href="/pqrs"
-                className="flex-row justify-center bg-letter text-white cursor-pointer hover:bg-sky-600 focus:ring-4 focus:outline-none focus:ring-[#1da1f2]/50 font-medium rounded-lg px-10 py-2.5 text-center inline-flex items-center dark:focus:ring-[#1da1f2]/55 mr-2 mb-2 hover:shadow-lg transition-all duration-200 ease-in-out hover:scale-110 scale-90 gap-x-2 opacity-90 hover:opacity-100"
+                className="flex-row justify-center bg-letter text-white cursor-pointer hover:bg-sky-600 focus:ring-4 focus:outline-none focus:ring-[#1da1f2]/50 rounded-lg px-10 py-2.5 text-center inline-flex items-center dark:focus:ring-[#1da1f2]/55 mr-2 mb-2 hover:shadow-lg transition-all duration-200 ease-in-out hover:scale-110 scale-90 gap-x-2 opacity-90 hover:opacity-100 font-bold"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -86,26 +76,54 @@ export default function PageContacto() {
             </div>
           </div>
         </article>
-        <article className="flex justify-center items-center gap-8 px-8 py-6 flex-wrap md:flex-nowrap">
+        <article className="flex justify-center items-center gap-8 px-8 py-6 flex-wrap lg:flex-nowrap">
           <CardContact
             icon="horarios"
             title="Horarios"
-            description={{ titleDescription: "Lunes a Viernes" }}
+            description={{
+              titleDescription: "Lunes a Viernes",
+              titleDescriptionSecundary: "Sabados",
+              titleDescriptionTerceary: "Festivos",
+              text: "8 am-12 pm. y 2 pm-5:30pm",
+              textSecundary: "8 am-2 pm",
+              textTerceary: "Cerrado",
+            }}
           />
           <CardContact
-            icon="horarios"
-            title="Horarios"
-            description={{ titleDescription: "Lunes a Viernes" }}
+            icon="ubicacion"
+            title="Ubicacion"
+            description={{
+              titleDescription: "SANTA ANA",
+              titleDescriptionSecundary: "CICUCO",
+              titleDescriptionTerceary: "TALAIGUA",
+              text: "Cra 8 #9-04 local 2 barrio",
+              textSecundary: "Calle 8 #5-48 AV. los Cañahuates",
+              textTerceary: "Cra 3 #14A-65 barrio centro",
+            }}
           />
           <CardContact
-            icon="horarios"
-            title="Horarios"
-            description={{ titleDescription: "Lunes a Viernes" }}
+            icon="correos"
+            title="Correos"
+            description={{
+              titleDescription: "juridicocostanet@gmail.com",
+              titleDescriptionSecundary: "oficinasantana@gmail.com",
+              text: "juridico@costanetcolombia.com",
+              textSecundary: "santaana@costanetcolombia.com",
+              titleDescriptionTerceary: "oficinacicuco@gmail.com",
+              textTerceary: "cicuco@costanetcolombia.com",
+            }}
           />
           <CardContact
-            icon="horarios"
-            title="Horarios"
-            description={{ titleDescription: "Lunes a Viernes" }}
+            icon="llamadas"
+            title="Contactos"
+            description={{
+              titleDescription: "SANTA ANA",
+              titleDescriptionSecundary: "CICUCO",
+              titleDescriptionTerceary: "TALAIGUA",
+              text: "3205133639",
+              textSecundary: "3160269611",
+              textTerceary: "3215748550",
+            }}
           />
         </article>
       </section>

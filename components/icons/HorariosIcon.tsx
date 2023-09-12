@@ -1,6 +1,4 @@
-interface ISizeIcon {
-  SIZE_ICON: string;
-}
+import { ISizeIcon } from "./ISizeIcon";
 
 export default function HorariosIcon({ SIZE_ICON }: ISizeIcon) {
   return (
