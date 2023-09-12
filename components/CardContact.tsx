@@ -42,18 +42,18 @@ export default function CardContact({
           {title}
         </h3>
         <ul className="mt-8">
-          <li className="uppercase font-bold">
+          <li className="uppercase font-bold text-sm">
             {description.titleDescription}
           </li>
           <p> {description.text}</p>
           <br />
-          <li className="uppercase font-bold">
+          <li className="uppercase font-bold text-sm">
             {" "}
             {description.titleDescriptionSecundary}{" "}
           </li>
           <p>{description.textSecundary}</p>
           <br />
-          <li className="uppercase font-bold">
+          <li className="uppercase font-bold text-sm">
             {" "}
             {description.titleDescriptionTerceary}{" "}
           </li>

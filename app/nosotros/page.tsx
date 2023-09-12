@@ -12,7 +12,7 @@ export default function PageAbout() {
       <section>
         <article className="flex justify-between items-center py-8 gap-4 flex-wrap lg:flex-nowrap">
           <div className="lg:flex-1 flex justify-center flex-col lg:items-center">
-            <h2 className="font-monset font-bold text-letter p-8 text-7xl mt-12">
+            <h2 className="font-monset font-bold text-letter p-8 text-2xl lg:text-7xl mt-12">
               NOSOTROS
             </h2>
             <AttachBorder />
@@ -30,7 +30,7 @@ export default function PageAbout() {
         <article className="flex justify-between items-center py-8 gap-4 flex-wrap lg:flex-nowrap flex-col-reverse lg:flex-row">
           <ImageAbout image={mision} />
           <div className="lg:flex-1 flex justify-center flex-col lg:items-center relative overflow-x-hidden w-full">
-            <h2 className="font-monset font-bold text-letter p-8 text-7xl mt-12 text-center lg:text-right">
+            <h2 className="font-monset font-bold text-letter text-2xl p-8 lg:text-7xl mt-12 text-center lg:text-right">
               MISION
             </h2>
             <SpinnerMision />
@@ -48,7 +48,7 @@ export default function PageAbout() {
         </article>
         <article className="flex justify-between items-center py-8 gap-4 flex-wrap lg:flex-nowrap">
           <div className="lg:flex-1 flex justify-center flex-col items-center w-full">
-            <h2 className="font-monset font-bold text-letter p-8 text-7xl mt-12">
+            <h2 className="font-monset font-bold text-letter p-8 text-2xl lg:text-7xl mt-12">
               VISION
             </h2>
             <SpinnerVision />
