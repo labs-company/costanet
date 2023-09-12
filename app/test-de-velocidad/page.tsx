@@ -20,7 +20,7 @@ export default function TestDeVelocidad() {
           <SpeedTest />
         </div>
       </article>
-      <h1 className="text-letter text-center md:text-end font-bold text-5xl mt-4 font-monset">
+      <h1 className="text-letter text-center md:text-end font-bold text-5xl my-4 font-monset">
         COSTANET
       </h1>
     </section>
