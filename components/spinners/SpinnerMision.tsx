@@ -1,12 +1,15 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function SpinnerMision() {
   const [scrollBorder, setScrollborder] = useState(0);
-  window.addEventListener("scroll", () => {
-    setScrollborder(window.scrollY);
-  });
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      setScrollborder(window.scrollY);
+    });
+  }, []);
 
   return (
     <span
