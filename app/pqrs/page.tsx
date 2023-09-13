@@ -67,6 +67,7 @@ export default function PagePqrs() {
               <input
                 type="text"
                 placeholder="Ingresa tu numero de telefono"
+                required
                 className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-navbar focus:ring-2 focus:ring-inset focus:ring-letter sm:text-sm sm:leading-6 outline-none p-2"
               />
             </div>
@@ -92,6 +93,7 @@ export default function PagePqrs() {
                 id="about"
                 name="about"
                 rows={3}
+                required
                 className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-navbar placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-letter sm:text-sm sm:leading-6 p-2 outline-none"
                 defaultValue={""}
                 placeholder="Escribe tu asunto"
