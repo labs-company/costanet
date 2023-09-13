@@ -6,7 +6,7 @@ interface IAbout {
 
 export default function ImageAbout({ image }: IAbout) {
   return (
-    <figure className="lg:flex-1 lg:flex justify-center flex-col items-center">
+    <figure className="lg:flex-1 lg:flex justify-center flex-col items-center px-4 text-center">
       <Image
         src={image}
         alt="Hola"

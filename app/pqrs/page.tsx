@@ -75,7 +75,7 @@ export default function PagePqrs() {
                 htmlFor="tipo"
                 className="block text-sm font-medium leading-6 text-gray-900 mb-2"
               >
-                Que tipo de comentario enviarás?
+                Tipo de comentario
               </label>
               <ListboxComponent />
             </div>
