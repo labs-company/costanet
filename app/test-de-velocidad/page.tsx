@@ -5,7 +5,7 @@ export default function TestDeVelocidad() {
     <section className="flex flex-col justify-center p-8" id="test">
       <article className="bg-white p-2">
         <div className="flex flex-col justify-center items-center text-justify gap-y-4">
-          <h2 className="sm:text-5xl font-bold text-letter text-lg font-monset">
+          <h2 className="sm:text-5xl font-bold text-letter font-monset text-3xl">
             TEST DE VELOCIDAD
           </h2>
           <p className="text-letter font-monset">
@@ -20,7 +20,7 @@ export default function TestDeVelocidad() {
           <SpeedTest />
         </div>
       </article>
-      <h1 className="text-letter text-center md:text-end font-bold text-5xl my-4 font-monset">
+      <h1 className="text-letter text-center md:text-end font-bold text-5xl my-4 font-monset pt-4">
         COSTANET
       </h1>
     </section>

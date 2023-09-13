@@ -33,7 +33,7 @@ export default function PageAbout() {
             MISION
           </h2>
           <SpinnerMision />
-          <p className="font-monset text-xl lg:w-[50vw] py-4 px-2">
+          <p className="font-monset text-xl lg:w-[50vw] py-4 px-4">
             {" "}
             CostaNet es una empresa de telecomunicaciones que orientará sus
             actividades hacia la promoción y comercialización de internet por

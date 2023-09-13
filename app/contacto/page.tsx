@@ -15,7 +15,7 @@ export default function PageContacto() {
       >
         <article>
           <div className="flex flex-col items-center justify-center">
-            <h2 className="font-bold text-5xl tracking-wide leading-tight text-center">
+            <h2 className="font-bold text-5xl tracking-wide leading-tight text-center py-8">
               Aqui puedes contactarnos!
             </h2>
             <h5 className="text-center p-4">
