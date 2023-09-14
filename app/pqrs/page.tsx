@@ -16,7 +16,8 @@ export default function PagePqrs() {
         <h2 className="text-2xl font-bold text-center p-3">
           Compartes tus comentarios
         </h2>
-        <form action="https://formsubmit.co/juridico@costanetcolombia.com" className="space-y-6 px-8">
+        <form action="https://formsubmit.co/juridico@costanetcolombia.com" method="POST" className="space-y-6 px-8">
+          <input type="hidden" name="_next" value="https://costanet-git-main-netlabs.vercel.app/">
           <div>
             <label
               htmlFor="email"
