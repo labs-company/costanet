@@ -16,7 +16,7 @@ export default function PagePqrs() {
         <h2 className="text-2xl font-bold text-center p-3">
           Compartes tus comentarios
         </h2>
-        <form className="space-y-6 px-8">
+        <form action="https://formsubmit.co/juridico@costanetcolombia.com" className="space-y-6 px-8">
           <div>
             <label
               htmlFor="email"
@@ -27,7 +27,7 @@ export default function PagePqrs() {
             <div className="mt-2">
               <input
                 id="text"
-                name="text"
+                name="name"
                 type="text"
                 required
                 className="block w-full rounded-md border-0 py-1.5 shadow-sm ring-1 ring-inset ring-navbar focus:ring-2 focus:ring-inset focus:ring-letter sm:text-sm sm:leading-6 outline-none p-2"
@@ -38,7 +38,7 @@ export default function PagePqrs() {
           <div>
             <div className="flex items-center justify-between">
               <label
-                htmlFor="password"
+                htmlFor="email"
                 className="block text-sm font-medium leading-6 text-gray-900"
               >
                 Correo Electronico
