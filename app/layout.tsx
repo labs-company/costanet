@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import ButtonWhatsApp from "@/components/ButtonWhatsapp";
+import { Analytics } from "@vercel/analytics/react";
 
 import "swiper/css";
 import "swiper/css/effect-fade";
@@ -48,7 +49,10 @@ export default function RootLayout({
         <header className="fixed top-0 z-50 left-0 right-0">
           <Navbar />
         </header>
-        <main className="mt-14">{children}</main>
+        <main className="mt-14">
+          {children}
+          <Analytics />
+        </main>
         <ButtonWhatsApp />
         <Footer />
       </body>
