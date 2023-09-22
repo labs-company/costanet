@@ -9,8 +9,8 @@ import ImageAbout from "@/components/ImageAbout";
 export default function PageAbout() {
   return (
     <section id="nosotros">
-      <article className="flex justify-between items-center py-8 gap-4 flex-wrap lg:flex-nowrap">
-        <div className="lg:flex-1 flex justify-center flex-col lg:items-center">
+      <article className="flex justify-between items-center py-8 gap-4 flex-wrap lg:flex-nowrap w-full">
+        <div className="lg:flex-1 flex justify-center flex-col lg:items-center relative w-full">
           <h2 className="font-monset font-bold text-letter p-8 text-2xl lg:text-7xl mt-12">
             NOSOTROS
           </h2>
