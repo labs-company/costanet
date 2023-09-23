@@ -45,7 +45,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className="">
+      <body className="hidden">
         <header className="fixed top-0 z-50 left-0 right-0">
           <Navbar />
         </header>
