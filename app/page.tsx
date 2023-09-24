@@ -10,11 +10,14 @@ export default function Home() {
       <PageCarrusel />
       <PageAbout />
       <PageServices />
+
+<section id="test">
       <iframe
         src="https://openspeedtest.com/speedtest"
         title="Open speedtest"
         className="w-full h-[70vh]"
       ></iframe>
+</section>
       <PageContact />
     </>
   );
