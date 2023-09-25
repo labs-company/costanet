@@ -28,14 +28,14 @@ export default function PageServices() {
             <div className="flex justify-around flex-col items-center gap-5 md:flex-row px-4">
               <a
                 href="https://wa.me/573205133639?text=Hola%20¡Estoy%20interesado%20en%20sus%20servicios%20pymes!"
-                className="btnpymes text-center font-monset bg-white text-letter"
+                className="text-center font-monset bg-white text-letter p-3.5 text-xl w-52 rounded-2xl font-bold hover:shadow-[0px_5px_1rem_0rem_#fff] hover:-translate-y-2 hover:transition-transform"
               >
                 Pymes
               </a>
 
               <a
                 href="https://wa.me/573205133639?text=Hola%20¡Estoy%20interesado%20en%20sus%20servicios%20domiciliario!"
-                className="btnpymes text-center font-monset bg-white text-letter"
+                className="text-center font-monset bg-white text-letter p-3.5 text-xl w-52 rounded-2xl font-bold hover:shadow-[0px_5px_1rem_0rem_#fff] hover:-translate-y-2 hover:transition-transform"
               >
                 Domiciliario
               </a>
