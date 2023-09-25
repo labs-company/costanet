@@ -1,28 +1,42 @@
-import SpeedTest from "@/components/SpeedTest";
+import Reload from "./reload";
 
 export default function TestDeVelocidad() {
   return (
-    <section className="flex flex-col justify-center p-8" id="test">
-      <article className="bg-white p-2">
-        <div className="flex flex-col justify-center items-center text-justify gap-y-4">
-          <h2 className="sm:text-5xl font-bold text-letter font-monset text-3xl text-center">
-            TEST DE VELOCIDAD
-          </h2>
-          <p className="text-letter font-monset">
-            Examina la velocidad de tu red
-          </p>
-          <p className="whitespace-pre-wrap text-center text-letter font-monset">
-            Realiza la medición de tus servicios de internet
-          </p>
-        </div>
-
-        <div className="loader-widget flex justify-center items-start">
-          <SpeedTest />
-        </div>
+    <section
+      id="test"
+      className="h-[70vh] grid lg:grid-cols-[50%_50%] auto-cols-auto pt-12"
+      style={{
+        background:
+          "linear-gradient(180deg, #F1F9FE, #F1F9FE 60%, #FFFFFF 55%, #FFFFFF)",
+      }}
+    >
+      <article className="h-full">
+        <iframe
+          src="https://openspeedtest.com/speedtest"
+          title="Open speedtest"
+          className="w-full h-full"
+        ></iframe>
       </article>
-      <h1 className="text-letter text-center md:text-end font-bold text-5xl my-4 font-monset pt-4">
-        COSTANET
-      </h1>
+      <article className="h-full px-4 flex flex-col items-center justify-center">
+        <h1 className="text-5xl font-bold text-vermas-100 font-monset">
+          Test de velocidad
+        </h1>
+        <ol className="py-6 text-2xl px-6 list-decimal">
+          <li className="py-2 px-2">
+            Al realizar la prubea obtendras tu resultado por parte de{" "}
+            <a
+              href="openspeedtest.com"
+              className="text-vermas-50 underline font-monset"
+            >
+              Open speedtest{" "}
+            </a>
+          </li>
+          <li className="py-2 px-2">
+            si deseas volver a repetir la prueba presiona el siguiente boton:
+          </li>
+        </ol>
+        <Reload />
+      </article>
     </section>
   );
 }
