@@ -116,12 +116,12 @@ export default function FooterWithSocialMediaIcons() {
               © 2023 CostaNet S.A.S. | Todos los derechos reservados
             </Link>
             <Link
-              href="https://github.com/graphicsdev-labs"
+              href="https://github.com/labs-company"
               className="hover:underline text-gray font-bold text-sm"
               target="_blank"
               rel="noopener noreferrer"
             >
-              By Graphics Dev
+              By Labs Company
             </Link>
           </div>
         </div>
