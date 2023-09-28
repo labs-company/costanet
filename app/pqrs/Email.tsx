@@ -1,8 +1,8 @@
 "use client";
 
-import { useState, FormEvent, Fragment } from "react";
+import { useState, Fragment } from "react";
 import { Listbox, Transition } from "@headlessui/react";
-import { CheckIcon, ChevronUpDownIcon } from "@heroicons/react/20/solid";
+import { ChevronUpDownIcon } from "@heroicons/react/20/solid";
 
 const typeComment = [
   { id: 1, title: "Peticion" },
@@ -11,7 +11,7 @@ const typeComment = [
 ];
 
 export default function Email() {
-  const [selected, setSelected] = useState(typeComment[0]);
+  const [selected, _] = useState(typeComment[0]);
   const [selectedTitle, setSelectedTitle] = useState(typeComment[0].title);
 
   const [username, setUsername] = useState({
@@ -25,18 +25,19 @@ export default function Email() {
   const handleChangeUsername = (key: string, value: string) => {
     if (key === "selected") {
       setSelectedTitle(value);
+      const commentWithColon = value + ": ";
+
+      setUsername({ ...username, [key]: value, coment: commentWithColon });
     }
     setUsername({ ...username, [key]: value });
   };
 
-  const handleSubmitEmail = (e: FormEvent) => {
-    e.preventDefault();
-    console.log("submit");
-    setUsername({ ...username, selected: selected.title });
-    console.log(username);
-  };
   return (
-    <form method="POST" className="space-y-6 px-8" onSubmit={handleSubmitEmail}>
+    <form
+      className="space-y-6 px-8"
+      action="https://formsubmit.co/gerenciageneral@costanetcolombia.com"
+      method="POST"
+    >
       <div>
         <label
           htmlFor="email"
@@ -90,8 +91,10 @@ export default function Email() {
             type="text"
             placeholder="Ingresa tu numero de telefono"
             required
+            name="phone"
             className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-navbar focus:ring-2 focus:ring-inset focus:ring-letter sm:text-sm sm:leading-6 outline-none p-2"
             onChange={(e) => handleChangeUsername("telephone", e.target.value)}
+            maxLength={10}
           />
         </div>
         <div className="flex-1">
@@ -135,23 +138,13 @@ export default function Email() {
                       value={commet}
                     >
                       {({ selected }) => (
-                        <>
-                          <span
-                            className={`block truncate ${
-                              selected ? "font-medium" : "font-normal"
-                            }`}
-                          >
-                            {commet.title}
-                          </span>
-                          {selected ? (
-                            <span className="absolute inset-y-0 left-0 flex items-center pl-3 text-amber-600">
-                              <CheckIcon
-                                className="h-5 w-5"
-                                aria-hidden="true"
-                              />
-                            </span>
-                          ) : null}
-                        </>
+                        <span
+                          className={`block truncate ${
+                            selected ? "font-medium" : "font-normal"
+                          }`}
+                        >
+                          {commet.title}
+                        </span>
                       )}
                     </Listbox.Option>
                   ))}
@@ -160,6 +153,7 @@ export default function Email() {
             </div>
           </Listbox>
         </div>
+        <input type="hidden" name="tipo" value={username.selected} />
       </div>
       <div className="col-span-full">
         <label
@@ -175,12 +169,17 @@ export default function Email() {
             rows={3}
             required
             className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-navbar placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-letter sm:text-sm sm:leading-6 p-2 outline-none"
-            defaultValue={""}
+            value={username.coment}
             placeholder="Escribe tu asunto"
             onChange={(e) => handleChangeUsername("coment", e.target.value)}
-          />
+          ></textarea>
         </div>
       </div>
+      <input
+        type="hidden"
+        name="_next"
+        value="https:costanetcolombia.com/thanks"
+      />
       <div className="flex justify-center items-center">
         <input
           type="submit"
