@@ -178,7 +178,7 @@ export default function Email() {
       <input
         type="hidden"
         name="_next"
-        value="/thanks"
+        value="https://costanetcolombia.com/thanks"
       />
       <div className="flex justify-center items-center">
         <input
