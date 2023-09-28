@@ -1,5 +1,6 @@
 import Link from "next/link";
-// import Popupfooter from "@/components/PopupFooter";
+import Media from "@/components/Media";
+
 export default function FooterWithSocialMediaIcons() {
   return (
     <footer className="bg-letter rounded-none p-0 text-white font-monset">
@@ -16,7 +17,6 @@ export default function FooterWithSocialMediaIcons() {
             </div>
           </div>
           <div className="md:grid md:grid-cols-3 gap-6 sm:mt-4 sm:grid-cols-4 sm:gap-4 pl-3 flex flex-col justify-center">
-            {/*             <Popupfooter /> */}
             <div>
               <h2 className="mb-2 font-bold">ACERCA DE</h2>
               <ul>
@@ -29,17 +29,15 @@ export default function FooterWithSocialMediaIcons() {
                   </Link>
                 </li>
                 <li className="mt-1">
-                  <Link href="/#sedes" className="hover:underline font-light">
-                    Sedes
-                  </Link>
-                </li>
-                <li className="mt-1">
                   <Link
                     href="/#contacto"
                     className="hover:underline font-light"
                   >
                     Contáctanos
                   </Link>
+                </li>
+                <li className="mt-1">
+                  <Media />
                 </li>
               </ul>
             </div>
@@ -70,39 +68,10 @@ export default function FooterWithSocialMediaIcons() {
               <h2 className="mb-2 font-bold">VELOCIDAD</h2>
               <ul>
                 <li>
-                  <Link
-                    href="/#test-de-velocidad"
-                    className="hover:underline font-light"
-                  >
+                  <Link href="/#test" className="hover:underline font-light">
                     Test de Velocidad
                   </Link>
                 </li>
-                {/* <li className="flex items-center gap-2 pt-4 pl-4">
-                  <a
-                    href="https://www.facebook.com/costanetiptv.santaana"
-                    className="cursor-pointer"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <Image
-                      src={facebookIcon}
-                      alt="Facebook de CostaNet"
-                      className="w-auto h-8"
-                    />
-                  </a>
-                  <a
-                    href="https://www.instagram.com/costanetsantaana/"
-                    className="cursor-pointer"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <Image
-                      src={instagramIcon}
-                      alt="Instagram de CostaNet"
-                      className="w-auto h-7 -mt-1"
-                    />
-                  </a>
-                </li> */}
               </ul>
             </div>
           </div>
