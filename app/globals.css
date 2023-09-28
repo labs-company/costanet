@@ -52,6 +52,7 @@
       scale: 100%;
     }
   }
+  /**animation images **/
   .show-image {
     view-timeline-name: --image;
     view-timeline-axis: block;
