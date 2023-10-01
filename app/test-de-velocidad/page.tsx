@@ -1,37 +1,37 @@
-import Reload from "./reload";
+import Reload from './reload';
 
 export default function TestDeVelocidad() {
   return (
     <section
-      id="test"
-      className="h-[70vh] grid lg:grid-cols-[50%_50%] auto-cols-auto pt-12"
+      id='test'
+      className='h-[70vh] grid lg:grid-cols-[50%_50%] auto-cols-auto pt-12'
       style={{
         background:
-          "linear-gradient(180deg, #F1F9FE, #F1F9FE 60%, #FFFFFF 55%, #FFFFFF)",
+          'linear-gradient(180deg, #F1F9FE, #F1F9FE 60%, #FFFFFF 55%, #FFFFFF)',
       }}
     >
-      <article className="h-full">
+      <article className='h-full'>
         <iframe
-          src="https://openspeedtest.com/speedtest"
-          title="Open speedtest"
-          className="w-full h-full"
+          src='https://openspeedtest.com/speedtest'
+          title='Open speedtest'
+          className='w-full h-full'
         ></iframe>
       </article>
-      <article className="h-full px-4 flex flex-col items-center justify-center">
-        <h1 className="text-5xl font-bold text-vermas-100 font-monset">
+      <article className='h-full px-4 flex flex-col items-center justify-center'>
+        <h1 className='text-5xl font-bold text-vermas-100 font-monset'>
           Test de velocidad
         </h1>
-        <ol className="py-6 text-2xl px-6 list-decimal">
-          <li className="py-2 px-2">
-            Al realizar la prubea obtendras tu resultado por parte de{" "}
+        <ol className='py-6 text-2xl px-6 list-decimal'>
+          <li className='py-2 px-2'>
+            Al realizar la prubea obtendras tu resultado por parte de{' '}
             <a
-              href="openspeedtest.com"
-              className="text-vermas-50 underline font-monset"
+              href='openspeedtest.com'
+              className='text-vermas-50 underline font-monset'
             >
-              Open speedtest{" "}
+              Open speedtest{' '}
             </a>
           </li>
-          <li className="py-2 px-2">
+          <li className='py-2 px-2'>
             si deseas volver a repetir la prueba presiona el siguiente boton:
           </li>
         </ol>
