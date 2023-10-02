@@ -6,5 +6,4 @@
 
 `tailwind.config.ts` en este archivo encontraras la paleta de colores de la empresa, tambien unas `box-shadow` (sombras) personalizadas
 
-
 `bradlc.vscode-tailwindcss` Te recomendamos la extension de tailwindcss para obtener autocompletado

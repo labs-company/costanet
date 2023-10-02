@@ -92,9 +92,18 @@ export default function Media() {
                         </h5>
                       </div>
                       <ListMedia
-                        mediaOne={{ name: 'Costanet Santa Ana', link: 'https://www.facebook.com/costanetiptv.santaana' }}
-                        mediaTwo={{ name: 'Costanet Cicuco', link: 'https://www.facebook.com/profile.php?id=100085553010151' }}
-                        mediaThree={{ name: 'Costanet Talaigua', link: 'https://www.facebook.com/COSTANETTALAIGUA' }}
+                        mediaOne={{
+                          name: 'Costanet Santa Ana',
+                          link: 'https://www.facebook.com/costanetiptv.santaana',
+                        }}
+                        mediaTwo={{
+                          name: 'Costanet Cicuco',
+                          link: 'https://www.facebook.com/profile.php?id=100085553010151',
+                        }}
+                        mediaThree={{
+                          name: 'Costanet Talaigua',
+                          link: 'https://www.facebook.com/COSTANETTALAIGUA',
+                        }}
                       />
                     </div>
                     <div className='py-6'>
