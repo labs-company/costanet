@@ -4,15 +4,15 @@ import GmailIcon from './icons/GmailIcon';
 import TelephoneIcon from './icons/TelephoneIcon';
 
 interface IMessageContact {
-  icon: string;
-  title: string;
+  icon?: string;
+  title?: string;
   description: {
-    titleDescription: string;
+    titleDescription?: string;
     titleDescriptionSecundary?: string;
     titleDescriptionTerceary?: string;
     text?: string;
     textSecundary?: string;
-    textTerceary: string;
+    textTerceary?: string;
   };
 }
 
