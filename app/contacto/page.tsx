@@ -105,12 +105,9 @@ export default function PageContacto() {
             icon='correos'
             title='Correos'
             description={{
-              titleDescription: 'juridicocostanet@gmail.com',
+              titleDescription: 'juridico@costanetcolombia.com',
               titleDescriptionSecundary: 'oficinasantana@gmail.com',
-              text: 'juridico@costanetcolombia.com',
-              textSecundary: 'santaana@costanetcolombia.com',
               titleDescriptionTerceary: 'oficinacicuco@gmail.com',
-              textTerceary: 'cicuco@costanetcolombia.com',
             }}
           />
           <CardContact
