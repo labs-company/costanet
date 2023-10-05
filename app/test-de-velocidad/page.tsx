@@ -4,20 +4,20 @@ export default function TestDeVelocidad() {
   return (
     <section
       id='test'
-      className='h-[70vh] grid lg:grid-cols-[50%_50%] auto-cols-auto pt-12'
+      className='h-full lg:h-[70vh] grid lg:grid-cols-[50%_50%] auto-cols-auto pt-12'
       style={{
         background:
           'linear-gradient(180deg, #F1F9FE, #F1F9FE 60%, #FFFFFF 55%, #FFFFFF)',
       }}
     >
-      <article className='h-full'>
+      <article className='h-full w-full'>
         <iframe
           src='https://openspeedtest.com/speedtest'
           title='Open speedtest'
           className='w-full h-full'
         ></iframe>
       </article>
-      <article className='h-full px-4 flex flex-col items-center justify-center'>
+      <article className='h-full px-4 flex flex-col items-center justify-center py-8'>
         <h1 className='text-5xl font-bold text-vermas-100 font-monset'>
           Test de velocidad
         </h1>
