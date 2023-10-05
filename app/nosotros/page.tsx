@@ -10,7 +10,7 @@ export default function PageAbout() {
       <article className='flex justify-between items-center py-8 gap-4 flex-wrap lg:flex-nowrap w-full'>
         <div className='lg:flex-1 flex justify-center flex-col lg:items-center relative w-full'>
           <h2 className='font-monset font-bold text-letter p-8 text-2xl lg:text-7xl mt-12'>
-            NOSOTROS
+            Nosotros
           </h2>
           <SpinnerAbout />
           <p className='font-monset text-xl w-full lg:w-[50vw] py-4 px-2'>
@@ -28,7 +28,7 @@ export default function PageAbout() {
         <ImageAbout image={mision} />
         <div className='lg:flex-1 flex justify-center flex-col lg:items-center relative overflow-x-hidden w-full'>
           <h2 className='font-monset font-bold text-letter text-2xl p-8 lg:text-7xl mt-12 text-center lg:text-right'>
-            MISION
+            Mision
           </h2>
           <SpinnerMision />
           <p className='font-monset text-xl lg:w-[50vw] py-4 px-4'>
@@ -46,7 +46,7 @@ export default function PageAbout() {
       <article className='flex justify-between items-center py-8 gap-4 flex-wrap lg:flex-nowrap'>
         <div className='lg:flex-1 flex justify-center flex-col items-center w-full'>
           <h2 className='font-monset font-bold text-letter p-8 text-2xl lg:text-7xl mt-12'>
-            VISION
+            Vision
           </h2>
           <SpinnerVision />
           <p className='font-monset text-xl lg:w-[50vw] py-4 px-2'>

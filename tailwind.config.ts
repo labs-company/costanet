@@ -13,7 +13,7 @@ const config: Config = {
       },
     },
     fontFamily: {
-      monset: ['Montserrat Alternates', 'sans-serif'],
+      monset: ['Open Sans', 'sans-serif'],
     },
     colors: {
       navbar: '#F1F9FE',
