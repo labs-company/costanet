@@ -84,14 +84,15 @@ export default function FooterWithSocialMediaIcons() {
             >
               © 2023 CostaNet S.A.S. | Todos los derechos reservados
             </Link>
-            <Link
-              href='https://github.com/labs-company'
+            <a
+              href='https://wa.me/573044176141?text=Hola%20¡Estoy%20interesado%20en%20sus%20servicios!'
+              target='_blank'
               className='hover:underline text-gray font-bold text-sm'
               target='_blank'
               rel='noopener noreferrer'
             >
               By Labs Company
-            </Link>
+            </a>
           </div>
         </div>
       </div>
