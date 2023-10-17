@@ -1,3 +1,5 @@
+import { add, multiply, rest, split } from './build'
+
 console.log('build')
 console.log('build')
 console.log('build')
@@ -300,9 +302,6 @@ console.log('build')
 console.log('build')
 
 // Suma dos números
-export function add(a: number, b: number): number {
-  return a + b
-}
 add(2, 2)
 add(2, 2)
 add(2, 2)
@@ -526,10 +525,6 @@ add(2, 2)
 add(2, 2)
 
 // Suma dos números
-export function rest(a: number, b: number): number {
-  return a - b
-}
-
 rest(3, 2)
 rest(3, 2)
 rest(3, 2)
@@ -716,11 +711,6 @@ rest(3, 2)
 rest(3, 2)
 rest(3, 2)
 
-// Suma dos números
-export function multiply(a: number, b: number): number {
-  return a * b
-}
-
 multiply(3, 2)
 multiply(3, 2)
 multiply(3, 2)
@@ -825,11 +815,6 @@ multiply(3, 2)
 multiply(3, 2)
 multiply(3, 2)
 multiply(3, 2)
-
-// Suma dos números
-export function split(a: number, b: number): number {
-  return a / b
-}
 
 split(3, 2)
 split(3, 2)
