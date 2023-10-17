@@ -1,13 +1,13 @@
-'use client';
+'use client'
 
-import { navigation, classNames } from '@/app/navbar';
-import Link from 'next/link';
-import { useState } from 'react';
+import { navigation, classNames } from '@/app/navbar'
+import Link from 'next/link'
+import { useState } from 'react'
 
 export default function NavbarNavigation() {
   const [currentNavItem, setCurrentNavItem] = useState(
     navigation.find((item) => item.current),
-  );
+  )
   return (
     <>
       <div className='flex space-x-4'>
@@ -31,5 +31,5 @@ export default function NavbarNavigation() {
         ))}
       </div>
     </>
-  );
+  )
 }

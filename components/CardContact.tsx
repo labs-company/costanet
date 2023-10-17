@@ -1,19 +1,19 @@
-import HorariosIcon from './icons/HorariosIcon';
-import LocationIcon from './icons/LocationIcon';
-import GmailIcon from './icons/GmailIcon';
-import TelephoneIcon from './icons/TelephoneIcon';
+import HorariosIcon from './icons/HorariosIcon'
+import LocationIcon from './icons/LocationIcon'
+import GmailIcon from './icons/GmailIcon'
+import TelephoneIcon from './icons/TelephoneIcon'
 
 interface IMessageContact {
-  icon?: string;
-  title?: string;
+  icon?: string
+  title?: string
   description: {
-    titleDescription?: string;
-    titleDescriptionSecundary?: string;
-    titleDescriptionTerceary?: string;
-    text?: string;
-    textSecundary?: string;
-    textTerceary?: string;
-  };
+    titleDescription?: string
+    titleDescriptionSecundary?: string
+    titleDescriptionTerceary?: string
+    text?: string
+    textSecundary?: string
+    textTerceary?: string
+  }
 }
 
 export default function CardContact({
@@ -21,7 +21,7 @@ export default function CardContact({
   title,
   description,
 }: IMessageContact) {
-  const SIZE_ICON = '80';
+  const SIZE_ICON = '80'
   return (
     <>
       <div className='bg-white shadow-xl min-w-max px-6 py-10 rounded transition scale-90 hover:scale-100 flex-1'>
@@ -59,5 +59,5 @@ export default function CardContact({
         </ul>
       </div>
     </>
-  );
+  )
 }

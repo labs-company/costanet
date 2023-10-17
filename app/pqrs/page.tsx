@@ -1,6 +1,6 @@
-import Image from 'next/image';
-import imagenPqrs from '@/public/imagen-pqrs.jpg';
-import Email from './Email';
+import Image from 'next/image'
+import imagenPqrs from '@/public/imagen-pqrs.jpg'
+import Email from './Email'
 
 export default function PagePqrs() {
   return (
@@ -19,5 +19,5 @@ export default function PagePqrs() {
         <Email />
       </section>
     </section>
-  );
+  )
 }

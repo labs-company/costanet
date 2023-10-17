@@ -1,8 +1,8 @@
-import nosotros from '@/public/sectionDos/nosotros.png';
-import vision from '@/public/vision.jpg';
-import mision from '@/public/mision-vision-y-valores-6.jpg';
-import { SpinnerAbout, SpinnerMision, SpinnerVision } from './Spinner';
-import ImageAbout from '@/components/ImageAbout';
+import nosotros from '@/public/sectionDos/nosotros.png'
+import vision from '@/public/vision.jpg'
+import mision from '@/public/mision-vision-y-valores-6.jpg'
+import { SpinnerAbout, SpinnerMision, SpinnerVision } from './Spinner'
+import ImageAbout from '@/components/ImageAbout'
 
 export default function PageAbout() {
   return (
@@ -62,5 +62,5 @@ export default function PageAbout() {
         <ImageAbout image={vision} />
       </article>
     </section>
-  );
+  )
 }

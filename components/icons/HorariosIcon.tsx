@@ -1,4 +1,4 @@
-import { ISizeIcon } from './ISizeIcon';
+import { ISizeIcon } from './ISizeIcon'
 
 export default function HorariosIcon({ SIZE_ICON }: ISizeIcon) {
   return (
@@ -22,5 +22,5 @@ export default function HorariosIcon({ SIZE_ICON }: ISizeIcon) {
         <path d='M17 4l2.75 2'></path>
       </svg>
     </>
-  );
+  )
 }

@@ -1,4 +1,4 @@
-import { ISizeIcon } from './ISizeIcon';
+import { ISizeIcon } from './ISizeIcon'
 
 export default function TelephoneIcon({ SIZE_ICON }: ISizeIcon) {
   return (
@@ -21,5 +21,5 @@ export default function TelephoneIcon({ SIZE_ICON }: ISizeIcon) {
         <path d='M15 3a6 6 0 0 1 6 6'></path>
       </svg>
     </>
-  );
+  )
 }

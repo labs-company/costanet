@@ -1,4 +1,4 @@
-import { ISizeIcon } from './ISizeIcon';
+import { ISizeIcon } from './ISizeIcon'
 
 export default function GmailIcon({ SIZE_ICON }: ISizeIcon) {
   return (
@@ -20,5 +20,5 @@ export default function GmailIcon({ SIZE_ICON }: ISizeIcon) {
         <path d='M3 7l9 6l9 -6'></path>
       </svg>
     </>
-  );
+  )
 }

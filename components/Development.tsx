@@ -1,4 +1,4 @@
-type TypeDev = { typing: string; title: string; description: string };
+type TypeDev = { typing: string; title: string; description: string }
 
 export default function Development({ title, description, typing }: TypeDev) {
   return (
@@ -24,5 +24,5 @@ export default function Development({ title, description, typing }: TypeDev) {
         </div>
       </section>
     </>
-  );
+  )
 }

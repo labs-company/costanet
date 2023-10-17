@@ -1,8 +1,8 @@
-import Image from 'next/image';
-import Link from 'next/link';
-import logo_cn from '@/public/logos/costanet_desktop.png';
-import DisclosureNavbar from './DisclosureNavbar';
-import NavbarNavigation from './NavbarNavigation';
+import Image from 'next/image'
+import Link from 'next/link'
+import logo_cn from '@/public/logos/costanet_desktop.png'
+import DisclosureNavbar from './DisclosureNavbar'
+import NavbarNavigation from './NavbarNavigation'
 
 export default function Navbar() {
   return (
@@ -29,5 +29,5 @@ export default function Navbar() {
         </div>
       </>
     </nav>
-  );
+  )
 }

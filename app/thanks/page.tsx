@@ -1,4 +1,4 @@
-import Development from '@/components/Development';
+import Development from '@/components/Development'
 
 export default function Thanks() {
   return (
@@ -7,5 +7,5 @@ export default function Thanks() {
       title='Muchas gracias!'
       description='El correo se ha enviado correctamente, estaremos revisando tu comentario'
     />
-  );
+  )
 }

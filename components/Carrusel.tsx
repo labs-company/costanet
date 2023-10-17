@@ -1,11 +1,11 @@
-'use client';
+'use client'
 
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { EffectFade, Autoplay, Pagination, Navigation } from 'swiper/modules';
-import Image from 'next/image';
-import carruseluno from '@/public/sectionOne/carruselUno.jpg';
-import carruseldos from '@/public/sectionOne/carruselDos.jpg';
-import carruseltres from '@/public/sectionOne/carruselTres.jpg';
+import { Swiper, SwiperSlide } from 'swiper/react'
+import { EffectFade, Autoplay, Pagination, Navigation } from 'swiper/modules'
+import Image from 'next/image'
+import carruseluno from '@/public/sectionOne/carruselUno.jpg'
+import carruseldos from '@/public/sectionOne/carruselDos.jpg'
+import carruseltres from '@/public/sectionOne/carruselTres.jpg'
 
 export default function Carrusel() {
   return (
@@ -44,5 +44,5 @@ export default function Carrusel() {
         </SwiperSlide>
       </Swiper>
     </>
-  );
+  )
 }

@@ -1,15 +1,15 @@
-import './globals.css';
+import './globals.css'
 
-import type { Metadata } from 'next';
-import Navbar from '@/components/Navbar';
-import Footer from '@/components/Footer';
-import ButtonWhatsApp from '@/components/ButtonWhatsapp';
-import { Analytics } from '@vercel/analytics/react';
+import type { Metadata } from 'next'
+import Navbar from '@/components/Navbar'
+import Footer from '@/components/Footer'
+import ButtonWhatsApp from '@/components/ButtonWhatsapp'
+import { Analytics } from '@vercel/analytics/react'
 
-import 'swiper/css';
-import 'swiper/css/effect-fade';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
+import 'swiper/css'
+import 'swiper/css/effect-fade'
+import 'swiper/css/navigation'
+import 'swiper/css/pagination'
 
 export const metadata: Metadata = {
   title: 'Costanet S.A.S',
@@ -36,12 +36,12 @@ export const metadata: Metadata = {
     name: 'costanet',
     url: 'www.costanetcolombia.com',
   },
-};
+}
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode;
+  children: React.ReactNode
 }) {
   return (
     <html lang='en' className='scroll-smooth'>
@@ -57,5 +57,5 @@ export default function RootLayout({
         <Footer />
       </body>
     </html>
-  );
+  )
 }

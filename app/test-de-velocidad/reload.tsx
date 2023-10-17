@@ -1,9 +1,9 @@
-'use client';
+'use client'
 
 export default function Reload() {
   const handleReload = () => {
-    window.location.reload();
-  };
+    window.location.reload()
+  }
 
   return (
     <a
@@ -13,5 +13,5 @@ export default function Reload() {
     >
       Reiniciar prueba
     </a>
-  );
+  )
 }

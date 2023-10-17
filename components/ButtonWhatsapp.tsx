@@ -1,5 +1,5 @@
-import whatsAppIcon from '@/public/whatsapp.svg';
-import Image from 'next/image';
+import whatsAppIcon from '@/public/whatsapp.svg'
+import Image from 'next/image'
 
 export default function ButtonWhatsapp() {
   return (
@@ -12,5 +12,5 @@ export default function ButtonWhatsapp() {
       <Image src={whatsAppIcon} alt='WhatsApp' className='w-10 h-10' />
       Ayuda
     </a>
-  );
+  )
 }

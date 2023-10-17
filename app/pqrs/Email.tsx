@@ -1,18 +1,18 @@
-'use client';
+'use client'
 
-import { useState, Fragment } from 'react';
-import { Listbox, Transition } from '@headlessui/react';
-import { ChevronUpDownIcon } from '@heroicons/react/20/solid';
+import { useState, Fragment } from 'react'
+import { Listbox, Transition } from '@headlessui/react'
+import { ChevronUpDownIcon } from '@heroicons/react/20/solid'
 
 const typeComment = [
   { id: 1, title: 'Peticion' },
   { id: 2, title: 'Queja' },
   { id: 3, title: 'Reclamo' },
-];
+]
 
 export default function Email() {
-  const [selected, _] = useState(typeComment[0]);
-  const [selectedTitle, setSelectedTitle] = useState(typeComment[0].title);
+  const [selected, _] = useState(typeComment[0])
+  const [selectedTitle, setSelectedTitle] = useState(typeComment[0].title)
 
   const [username, setUsername] = useState({
     name: '',
@@ -20,17 +20,17 @@ export default function Email() {
     telephone: '',
     selected: selectedTitle,
     coment: '',
-  });
+  })
 
   const handleChangeUsername = (key: string, value: string) => {
     if (key === 'selected') {
-      setSelectedTitle(value);
-      const commentWithColon = value + ': ';
+      setSelectedTitle(value)
+      const commentWithColon = value + ': '
 
-      setUsername({ ...username, [key]: value, coment: commentWithColon });
+      setUsername({ ...username, [key]: value, coment: commentWithColon })
     }
-    setUsername({ ...username, [key]: value });
-  };
+    setUsername({ ...username, [key]: value })
+  }
 
   return (
     <form
@@ -188,5 +188,5 @@ export default function Email() {
         />
       </div>
     </form>
-  );
+  )
 }

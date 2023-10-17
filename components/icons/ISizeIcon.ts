@@ -1,3 +1,3 @@
 export interface ISizeIcon {
-  SIZE_ICON: string;
+  SIZE_ICON: string
 }

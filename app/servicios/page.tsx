@@ -1,5 +1,5 @@
-import Image from 'next/image';
-import clientHappy from '@/public/sectionTres/clientHappy.png';
+import Image from 'next/image'
+import clientHappy from '@/public/sectionTres/clientHappy.png'
 
 export default function PageServices() {
   return (
@@ -44,5 +44,5 @@ export default function PageServices() {
         </article>
       </section>
     </>
-  );
+  )
 }

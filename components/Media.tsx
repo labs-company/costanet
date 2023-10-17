@@ -1,27 +1,27 @@
-'use client';
+'use client'
 
-import { Dialog, Transition } from '@headlessui/react';
-import { Fragment, useState } from 'react';
+import { Dialog, Transition } from '@headlessui/react'
+import { Fragment, useState } from 'react'
 
-import facebook from '@/public/redes/facebook.png';
-import instagram from '@/public/redes/instagram.png';
-import Image from 'next/image';
+import facebook from '@/public/redes/facebook.png'
+import instagram from '@/public/redes/instagram.png'
+import Image from 'next/image'
 
 type TMedia = {
-  name: string;
-  link: string;
-};
+  name: string
+  link: string
+}
 type typePropsMedia = {
-  mediaOne: TMedia;
-  mediaTwo: TMedia;
-  mediaThree: TMedia;
-};
+  mediaOne: TMedia
+  mediaTwo: TMedia
+  mediaThree: TMedia
+}
 
 export default function Media() {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false)
 
-  const closeModal = () => setIsOpen(false);
-  const openModal = () => setIsOpen(true);
+  const closeModal = () => setIsOpen(false)
+  const openModal = () => setIsOpen(true)
   return (
     <>
       <a href='#!' className='hover:underline font-light' onClick={openModal}>
@@ -131,7 +131,7 @@ export default function Media() {
         </Dialog>
       </Transition>
     </>
-  );
+  )
 }
 
 function ListMedia({ mediaOne, mediaTwo, mediaThree }: typePropsMedia) {
@@ -160,5 +160,5 @@ function ListMedia({ mediaOne, mediaTwo, mediaThree }: typePropsMedia) {
         </li>
       </ul>
     </div>
-  );
+  )
 }

@@ -6,10 +6,10 @@ const navigation = [
   { name: 'Test de Velocidad', href: '/#test', current: false },
   { name: 'PQR', href: '/pqrs', current: false },
   { name: 'PSE', href: '/pse', current: false },
-];
+]
 
 function classNames(...classes: string[]) {
-  return classes.filter(Boolean).join(' ');
+  return classes.filter(Boolean).join(' ')
 }
 
-export { navigation, classNames };
+export { navigation, classNames }

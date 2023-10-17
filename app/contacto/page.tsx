@@ -1,6 +1,6 @@
-'use client';
-import Link from 'next/link';
-import CardContact from '@/components/CardContact';
+'use client'
+import Link from 'next/link'
+import CardContact from '@/components/CardContact'
 
 export default function PageContacto() {
   return (
@@ -125,5 +125,5 @@ export default function PageContacto() {
         </article>
       </section>
     </>
-  );
+  )
 }

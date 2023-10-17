@@ -1,4 +1,4 @@
-import Reload from './reload';
+import Reload from './reload'
 
 export default function TestDeVelocidad() {
   return (
@@ -38,5 +38,5 @@ export default function TestDeVelocidad() {
         <Reload />
       </article>
     </section>
-  );
+  )
 }

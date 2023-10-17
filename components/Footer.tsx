@@ -1,5 +1,5 @@
-import Link from 'next/link';
-import Media from '@/components/Media';
+import Link from 'next/link'
+import Media from '@/components/Media'
 
 export default function FooterWithSocialMediaIcons() {
   return (
@@ -88,7 +88,6 @@ export default function FooterWithSocialMediaIcons() {
               href='https://wa.me/573044176141?text=Hola%20¡Estoy%20interesado%20en%20sus%20servicios!'
               target='_blank'
               className='hover:underline text-gray font-bold text-sm'
-              target='_blank'
               rel='noopener noreferrer'
             >
               By Labs Company
@@ -97,5 +96,5 @@ export default function FooterWithSocialMediaIcons() {
         </div>
       </div>
     </footer>
-  );
+  )
 }

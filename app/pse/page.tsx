@@ -1,4 +1,4 @@
-import Development from '@/components/Development';
+import Development from '@/components/Development'
 
 export default function PagePSE() {
   return (
@@ -9,5 +9,5 @@ export default function PagePSE() {
         description='Esta pagina esta en construccion'
       />
     </section>
-  );
+  )
 }

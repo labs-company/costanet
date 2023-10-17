@@ -1,7 +1,7 @@
-import Image, { StaticImageData } from 'next/image';
+import Image, { StaticImageData } from 'next/image'
 
 interface IAbout {
-  image: string | StaticImageData;
+  image: string | StaticImageData
 }
 
 export default function ImageAbout({ image }: IAbout) {
@@ -13,5 +13,5 @@ export default function ImageAbout({ image }: IAbout) {
         className='rounded-xl transition-transform overflow-hidden lg:w-[30vw] shadow-xl show-image w-full'
       />
     </figure>
-  );
+  )
 }

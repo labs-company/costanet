@@ -1,13 +1,13 @@
-'use client';
-import { navigation, classNames } from '@/app/navbar';
-import { Disclosure } from '@headlessui/react';
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
-import { useState } from 'react';
+'use client'
+import { navigation, classNames } from '@/app/navbar'
+import { Disclosure } from '@headlessui/react'
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+import { useState } from 'react'
 
 export default function DisclosureNavbar() {
   const [currentNavItem, setCurrentNavItem] = useState(
     navigation.find((item) => item.current),
-  );
+  )
 
   return (
     <Disclosure as='div' className='sm:hidden'>
@@ -50,8 +50,8 @@ export default function DisclosureNavbar() {
               </div>
             </Disclosure.Panel>
           </>
-        );
+        )
       }}
     </Disclosure>
-  );
+  )
 }
