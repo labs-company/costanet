@@ -300,7 +300,7 @@ console.log('build')
 console.log('build')
 
 // Suma dos números
-function add(a: number, b: number): number {
+export function add(a: number, b: number): number {
   return a + b
 }
 add(2, 2)
@@ -526,7 +526,7 @@ add(2, 2)
 add(2, 2)
 
 // Suma dos números
-function rest(a: number, b: number): number {
+export function rest(a: number, b: number): number {
   return a - b
 }
 
@@ -717,7 +717,7 @@ rest(3, 2)
 rest(3, 2)
 
 // Suma dos números
-function multiply(a: number, b: number): number {
+export function multiply(a: number, b: number): number {
   return a * b
 }
 
@@ -827,7 +827,7 @@ multiply(3, 2)
 multiply(3, 2)
 
 // Suma dos números
-function split(a: number, b: number): number {
+export function split(a: number, b: number): number {
   return a / b
 }
 
