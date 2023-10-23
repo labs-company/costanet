@@ -10,11 +10,11 @@ export default function TestDeVelocidad() {
           'linear-gradient(180deg, #F1F9FE, #F1F9FE 60%, #FFFFFF 55%, #FFFFFF)',
       }}
     >
-      <article className='h-full w-full'>
+      <article className='h-full w-full relative'>
         <iframe
           src='https://openspeedtest.com/speedtest'
           title='Open speedtest'
-          className='w-full h-full'
+          className='w-full h-96 lg:h-full -z-0'
         ></iframe>
       </article>
       <article className='h-full px-4 flex flex-col items-center justify-center py-8'>
@@ -24,10 +24,7 @@ export default function TestDeVelocidad() {
         <ol className='py-6 text-2xl px-6 list-decimal'>
           <li className='py-2 px-2'>
             Al finalizar la prueba obtendrás tu resultado por parte de{' '}
-            <a
-              href='#!'
-              className='text-vermas-50 font-bold font-monset'
-            >
+            <a href='#!' className='font-monset'>
               Open speedtest{' '}
             </a>
           </li>
