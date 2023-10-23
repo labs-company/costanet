@@ -23,7 +23,7 @@ export default function TestDeVelocidad() {
         </h1>
         <ol className='py-6 text-2xl px-6 list-decimal'>
           <li className='py-2 px-2'>
-            Al realizar la prueba obtendras tu resultado por parte de{' '}
+            Al realizar la prueba obtendrás tu resultado por parte de{' '}
             <a
               href='#!'
               className='text-vermas-50 font-bold font-monset'
