@@ -23,9 +23,9 @@ export default function TestDeVelocidad() {
         </h1>
         <ol className='py-6 text-2xl px-6 list-decimal'>
           <li className='py-2 px-2'>
-            Al realizar la prubea obtendras tu resultado por parte de{' '}
+            Al realizar la prueba obtendras tu resultado por parte de{' '}
             <a
-              href='#'
+              href='#!'
               className='text-vermas-50 font-bold font-monset'
             >
               Open speedtest{' '}
