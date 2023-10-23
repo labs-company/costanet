@@ -25,8 +25,8 @@ export default function TestDeVelocidad() {
           <li className='py-2 px-2'>
             Al realizar la prubea obtendras tu resultado por parte de{' '}
             <a
-              href='openspeedtest.com'
-              className='text-vermas-50 underline font-monset'
+              href='#'
+              className='text-vermas-50 font-bold font-monset'
             >
               Open speedtest{' '}
             </a>
