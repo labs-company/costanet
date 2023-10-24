@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import Reload from './reload'
 
 export default function TestDeVelocidad() {
@@ -11,6 +12,11 @@ export default function TestDeVelocidad() {
       }}
     >
       <article className='h-full w-full relative'>
+        <Link
+          href='/open'
+          target='_blank'
+          className='hover:cursor-pointer absolute w-full h-full'
+        ></Link>
         <iframe
           src='https://openspeedtest.com/speedtest'
           title='Open speedtest'
