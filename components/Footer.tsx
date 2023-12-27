@@ -3,7 +3,7 @@ import Media from '@/components/Media'
 
 export default function FooterWithSocialMediaIcons() {
   return (
-    <footer className='bg-letter rounded-none p-0 text-white font-monset'>
+    <footer className='hidden bg-letter rounded-none p-0 text-white font-monset'>
       <div className='w-full'>
         <div
           className=' flex flex-col md:grid w-full p-5 relative'
