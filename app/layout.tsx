@@ -48,7 +48,7 @@ export default function RootLayout({
     <html lang='en' className='scroll-smooth'>
       <body className='relative'>
         <div className='absolute h-screen w-full inset-0'>
-          <h2>Error de servidor</h2>
+          <h2>Something error server</h2>
         </div>
         <header className='fixed top-0 z-50 left-0 right-0 hidden'>
           <Navbar />
