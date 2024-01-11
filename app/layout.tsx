@@ -50,7 +50,7 @@ export default function RootLayout({
         <header className='fixed top-0 z-50 left-0 right-0 hidden'>
           <Navbar />
         </header>
-        <main className='mt-14 hidden'>
+        <main className='mt-14'>
           {children}
           <Analytics />
         </main>
